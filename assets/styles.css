@@ -653,8 +653,17 @@ body { padding-top: var(--header-total); }
   display: flex; align-items: center; justify-content: space-between; gap: 16px;
 }
 .footer__prebar-left {
-  display: flex; align-items: center; gap: 10px;
-  font-size: 14px; color: rgba(255,255,255,.7);
+  display: flex; align-items: center; gap: 8px;
+  font-size: 13px; color: rgba(255,255,255,.7);
+  flex: 1; min-width: 0;
+}
+.footer__prebar-left span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.footer__prebar-left strong {
+  white-space: nowrap;
 }
 .footer__prebar-left svg {
   width: 18px; height: 18px; stroke: var(--gold); fill: none;
