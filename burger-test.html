@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Burger Test</title>
+<style>
+body { margin: 0; font-family: sans-serif; }
+.header { position: fixed; top: 0; left: 0; right: 0; height: 60px; background: #1A1A20; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; z-index: 100; }
+.burger { display: flex; flex-direction: column; gap: 5px; padding: 8px; background: none; border: none; cursor: pointer; }
+.burger span { display: block; width: 22px; height: 2px; background: #fff; border-radius: 2px; }
+.overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 200; }
+.overlay.on { display: block; }
+.drawer { position: fixed; top: 0; right: 0; bottom: 0; width: 300px; background: #fff; z-index: 300; transform: translateX(100%); transition: transform 0.3s; }
+.drawer.open { transform: translateX(0); }
+.drawer h2 { padding: 20px; }
+.content { margin-top: 80px; padding: 20px; }
+#status { background: #eee; padding: 10px; margin-bottom: 20px; border-radius: 4px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <span style="color:#C6A76B;font-weight:bold">RENOVUS TEST</span>
+  <button class="burger" id="burgerBtn">
+    <span></span><span></span><span></span>
+  </button>
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+<div class="drawer" id="drawer">
+  <h2>Menü funktioniert! ✅</h2>
+  <p style="padding:0 20px">Wenn du das siehst, funktioniert das Burger-Menü korrekt.</p>
+  <button onclick="closeD()" style="margin:20px;padding:10px 20px;background:#C6A76B;border:none;cursor:pointer;font-size:16px">Schließen</button>
+</div>
+
+<div class="content">
+  <div id="status">Status: Bereit — tippe auf ☰ oben rechts</div>
+  <h1>Burger Menü Test</h1>
+  <p>Diese Seite testet nur das Burger-Menü.</p>
+</div>
+
+<script>
+var burger  = document.getElementById('burgerBtn');
+var overlay = document.getElementById('overlay');
+var drawer  = document.getElementById('drawer');
+var status  = document.getElementById('status');
+
+function openD() {
+  drawer.classList.add('open');
+  overlay.classList.add('on');
+  status.textContent = 'Status: Menü OFFEN ✅';
+  document.body.style.overflow = 'hidden';
+}
+function closeD() {
+  drawer.classList.remove('open');
+  overlay.classList.remove('on');
+  status.textContent = 'Status: Menü geschlossen';
+  document.body.style.overflow = '';
+}
+
+burger.addEventListener('click', function() {
+  status.textContent = 'Status: Burger geklickt!';
+  drawer.classList.contains('open') ? closeD() : openD();
+});
+overlay.addEventListener('click', closeD);
+
+status.textContent = 'Status: JS geladen ✅ — tippe auf ☰';
+</script>
+
+</body>
+</html>
