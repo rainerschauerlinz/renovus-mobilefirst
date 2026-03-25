@@ -297,36 +297,34 @@
 </a>
 
 <div class="page-offset"></div>
+<main id="main">
 
 <!-- ══════════════════════════════════════
-     HERO
+     S1: HERO
 ══════════════════════════════════════ -->
-<section id="hero" class="hero section-navy">
-  <div class="hero__bg">
+<section id="hero" class="s-hero">
+  <div class="s-hero__bg">
     <picture>
-      <source media="(max-width: 767px)"
-        srcset="https://renovus-website.pages.dev/img/hero-donau-panorama-linz-immobilienmakler-renovus-mobile.webp">
-      <img
-        src="https://renovus-website.pages.dev/img/hero-donau-panorama-linz-immobilienmakler-renovus.webp"
-        alt="Immobilienmakler Linz – Renovus Immobilien, Donau Panorama"
-        fetchpriority="high"
-        loading="eager">
+      <source media="(max-width:767px)" srcset="https://renovus-website.pages.dev/img/hero-donau-panorama-linz-immobilienmakler-renovus-mobile.webp">
+      <img src="https://renovus-website.pages.dev/img/hero-donau-panorama-linz-immobilienmakler-renovus.webp"
+        alt="Immobilienmakler Linz – Renovus Immobilien, Donau Panorama Linz"
+        fetchpriority="high" loading="eager" width="1200" height="800">
     </picture>
-    <div class="hero__overlay"></div>
+    <div class="s-hero__overlay"></div>
   </div>
-  <div class="hero__content container">
-    <p class="eyebrow">Immobilienmakler Linz · Linz-Land · Urfahr-Umgebung</p>
-    <h1>Ihre Immobilie in <em>besten Händen</em></h1>
-    <p class="lead hero__sub">Staatlich geprüfter Immobilientreuhänder mit 4 WKO-Konzessionen. Persönlich. Kompetent. Vor Ort. Rainer Schauer begleitet Sie vom ersten Gespräch bis zum Abschluss.</p>
-    <div class="btn-group hero__ctas">
-      <a href="#bewertung" class="btn btn-primary">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+  <div class="s-hero__inner wrap">
+    <p class="s-hero__eyebrow">Staatlich geprüfter Immobilientreuhänder in Linz</p>
+    <h1 class="s-hero__h1">Immobilienmakler Linz –<br><em>Ihre Immobilie erfolgreich verkaufen</em></h1>
+    <p class="s-hero__sub">Persönliche Betreuung durch Rainer Schauer. Kostenlose Immobilienbewertung und diskreter Verkauf von Haus, Wohnung und Anlageimmobilien in Linz, Linz-Land und Urfahr-Umgebung.</p>
+    <div class="s-hero__ctas">
+      <a href="#bewertung" class="btn-gold">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
         Kostenlose Bewertung
       </a>
-      <a href="/immobilien" class="btn btn-secondary">Objekte ansehen</a>
+      <a href="#wege" class="btn-outline-white">Unsere Leistungen</a>
     </div>
-    <ul class="hero__trust">
-      <li>Staatlich geprüft · 4 WKO-Konzessionen</li>
+    <ul class="s-hero__trust">
+      <li>4 WKO-Konzessionen · Staatlich geprüft</li>
       <li>Kostenlose Bewertung vor Ort</li>
       <li>Persönliche Begleitung bis zum Abschluss</li>
     </ul>
@@ -334,150 +332,120 @@
 </section>
 
 <!-- ══════════════════════════════════════
-     TRUST-LEISTE
+     S2: TRUST-LEISTE
 ══════════════════════════════════════ -->
-<section class="trust-bar">
-  <div class="container">
-    <div class="trust-bar__inner">
-      <div class="trust-bar__seals">
-        <img src="https://renovus-website.pages.dev/img/guetesiegel-immobilientreuhander-linz-wko.webp"
-          alt="WKO Gütesiegel Immobilientreuhänder staatlich geprüft" loading="lazy" width="72" height="72">
-        <img src="https://renovus-website.pages.dev/img/guetesiegel-immobilienmakler-linz-wko.webp"
-          alt="WKO Gütesiegel Immobilienmakler staatlich geprüft" loading="lazy" width="72" height="72">
-        <img src="https://renovus-website.pages.dev/img/guetesiegel-bautraeger-linz-wko.webp"
-          alt="WKO Gütesiegel Bauträger staatlich geprüft" loading="lazy" width="72" height="72">
-        <img src="https://renovus-website.pages.dev/img/guetesiegel-immobilienverwalter-linz-wko.webp"
-          alt="WKO Gütesiegel Immobilienverwalter staatlich geprüft" loading="lazy" width="72" height="72">
-      </div>
-      <div class="trust-bar__stats">
-        <div class="trust-bar__stat">
-          <strong>15+</strong>
-          <span>Jahre Erfahrung</span>
-        </div>
-        <div class="trust-bar__stat">
-          <strong>300+</strong>
-          <span>Erfolgreiche Abschlüsse</span>
-        </div>
-        <div class="trust-bar__stat">
-          <strong>4,9★</strong>
-          <span>Google Bewertung</span>
-        </div>
-      </div>
+<section id="trust" class="s-trust">
+  <div class="wrap s-trust__inner">
+    <div class="s-trust__seals">
+      <img src="https://renovus-website.pages.dev/img/guetesiegel-immobilientreuhander-linz-wko.webp"
+        alt="WKO Gütesiegel Immobilientreuhänder staatlich geprüft" loading="lazy" width="72" height="72">
+      <img src="https://renovus-website.pages.dev/img/guetesiegel-immobilienmakler-linz-wko.webp"
+        alt="WKO Gütesiegel Immobilienmakler staatlich geprüft" loading="lazy" width="72" height="72">
+      <img src="https://renovus-website.pages.dev/img/guetesiegel-bautraeger-linz-wko.webp"
+        alt="WKO Gütesiegel Bauträger staatlich geprüft" loading="lazy" width="72" height="72">
+      <img src="https://renovus-website.pages.dev/img/guetesiegel-immobilienverwalter-linz-wko.webp"
+        alt="WKO Gütesiegel Immobilienverwalter staatlich geprüft" loading="lazy" width="72" height="72">
+    </div>
+    <div class="s-trust__divider"></div>
+    <div class="s-trust__stats">
+      <div class="s-trust__stat"><strong>15+</strong><span>Jahre Erfahrung</span></div>
+      <div class="s-trust__stat"><strong>300+</strong><span>Abschlüsse</span></div>
+      <div class="s-trust__stat"><strong>4,9 ★</strong><span>Google Bewertung</span></div>
     </div>
   </div>
 </section>
 
 <!-- ══════════════════════════════════════
-     INTRO + PORTRAIT
+     S3: RAINER PORTRAIT
 ══════════════════════════════════════ -->
-<section id="ueber" class="section section-sand">
-  <div class="container">
-    <div class="intro__grid">
-      <div class="intro__img">
-        <picture>
-          <source media="(max-width: 767px)"
-            srcset="https://renovus-website.pages.dev/img/rainer-schauer-immobilientreuhander-linz-renovus-mobile.webp">
-          <img
-            src="https://renovus-website.pages.dev/img/rainer-schauer-immobilientreuhander-linz-renovus.webp"
-            alt="Rainer Schauer – Immobilientreuhänder Linz, Renovus Immobilien"
-            loading="lazy">
-        </picture>
-        <div class="intro__img-label">
-          <strong>Rainer Schauer</strong>
-          <span>Staatlich geprüfter Immobilientreuhänder</span>
-        </div>
+<section id="rainer" class="s-rainer section-sand">
+  <div class="wrap s-rainer__grid">
+    <div class="s-rainer__img-col">
+      <picture>
+        <source media="(max-width:767px)" srcset="https://renovus-website.pages.dev/img/rainer-schauer-immobilientreuhander-linz-renovus-mobile.webp">
+        <img src="https://renovus-website.pages.dev/img/rainer-schauer-immobilientreuhander-linz-renovus.webp"
+          alt="Rainer Schauer – Immobilientreuhänder Linz, Renovus Immobilien"
+          loading="lazy" width="600" height="750">
+      </picture>
+      <div class="s-rainer__label">
+        <strong>Rainer Schauer</strong>
+        <span>Staatlich geprüfter Immobilientreuhänder</span>
       </div>
-      <div class="intro__content">
-        <p class="eyebrow">Persönlich. Kompetent. Vor Ort.</p>
-        <h2>Ihr Partner für Immobilien im Großraum Linz</h2>
-        <p>Renovus Immobilien steht für persönliche Beratung auf höchstem Niveau. Rainer Schauer – staatlich geprüfter Immobilientreuhänder mit allen 4 WKO-Konzessionen – begleitet Sie vom ersten Gespräch bis zur Schlüsselübergabe. Kein Callcenter, kein Mitarbeiter der Ihr Objekt nie gesehen hat.</p>
-        <p>Mit über 15 Jahren Marktkenntnis im Großraum Linz kennen wir jeden Stadtteil, jede Lage, jeden Preistrend. Das Ergebnis: Ihre Immobilie wird zum richtigen Preis, in der richtigen Zeit, an den richtigen Käufer verkauft.</p>
-        <div class="intro__credentials">
-          <div class="intro__credential">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            Staatlich geprüfter Immobilientreuhänder
-          </div>
-          <div class="intro__credential">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            4× WKO-Konzession (Makler, Bauträger, Verwalter, Treuhänder)
-          </div>
-          <div class="intro__credential">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            Aktives Käufer- und Investorennetzwerk in Linz
-          </div>
-        </div>
-        <a href="/ueber-renovus" class="btn btn-secondary">Mehr über Rainer Schauer</a>
-      </div>
+    </div>
+    <div class="s-rainer__text-col">
+      <p class="eyebrow">Ihr persönlicher Ansprechpartner</p>
+      <h2>Kein System-Makler. Kein Callcenter.</h2>
+      <p>Rainer Schauer begleitet Sie persönlich – von der ersten Bewertung bis zur Schlüsselübergabe. Mit klarer Strategie, fundierter Marktkenntnis und dem Mut, ehrliche Preise zu nennen.</p>
+      <p>Als staatlich geprüfter Immobilientreuhänder mit allen 4 WKO-Konzessionen biete ich Ihnen ein Leistungsspektrum, das weit über die klassische Maklertätigkeit hinausgeht. Ihr Ergebnis ist mein Ergebnis.</p>
+      <ul class="s-rainer__credentials">
+        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Staatlich geprüft · 4× WKO-Konzession</li>
+        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>15+ Jahre Marktkenntnis Großraum Linz</li>
+        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Aktives Käufer- und Investorennetzwerk</li>
+        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Persönliche Begleitung bis Schlüsselübergabe</li>
+      </ul>
+      <a href="/ueber-renovus" class="btn-navy">Mehr über Rainer Schauer</a>
     </div>
   </div>
 </section>
 
 <!-- ══════════════════════════════════════
-     LEISTUNGSBLÖCKE
+     S4: IMAGE BREAK — FREINBERG
 ══════════════════════════════════════ -->
-<section id="leistungen" class="section">
-  <div class="container">
-    <p class="eyebrow text-center">Was wir für Sie tun</p>
-    <h2 class="text-center">Unsere Leistungen</h2>
-    <div class="cards cards-3 leistungen__grid">
+<div class="s-break" id="freinberg-break">
+  <picture>
+    <source media="(max-width:767px)" srcset="https://renovus-website.pages.dev/img/panorama-linz-freinberg-weitblick-immobilien-mobile.webp">
+    <img src="https://renovus-website.pages.dev/img/panorama-linz-freinberg-weitblick-immobilien.webp"
+      alt="Panorama Linz Freinberg – Immobilien Linz Weitblick" loading="lazy" width="1200" height="500">
+  </picture>
+  <div class="s-break__overlay"></div>
+  <blockquote class="s-break__quote">Immobilienentscheidungen brauchen Weitblick.</blockquote>
+</div>
 
-      <div class="card leistung-card">
-        <div class="card__media">
-          <picture>
-            <source media="(max-width: 767px)"
-              srcset="https://renovus-website.pages.dev/img/haus-verkaufen-linz-einfamilienhaus-modern-mobile.webp">
-            <img src="https://renovus-website.pages.dev/img/haus-verkaufen-linz-einfamilienhaus-modern.webp"
-              alt="Immobilie verkaufen Linz – Renovus Immobilien" loading="lazy">
-          </picture>
+<!-- ══════════════════════════════════════
+     S5: WEGE / LEISTUNGEN
+══════════════════════════════════════ -->
+<section id="wege" class="s-wege">
+  <div class="wrap">
+    <p class="eyebrow text-c">Was möchten Sie tun?</p>
+    <h2 class="text-c">Ihr nächster Schritt mit Renovus</h2>
+    <div class="s-wege__grid">
+
+      <div class="s-wege__card">
+        <div class="s-wege__img">
+          <img src="https://renovus-website.pages.dev/img/immobilienbewertung-haus-linz-aussen-renovus.webp"
+            alt="Immobilienbewertung Linz kostenlos" loading="lazy" width="600" height="400">
         </div>
-        <div class="card__body">
-          <p class="leistung__tag">Verkaufen</p>
+        <div class="s-wege__body">
+          <p class="s-wege__tag">Bewertung</p>
+          <h3>Immobilie bewerten</h3>
+          <p>Was ist Ihre Immobilie heute wirklich wert? Rainer Schauer bewertet Haus oder Wohnung kostenlos, persönlich und fundiert – direkt vor Ort in Linz.</p>
+          <a href="/immobilienbewertung-linz" class="btn-gold-sm">Kostenlose Bewertung</a>
+        </div>
+      </div>
+
+      <div class="s-wege__card">
+        <div class="s-wege__img">
+          <img src="https://renovus-website.pages.dev/img/haus-verkaufen-linz-einfamilienhaus-modern.webp"
+            alt="Immobilie verkaufen Linz" loading="lazy" width="600" height="400">
+        </div>
+        <div class="s-wege__body">
+          <p class="s-wege__tag">Verkaufen</p>
           <h3>Immobilie verkaufen</h3>
-          <p>Maximaler Erlös durch professionelle Vermarktung, aktives Käufernetzwerk und persönliche Begleitung bis zum Notartermin.</p>
-          <a href="/immobilie-verkaufen-linz" class="card__link">
-            Mehr erfahren
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
+          <p>Sie haben sich entschieden zu verkaufen. Renovus begleitet Sie mit klarer Strategie, professioneller Vermarktung und persönlichem Einsatz bis zum Abschluss.</p>
+          <a href="/immobilie-verkaufen-linz" class="btn-gold-sm">Jetzt starten</a>
         </div>
       </div>
 
-      <div class="card leistung-card">
-        <div class="card__media">
-          <picture>
-            <source media="(max-width: 767px)"
-              srcset="https://renovus-website.pages.dev/img/immobilienbewertung-haus-linz-aussen-renovus-mobile.webp">
-            <img src="https://renovus-website.pages.dev/img/immobilienbewertung-haus-linz-aussen-renovus.webp"
-              alt="Immobilienbewertung Linz kostenlos – Renovus" loading="lazy">
-          </picture>
+      <div class="s-wege__card">
+        <div class="s-wege__img">
+          <img src="https://renovus-website.pages.dev/img/wohnung-verkaufen-linz-modern-renovus.webp"
+            alt="Immobilien kaufen Linz" loading="lazy" width="600" height="400">
         </div>
-        <div class="card__body">
-          <p class="leistung__tag">Bewertung</p>
-          <h3>Kostenlose Bewertung</h3>
-          <p>Fundierte Marktpreiseinschätzung direkt vor Ort. Kostenlos, unverbindlich, persönlich – in 45–90 Minuten wissen Sie was Ihre Immobilie wert ist.</p>
-          <a href="/immobilienbewertung-linz" class="card__link">
-            Jetzt anfragen
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <div class="card leistung-card">
-        <div class="card__media">
-          <picture>
-            <source media="(max-width: 767px)"
-              srcset="https://renovus-website.pages.dev/img/wohnung-verkaufen-linz-modern-renovus-mobile.webp">
-            <img src="https://renovus-website.pages.dev/img/wohnung-verkaufen-linz-modern-renovus.webp"
-              alt="Immobilien kaufen Linz – Renovus Immobilien" loading="lazy">
-          </picture>
-        </div>
-        <div class="card__body">
-          <p class="leistung__tag">Kaufen</p>
+        <div class="s-wege__body">
+          <p class="s-wege__tag">Kaufen</p>
           <h3>Immobilie kaufen</h3>
-          <p>Zugang zu exklusiven Off-Market-Objekten, persönliche Begleitung bei der Besichtigung und kompetente Beratung beim Kaufvertrag.</p>
-          <a href="/immobilien-linz-kaufen" class="card__link">
-            Suchanfrage stellen
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
+          <p>Zugang zu exklusiven Objekten, persönliche Besichtigungsbegleitung und kompetente Beratung beim Kaufvertrag. Ihr Suchanfrage landet direkt bei Rainer.</p>
+          <a href="/immobilien-linz-kaufen" class="btn-gold-sm">Suchanfrage stellen</a>
         </div>
       </div>
 
@@ -486,53 +454,192 @@
 </section>
 
 <!-- ══════════════════════════════════════
-     PROZESS
+     S6: PROZESS
 ══════════════════════════════════════ -->
-<section id="prozess" class="section section-sand">
-  <div class="container">
-    <p class="eyebrow text-center">Wie es funktioniert</p>
-    <h2 class="text-center">Der Weg zum erfolgreichen Verkauf</h2>
-    <div class="steps steps-4 prozess__steps">
-      <div class="step">
-        <div class="step__number">1</div>
-        <h3>Kostenlose Bewertung</h3>
-        <p>Rainer Schauer kommt persönlich zu Ihnen. Fundierte Marktpreiseinschätzung in 45–90 Minuten – kostenlos und unverbindlich.</p>
+<section id="prozess-verkauf" class="s-prozess section-sand">
+  <div class="wrap">
+    <p class="eyebrow text-c">Unser Vorgehen</p>
+    <h2 class="text-c">So verkaufen wir Ihre Immobilie erfolgreich</h2>
+    <p class="s-prozess__sub text-c">Vier klare Schritte. Ein persönlicher Ansprechpartner. Kein Rätselraten.</p>
+    <div class="s-prozess__grid">
+      <div class="s-prozess__step">
+        <div class="s-prozess__num">01</div>
+        <h3>Bewertung</h3>
+        <p>Fundierte Marktanalyse und ehrlicher Preisrahmen – damit Sie wissen, was Ihre Immobilie in Linz heute wirklich wert ist.</p>
       </div>
-      <div class="step">
-        <div class="step__number">2</div>
-        <h3>Professionelle Aufbereitung</h3>
-        <p>Professionelle Fotos, Drohnenaufnahmen, 3D-Grundriss und ein überzeugendes Exposé – Ihre Immobilie im besten Licht.</p>
+      <div class="s-prozess__step">
+        <div class="s-prozess__num">02</div>
+        <h3>Strategie &amp; Vermarktung</h3>
+        <p>Professionelle Fotos, Drohnenaufnahmen, Exposé und gezielte Präsentation auf allen relevanten Portalen und im Käufernetzwerk.</p>
       </div>
-      <div class="step">
-        <div class="step__number">3</div>
-        <h3>Aktive Vermarktung</h3>
-        <p>Präsentation auf allen relevanten Portalen, direkter Zugang zu unserem Käufernetzwerk und gezieltes Marketing.</p>
+      <div class="s-prozess__step">
+        <div class="s-prozess__num">03</div>
+        <h3>Besichtigungen</h3>
+        <p>Rainer Schauer führt alle Besichtigungen persönlich durch. Kein Mitarbeiter, der Ihr Objekt nie gesehen hat.</p>
       </div>
-      <div class="step">
-        <div class="step__number">4</div>
-        <h3>Abschluss & Übergabe</h3>
-        <p>Kaufpreisverhandlung, Notartermin-Koordination und persönliche Begleitung bis zur Schlüsselübergabe.</p>
+      <div class="s-prozess__step">
+        <div class="s-prozess__num">04</div>
+        <h3>Abschluss &amp; Übergabe</h3>
+        <p>Kaufpreisverhandlung, Notarkoordination und persönliche Begleitung bis zur Schlüsselübergabe.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ══════════════════════════════════════
-     RAINER ZITAT
+     S7: IMMOBILIENTYPEN
 ══════════════════════════════════════ -->
-<section class="section zitat-section">
-  <div class="container">
-    <div class="zitat__inner">
-      <div class="zitat__quote-mark">"</div>
-      <blockquote class="zitat__text">
-        Ich habe Renovus Immobilien gegründet, weil ich glaube dass jeder Mensch beim wichtigsten finanziellen Entscheid seines Lebens einen verlässlichen Partner verdient — keinen Verkäufer, sondern einen Treuhänder.
-      </blockquote>
-      <div class="zitat__author">
-        <img src="https://renovus-website.pages.dev/img/rainer-schauer-immobilientreuhander-linz-portrait.webp"
-          alt="Rainer Schauer" loading="lazy" width="56" height="56">
-        <div>
-          <strong>Rainer Schauer</strong>
-          <span>Staatlich geprüfter Immobilientreuhänder · Renovus Immobilien</span>
+<section id="objekte" class="s-objekte">
+  <div class="wrap">
+    <p class="eyebrow text-c">Ihre Immobilie in Linz verkaufen</p>
+    <h2 class="text-c">Haus, Wohnung oder Anlageimmobilie</h2>
+    <p class="s-objekte__sub text-c">Renovus vermittelt alle Immobilientypen im Großraum Linz – persönlich, diskret und zum bestmöglichen Preis.</p>
+    <div class="s-objekte__grid">
+      <a href="/haus-verkaufen-linz" class="s-objekte__card">
+        <div class="s-objekte__img">
+          <img src="https://renovus-website.pages.dev/img/haus-verkaufen-linz-einfamilienhaus-modern.webp"
+            alt="Haus verkaufen Linz" loading="lazy" width="400" height="280">
+        </div>
+        <div class="s-objekte__body">
+          <h3>Haus &amp; Villa</h3>
+          <p>Einfamilienhaus, Doppelhaus, Reihenhaus oder Villa – Renovus bewertet und vermarktet mit voller Konsequenz.</p>
+          <span class="s-objekte__link">Haus verkaufen →</span>
+        </div>
+      </a>
+      <a href="/wohnung-verkaufen-linz" class="s-objekte__card">
+        <div class="s-objekte__img">
+          <img src="https://renovus-website.pages.dev/img/wohnung-verkaufen-linz-modern-renovus.webp"
+            alt="Wohnung verkaufen Linz" loading="lazy" width="400" height="280">
+        </div>
+        <div class="s-objekte__body">
+          <h3>Eigentumswohnung</h3>
+          <p>Vom Stadtapartment bis zur Penthouse-Wohnung – mit aktivem Käufernetzwerk und professionellem Exposé.</p>
+          <span class="s-objekte__link">Wohnung verkaufen →</span>
+        </div>
+      </a>
+      <a href="/zinshaus-verkaufen-linz" class="s-objekte__card">
+        <div class="s-objekte__img">
+          <img src="https://renovus-website.pages.dev/img/penthouse-linz-premium-immobilie-renovus.webp"
+            alt="Zinshaus verkaufen Linz" loading="lazy" width="400" height="280">
+        </div>
+        <div class="s-objekte__body">
+          <h3>Zinshaus &amp; Anlage</h3>
+          <p>Zinshäuser, Vorsorgewohnungen und Gewerbeimmobilien – diskret, zum richtigen Faktor, an die richtigen Investoren.</p>
+          <span class="s-objekte__link">Anlageimmobilie →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     S8: IMAGE BREAK — WOHNZIMMER
+══════════════════════════════════════ -->
+<div class="s-break" id="wohnzimmer-break">
+  <picture>
+    <source media="(max-width:767px)" srcset="https://renovus-website.pages.dev/img/wohnzimmer-lichtdurchflutet-linz-immobilie-mobile.webp">
+    <img src="https://renovus-website.pages.dev/img/wohnzimmer-lichtdurchflutet-linz-immobilie.webp"
+      alt="Wohnzimmer lichtdurchflutet Linz – Renovus Immobilien" loading="lazy" width="1200" height="500">
+  </picture>
+  <div class="s-break__overlay"></div>
+  <blockquote class="s-break__quote">Der richtige Käufer erkennt den Wert sofort.</blockquote>
+</div>
+
+<!-- ══════════════════════════════════════
+     S9: WOHNEN IM ALTER
+══════════════════════════════════════ -->
+<section id="wohnen-im-alter" class="s-bestager section-sand">
+  <div class="wrap s-bestager__grid">
+    <div class="s-bestager__img-col">
+      <picture>
+        <source media="(max-width:767px)" srcset="https://renovus-website.pages.dev/img/immobilie-verkaufen-alter-linz-aelteres-paar-mobile.webp">
+        <img src="https://renovus-website.pages.dev/img/immobilie-verkaufen-alter-linz-aelteres-paar.webp"
+          alt="Immobilie im Alter verkaufen Linz – älteres Paar" loading="lazy" width="600" height="700">
+      </picture>
+    </div>
+    <div class="s-bestager__text-col">
+      <p class="eyebrow">Lebenssituation im Fokus</p>
+      <h2>Immobilie im Alter verkaufen – Ihre Möglichkeiten</h2>
+      <p>Viele Eigentümer kommen in eine Lebensphase, in der das Haus zu groß, die Treppe zu hoch oder der Garten zu aufwändig wird. Renovus begleitet Sie behutsam – ohne Druck, mit echter Rücksicht auf Ihre Situation und Ihre Zeit.</p>
+      <ul class="s-bestager__list">
+        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Kein Zeitdruck – Ihr Tempo bestimmt das Gespräch</li>
+        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Persönliche Beratung zu Haus zu groß, Pension, Erbschaft</li>
+        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Koordination aller Beteiligten – Notar, Familie, Behörden</li>
+      </ul>
+      <a href="/immobilie-im-alter-verkaufen-linz" class="btn-navy">Mehr erfahren</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     S10: SITUATIONEN
+══════════════════════════════════════ -->
+<section id="situationen" class="s-situationen">
+  <div class="wrap">
+    <p class="eyebrow text-c">Besondere Lebenssituationen</p>
+    <h2 class="text-c">Jede Situation verdient individuelle Beratung</h2>
+    <p class="s-situationen__sub text-c">Manchmal entsteht eine Immobilienfrage nicht aus einem ruhigen Entschluss heraus. Renovus begleitet Sie auch in schwierigen Momenten – diskret und lösungsorientiert.</p>
+    <div class="s-situationen__grid">
+      <a href="/immobilie-geerbt-linz" class="s-sit__card">
+        <div class="s-sit__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg></div>
+        <h3>Immobilie geerbt</h3>
+        <p>Eine geerbte Immobilie bringt viele offene Fragen. Wir helfen Ihnen strukturiert durch den Prozess.</p>
+        <span class="s-sit__link">Mehr erfahren →</span>
+      </a>
+      <a href="/immobilie-bei-trennung-linz" class="s-sit__card">
+        <div class="s-sit__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="8" y1="12" x2="16" y2="12"/></svg></div>
+        <h3>Trennung &amp; Scheidung</h3>
+        <p>Diskrete, faire Begleitung beim Verkauf der gemeinsamen Immobilie – mit Respekt für alle Beteiligten.</p>
+        <span class="s-sit__link">Mehr erfahren →</span>
+      </a>
+      <a href="/haus-zu-gross-linz" class="s-sit__card">
+        <div class="s-sit__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+        <h3>Haus zu groß</h3>
+        <p>Wenn die Kinder ausgezogen sind und das Haus zu groß wird – Neustart mit Plan und ohne Hektik.</p>
+        <span class="s-sit__link">Mehr erfahren →</span>
+      </a>
+      <a href="/immobilie-verkaufen-pension-linz" class="s-sit__card">
+        <div class="s-sit__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div>
+        <h3>Pension &amp; Verkauf</h3>
+        <p>Verkaufen, halten oder vermieten? Wir helfen Ihnen die richtige Entscheidung für Ihre Pension zu treffen.</p>
+        <span class="s-sit__link">Mehr erfahren →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     S11: REGION
+══════════════════════════════════════ -->
+<section id="region" class="s-region section-sand">
+  <div class="wrap">
+    <p class="eyebrow text-c">Regionale Expertise</p>
+    <h2 class="text-c">Ihr Immobilienmakler im Großraum Linz</h2>
+    <p class="s-region__sub text-c">Renovus kennt jeden Markt – von der Linzer Altstadt bis ins Linz-Land und in die Urfahr-Umgebung.</p>
+    <div class="s-region__grid">
+      <div class="s-region__card s-region__card--main">
+        <div class="s-region__img">
+          <img src="https://renovus-website.pages.dev/img/linz-architektur-immobilienmarkt-standort.webp"
+            alt="Linz Immobilien – Hauptstandort Renovus" loading="lazy" width="500" height="320">
+        </div>
+        <div class="s-region__body">
+          <h3>Hauptstandort Linz</h3>
+          <p>Alle Stadtteile · Urfahr · Froschberg · Pöstlingberg · Linzer Innenstadt</p>
+          <a href="/immobilienmakler-linz" class="s-region__link">Immobilienmakler Linz →</a>
+        </div>
+      </div>
+      <div class="s-region__card">
+        <div class="s-region__body">
+          <h3>Linz-Land</h3>
+          <p>Leonding · Traun · Ansfelden · Pasching</p>
+          <a href="/immobilie-verkaufen-linz-land" class="s-region__link">Linz-Land →</a>
+        </div>
+      </div>
+      <div class="s-region__card">
+        <div class="s-region__body">
+          <h3>Urfahr-Umgebung</h3>
+          <p>Puchenau · Steyregg · Gallneukirchen</p>
+          <a href="/immobilie-verkaufen-urfahr-umgebung" class="s-region__link">Urfahr-Umgebung →</a>
         </div>
       </div>
     </div>
@@ -540,251 +647,306 @@
 </section>
 
 <!-- ══════════════════════════════════════
-     3-STEP BEWERTUNGSFORMULAR
+     S12: IMAGE BREAK — DOM
 ══════════════════════════════════════ -->
-<section id="bewertung" class="section section-navy bewertung-section">
-  <div class="container">
-    <div class="bewertung__header">
+<div class="s-break" id="dom-break">
+  <picture>
+    <source media="(max-width:767px)" srcset="https://renovus-website.pages.dev/img/linz-dom-stadtansicht-immobilienmakler-renovus-mobile.webp">
+    <img src="https://renovus-website.pages.dev/img/linz-dom-stadtansicht-immobilienmakler-renovus.webp"
+      alt="Linz Dom Stadtansicht – Immobilienmakler Renovus" loading="lazy" width="1200" height="500">
+  </picture>
+  <div class="s-break__overlay"></div>
+  <blockquote class="s-break__quote">Linz kennen heißt den Markt verstehen.</blockquote>
+</div>
+
+<!-- ══════════════════════════════════════
+     S13: BEWERTUNGSTOOL (Bottimmo)
+══════════════════════════════════════ -->
+<section id="bewertungstool" class="s-btm">
+  <div class="wrap s-btm__inner">
+    <div class="s-btm__text">
+      <p class="eyebrow">Online Sofortbewertung</p>
+      <h2>Was ist Ihre Immobilie wert?</h2>
+      <p>Jetzt in 3 Minuten herausfinden. Schnelle Online-Einschätzung – kostenlos, unverbindlich, sofort.</p>
+      <a href="#bewertung" class="btn-navy s-btm__cta">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 012 2.12 2 2 0 014 .11h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Persönliche Bewertung durch Rainer Schauer
+      </a>
+    </div>
+    <div class="s-btm__widget">
+      <p class="s-btm__widget-label">Online-Schnellbewertung:</p>
+      <btm-widget></btm-widget>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     S14: MARKT / RATGEBER TEASER
+══════════════════════════════════════ -->
+<section id="markt" class="s-markt section-sand">
+  <div class="wrap">
+    <p class="eyebrow text-c">Wissen &amp; Markt</p>
+    <h2 class="text-c">Fundiertes Wissen. Klare Einschätzungen.</h2>
+    <div class="s-markt__grid">
+      <a href="/immobilienpreise-linz" class="s-markt__card">
+        <div class="s-markt__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <h3>Immobilienpreise Linz 2025</h3>
+        <p>Aktuelle Preisentwicklung für Häuser und Wohnungen in Linz – fundiert aufbereitet.</p>
+        <span class="s-markt__link">Mehr erfahren →</span>
+      </a>
+      <a href="/ratgeber/fehler-beim-immobilienverkauf-linz" class="s-markt__card">
+        <div class="s-markt__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+        <h3>7 Fehler beim Immobilienverkauf</h3>
+        <p>Die häufigsten Fehler die Eigentümer beim Verkauf machen – und wie Sie sie vermeiden.</p>
+        <span class="s-markt__link">Zum Ratgeber →</span>
+      </a>
+      <a href="/ratgeber/homestaging-tipps" class="s-markt__card">
+        <div class="s-markt__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg></div>
+        <h3>Homestaging Tipps</h3>
+        <p>Wie Sie durch die richtige Aufbereitung den Verkaufspreis steigern und schneller verkaufen.</p>
+        <span class="s-markt__link">Zum Ratgeber →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     S15: REZENSIONEN
+══════════════════════════════════════ -->
+<section id="rezensionen" class="s-rez">
+  <div class="wrap">
+    <p class="eyebrow text-c">Kundenstimmen</p>
+    <h2 class="text-c">Was unsere Kunden über uns sagen</h2>
+    <div class="s-rez__grid">
+      <div class="s-rez__card">
+        <div class="s-rez__stars">★★★★★</div>
+        <blockquote class="s-rez__text">Rainer Schauer hat unser Haus in Linz-Land innerhalb von 6 Wochen verkauft — und das zu einem Preis, den wir selbst nicht für möglich gehalten hätten. Die Kommunikation war jederzeit klar und persönlich.</blockquote>
+        <p class="s-rez__author">Familie M. · Einfamilienhaus, Linz-Land</p>
+      </div>
+      <div class="s-rez__card">
+        <div class="s-rez__stars">★★★★★</div>
+        <blockquote class="s-rez__text">Endlich ein Makler der wirklich zuhört. Rainer hat unsere Wohnung in Urfahr nicht einfach inseriert — er hat aktiv Käufer angesprochen. Der Abschluss war in 5 Wochen erledigt.</blockquote>
+        <p class="s-rez__author">Mag. P. · Eigentumswohnung, Urfahr</p>
+      </div>
+      <div class="s-rez__card">
+        <div class="s-rez__stars">★★★★★</div>
+        <blockquote class="s-rez__text">Wir haben geerbt und wussten nicht wo anfangen. Rainer hat uns von der Bewertung bis zum Notartermin begleitet — ruhig, kompetent und immer erreichbar.</blockquote>
+        <p class="s-rez__author">Familie K. · Erbschaft, Linz</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     S16: TIPPGEBER
+══════════════════════════════════════ -->
+<section id="tippgeber" class="s-tipp section-navy">
+  <div class="wrap s-tipp__inner">
+    <div class="s-tipp__text">
+      <p class="eyebrow" style="color:rgba(198,167,107,.8)">Empfehlungs-Programm</p>
+      <h2 style="color:#fff">Kennen Sie jemanden,<br>der verkaufen möchte?</h2>
+      <p style="color:rgba(255,255,255,.75)">Ihr Tipp. Ihr Geld. Wenn jemand aus Ihrem Umfeld seine Immobilie verkaufen möchte — geben Sie uns einen Tipp. Wir übernehmen alles weitere. Sie erhalten automatisch Ihre Prämie nach Kaufabschluss.</p>
+      <div class="s-tipp__stats">
+        <div class="s-tipp__stat"><strong>€&nbsp;3.000</strong><span>Durchschnittliche Prämie</span></div>
+        <div class="s-tipp__stat"><strong>10&nbsp;%</strong><span>der Maklerprovision</span></div>
+        <div class="s-tipp__stat"><strong>100&nbsp;%</strong><span>nach Kaufabschluss</span></div>
+      </div>
+      <a href="/tippgeber-linz" class="btn-gold">Jetzt Tipp abgeben</a>
+    </div>
+    <div class="s-tipp__img">
+      <img src="https://renovus-website.pages.dev/img/immobilienverkauf-abschluss-handschlag-renovus-linz.webp"
+        alt="Tippgeber Empfehlung Immobilien Linz – Renovus" loading="lazy" width="500" height="400">
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     S17: FAQ
+══════════════════════════════════════ -->
+<section id="faq" class="s-faq section-sand">
+  <div class="wrap wrap-narrow">
+    <p class="eyebrow text-c">Häufige Fragen</p>
+    <h2 class="text-c">Was Eigentümer am häufigsten fragen</h2>
+    <div class="s-faq__list">
+
+      <div class="s-faq__item">
+        <button class="s-faq__trigger" aria-expanded="false">
+          Was ist meine Immobilie in Linz wert?
+          <svg class="s-faq__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="s-faq__body">Der Wert hängt von Lage, Größe, Zustand, Ausstattung und der aktuellen Marktnachfrage ab. Eigentümer in Linz unterschätzen ihren Wert häufig – oder überschätzen ihn. Eine fundierte Bewertung durch Rainer Schauer ist kostenlos und liefert einen realistischen Marktpreis auf Basis aktueller Vergleichsverkäufe.</div>
+      </div>
+
+      <div class="s-faq__item">
+        <button class="s-faq__trigger" aria-expanded="false">
+          Wie lange dauert ein Immobilienverkauf in Linz?
+          <svg class="s-faq__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="s-faq__body">Gut bepreiste Wohnungen finden in Linz in 4–8 Wochen Käufer, Häuser in 6–14 Wochen. Mit professioneller Vermarktung durch Renovus und direktem Zugang zum Käufernetzwerk verkürzt sich die Zeit deutlich. Wer realistisch bepreist und professionell vermarktet, verkauft schnell und zum besten Preis.</div>
+      </div>
+
+      <div class="s-faq__item">
+        <button class="s-faq__trigger" aria-expanded="false">
+          Was kostet eine Immobilienbewertung bei Renovus?
+          <svg class="s-faq__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="s-faq__body">Die Immobilienbewertung durch Rainer Schauer ist vollständig kostenlos und unverbindlich. Sie dauert ca. 45–90 Minuten direkt bei Ihnen vor Ort und liefert eine fundierte Marktpreiseinschätzung auf Basis aktueller Vergleichsverkäufe in Linz und Umgebung.</div>
+      </div>
+
+      <div class="s-faq__item">
+        <button class="s-faq__trigger" aria-expanded="false">
+          Wie hoch ist die Maklerprovision in Österreich?
+          <svg class="s-faq__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="s-faq__body">In Österreich beträgt die Maklerprovision maximal 3% des Kaufpreises plus MwSt. Seit dem Bestellerprinzip zahlt grundsätzlich derjenige die Provision, der den Makler beauftragt hat. Bei Renovus erhalten Sie für diese Provision eine vollständige Rundum-Betreuung – von der Bewertung bis zur Schlüsselübergabe.</div>
+      </div>
+
+      <div class="s-faq__item">
+        <button class="s-faq__trigger" aria-expanded="false">
+          Was ist der Unterschied zwischen Immobilientreuhänder und Makler?
+          <svg class="s-faq__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="s-faq__body">Ein staatlich geprüfter Immobilientreuhänder wie Rainer Schauer besitzt alle 4 WKO-Konzessionen: Makler, Bauträger, Verwalter und Treuhänder. Das bedeutet umfassendere Kompetenz, höhere rechtliche Standards und ein breiteres Leistungsspektrum als ein einfacher Makler.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     S18: BEWERTUNGSFORMULAR (3-Step)
+══════════════════════════════════════ -->
+<section id="bewertung" class="s-form section-navy">
+  <div class="wrap">
+    <div class="s-form__header">
       <p class="eyebrow" style="color:rgba(198,167,107,.8)">Jetzt starten</p>
       <h2 style="color:#fff">Kostenlose Immobilienbewertung anfragen</h2>
-      <p class="lead" style="color:rgba(255,255,255,.75)">Unverbindlich · Persönlich · Marktgerecht</p>
-      <ul class="bewertung__checks">
-        <li>Kostenlos und ohne Verpflichtung</li>
+      <ul class="s-form__checks">
+        <li>Kostenlos &amp; unverbindlich</li>
         <li>Rainer Schauer kommt persönlich zu Ihnen</li>
         <li>Fundiertes Ergebnis in 45–90 Minuten</li>
+        <li>Antwort innerhalb von 24 Stunden</li>
       </ul>
     </div>
-
-    <div class="form-card bewertung__form-card">
-
-      <!-- Schritt-Anzeige -->
-      <div class="bewertung__steps-nav">
-        <div class="bewertung__step-dot active" data-step="1">1</div>
-        <div class="bewertung__step-line"></div>
-        <div class="bewertung__step-dot" data-step="2">2</div>
-        <div class="bewertung__step-line"></div>
-        <div class="bewertung__step-dot" data-step="3">3</div>
+    <div class="s-form__card">
+      <div class="s-form__steps-nav">
+        <div class="s-form__step-dot active" data-step="1">1</div>
+        <div class="s-form__step-line"></div>
+        <div class="s-form__step-dot" data-step="2">2</div>
+        <div class="s-form__step-line"></div>
+        <div class="s-form__step-dot" data-step="3">3</div>
       </div>
 
-      <!-- Step 1: Objekttyp -->
-      <div class="bewertung__step" id="bstep-1">
-        <h3 class="bewertung__step-title">Was möchten Sie bewerten lassen?</h3>
-        <div class="bewertung__typ-grid">
-          <button type="button" class="bewertung__typ-btn" data-value="Einfamilienhaus">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <!-- Step 1 -->
+      <div class="s-form__step" id="fs-1">
+        <h3 class="s-form__step-title">Was möchten Sie bewerten lassen?</h3>
+        <div class="s-form__typ-grid">
+          <button type="button" class="s-form__typ-btn" data-value="Einfamilienhaus">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
             Haus
           </button>
-          <button type="button" class="bewertung__typ-btn" data-value="Eigentumswohnung">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
+          <button type="button" class="s-form__typ-btn" data-value="Eigentumswohnung">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
             Wohnung
           </button>
-          <button type="button" class="bewertung__typ-btn" data-value="Zinshaus">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M9 21V7l7-4v18M9 7H3v14M16 11h.01M16 15h.01"/></svg>
+          <button type="button" class="s-form__typ-btn" data-value="Zinshaus">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M9 21V7l7-4v18M9 7H3v14M16 11h.01M16 15h.01"/></svg>
             Zinshaus
           </button>
-          <button type="button" class="bewertung__typ-btn" data-value="Sonstiges">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <button type="button" class="s-form__typ-btn" data-value="Sonstiges">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
             Sonstiges
           </button>
         </div>
-        <p class="bewertung__step-note">Bitte wählen Sie Ihren Objekttyp</p>
+        <p class="s-form__note">Bitte wählen Sie Ihren Objekttyp</p>
       </div>
 
-      <!-- Step 2: Objektdetails -->
-      <div class="bewertung__step hidden" id="bstep-2">
-        <h3 class="bewertung__step-title">Details zu Ihrer Immobilie</h3>
-        <div class="form-grid">
-          <div class="form-row form-row-2">
-            <div>
-              <label class="form-label" for="b-strasse">Straße + Hausnummer <span class="req">*</span></label>
-              <input class="form-input" type="text" id="b-strasse" name="strasse" placeholder="z.B. Hauptstraße 12" required>
-            </div>
-            <div>
-              <label class="form-label" for="b-plz">PLZ + Ort <span class="req">*</span></label>
-              <input class="form-input" type="text" id="b-plz" name="plz_ort" placeholder="z.B. 4020 Linz" required>
-            </div>
+      <!-- Step 2 -->
+      <div class="s-form__step s-form__hidden" id="fs-2">
+        <h3 class="s-form__step-title">Details zu Ihrer Immobilie</h3>
+        <div class="s-form__grid">
+          <div class="s-form__row-2">
+            <div><label class="s-form__label" for="f-strasse">Straße + Nr. <span class="s-form__req">*</span></label><input class="s-form__input" type="text" id="f-strasse" placeholder="z.B. Hauptstraße 12" required></div>
+            <div><label class="s-form__label" for="f-plz">PLZ + Ort <span class="s-form__req">*</span></label><input class="s-form__input" type="text" id="f-plz" placeholder="z.B. 4020 Linz" required></div>
           </div>
-          <div class="form-row form-row-2">
-            <div>
-              <label class="form-label" for="b-flaeche">Wohnfläche m² <span class="req">*</span></label>
-              <input class="form-input" type="number" id="b-flaeche" name="flaeche" placeholder="z.B. 120" min="10" max="2000" required>
-            </div>
-            <div>
-              <label class="form-label" for="b-baujahr">Baujahr</label>
-              <input class="form-input" type="number" id="b-baujahr" name="baujahr" placeholder="z.B. 1990" min="1850" max="2026">
-            </div>
+          <div class="s-form__row-2">
+            <div><label class="s-form__label" for="f-flaeche">Wohnfläche m² <span class="s-form__req">*</span></label><input class="s-form__input" type="number" id="f-flaeche" placeholder="z.B. 120" min="10" max="2000" required></div>
+            <div><label class="s-form__label" for="f-baujahr">Baujahr</label><input class="s-form__input" type="number" id="f-baujahr" placeholder="z.B. 1990" min="1850" max="2026"></div>
           </div>
         </div>
-        <div class="bewertung__nav">
-          <button type="button" class="btn btn-secondary bewertung__back" data-to="1">← Zurück</button>
-          <button type="button" class="btn btn-primary bewertung__next" data-to="3">Weiter →</button>
+        <div class="s-form__nav">
+          <button type="button" class="btn-outline-navy s-form__back" data-to="1">← Zurück</button>
+          <button type="button" class="btn-gold s-form__next" data-to="3">Weiter →</button>
         </div>
       </div>
 
-      <!-- Step 3: Kontakt -->
-      <div class="bewertung__step hidden" id="bstep-3">
-        <h3 class="bewertung__step-title">Ihre Kontaktdaten</h3>
-        <div class="form-grid">
-          <div class="form-row form-row-2">
-            <div>
-              <label class="form-label" for="b-vorname">Vorname <span class="req">*</span></label>
-              <input class="form-input" type="text" id="b-vorname" name="vorname" placeholder="Vorname" required>
-            </div>
-            <div>
-              <label class="form-label" for="b-nachname">Nachname <span class="req">*</span></label>
-              <input class="form-input" type="text" id="b-nachname" name="nachname" placeholder="Nachname" required>
-            </div>
+      <!-- Step 3 -->
+      <div class="s-form__step s-form__hidden" id="fs-3">
+        <h3 class="s-form__step-title">Ihre Kontaktdaten</h3>
+        <div class="s-form__grid">
+          <div class="s-form__row-2">
+            <div><label class="s-form__label" for="f-vorname">Vorname <span class="s-form__req">*</span></label><input class="s-form__input" type="text" id="f-vorname" placeholder="Vorname" required></div>
+            <div><label class="s-form__label" for="f-nachname">Nachname <span class="s-form__req">*</span></label><input class="s-form__input" type="text" id="f-nachname" placeholder="Nachname" required></div>
           </div>
-          <div class="form-row form-row-2">
-            <div>
-              <label class="form-label" for="b-email">E-Mail <span class="req">*</span></label>
-              <input class="form-input" type="email" id="b-email" name="email" placeholder="ihre@email.at" required>
-            </div>
-            <div>
-              <label class="form-label" for="b-tel">Telefon <span class="req">*</span></label>
-              <input class="form-input" type="tel" id="b-tel" name="telefon" placeholder="+43 732 ..." required>
-            </div>
+          <div class="s-form__row-2">
+            <div><label class="s-form__label" for="f-email">E-Mail <span class="s-form__req">*</span></label><input class="s-form__input" type="email" id="f-email" placeholder="ihre@email.at" required></div>
+            <div><label class="s-form__label" for="f-tel">Telefon <span class="s-form__req">*</span></label><input class="s-form__input" type="tel" id="f-tel" placeholder="+43 732 ..." required></div>
           </div>
-          <div class="form-check">
-            <input type="checkbox" id="b-dsgvo" name="dsgvo" required>
-            <label for="b-dsgvo">Ich stimme zu, dass meine Daten gemäß <a href="/datenschutz">Datenschutzerklärung</a> verarbeitet werden. <span class="req">*</span></label>
+          <div class="s-form__check">
+            <input type="checkbox" id="f-dsgvo" required>
+            <label for="f-dsgvo">Ich stimme zu, dass meine Daten gemäß <a href="/datenschutz">Datenschutzerklärung</a> verarbeitet werden. <span class="s-form__req">*</span></label>
           </div>
         </div>
-        <div class="bewertung__nav">
-          <button type="button" class="btn btn-secondary bewertung__back" data-to="2">← Zurück</button>
-          <button type="button" class="btn btn-primary bewertung__submit" id="b-submit">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        <div class="s-form__nav">
+          <button type="button" class="btn-outline-navy s-form__back" data-to="2">← Zurück</button>
+          <button type="button" class="btn-gold" id="f-submit">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
             Jetzt kostenlos anfragen
           </button>
         </div>
-        <p class="form-help" style="margin-top:12px;text-align:center">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline;margin-right:4px"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+        <p class="s-form__ssl">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline;vertical-align:middle"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
           SSL-verschlüsselt · Keine Weitergabe an Dritte
         </p>
       </div>
 
       <!-- Erfolg -->
-      <!-- Bottimmo Widget Alternative -->
-<div class="bottimmo__wrap">
-  <p class="bottimmo__label">Oder nutzen Sie unser Online-Bewertungstool:</p>
-  <btm-widget></btm-widget>
-</div>
-
-<div class="bewertung__step hidden" id="bstep-success">
-        <div class="bewertung__success">
-          <div class="bewertung__success-icon">✓</div>
+      <div class="s-form__step s-form__hidden" id="fs-success">
+        <div class="s-form__success">
+          <div class="s-form__success-icon">✓</div>
           <h3>Vielen Dank!</h3>
-          <p>Ihre Anfrage wurde erfolgreich übermittelt. Rainer Schauer meldet sich persönlich innerhalb von 24 Stunden bei Ihnen.</p>
-          <p class="bewertung__success-contact">
-            Oder rufen Sie direkt an:
-            <a href="tel:+43732237997"><strong>+43&nbsp;732&nbsp;237&nbsp;997</strong></a>
-          </p>
+          <p>Ihre Anfrage wurde erfolgreich übermittelt. Rainer Schauer meldet sich persönlich innerhalb von 24 Stunden.</p>
+          <p>Oder rufen Sie direkt an: <a href="tel:+43732237997" class="s-form__tel"><strong>+43&nbsp;732&nbsp;237&nbsp;997</strong></a></p>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
 <!-- ══════════════════════════════════════
-     FAQ
+     S19: FINAL CTA
 ══════════════════════════════════════ -->
-<section id="faq" class="section section-sand">
-  <div class="container container-narrow">
-    <p class="eyebrow text-center">Häufige Fragen</p>
-    <h2 class="text-center">Das fragen unsere Kunden</h2>
-    <div class="faq faq__list">
-
-      <div class="faq__item">
-        <button class="faq__trigger" aria-expanded="false">
-          Was kostet eine Immobilienbewertung bei Renovus?
-          <svg class="faq__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
-        <div class="faq__body">
-          Die Immobilienbewertung durch Rainer Schauer ist vollständig kostenlos und unverbindlich. Sie dauert ca. 45–90 Minuten direkt bei Ihnen vor Ort und liefert eine fundierte Marktpreiseinschätzung auf Basis aktueller Vergleichsverkäufe.
-        </div>
-      </div>
-
-      <div class="faq__item">
-        <button class="faq__trigger" aria-expanded="false">
-          Wie lange dauert ein Immobilienverkauf in Linz?
-          <svg class="faq__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
-        <div class="faq__body">
-          Gut bepreiste Wohnungen in guten Lagen finden in Linz in 4–8 Wochen Käufer, Häuser in 6–14 Wochen. Mit professioneller Vermarktung durch Renovus erzielen Sie den besten Preis in kürzester Zeit. Wer realistisch bepreist, verkauft schnell.
-        </div>
-      </div>
-
-      <div class="faq__item">
-        <button class="faq__trigger" aria-expanded="false">
-          Welche Regionen betreut Renovus Immobilien?
-          <svg class="faq__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
-        <div class="faq__body">
-          Renovus ist aktiv in Linz Stadt (alle Stadtteile), im Bezirk Linz-Land (Leonding, Traun, Ansfelden, Pasching) und in Urfahr-Umgebung (Puchenau, Steyregg, Gallneukirchen). Bei besonderen Objekten auch im gesamten Zentralraum Oberösterreich.
-        </div>
-      </div>
-
-      <div class="faq__item">
-        <button class="faq__trigger" aria-expanded="false">
-          Was ist der Unterschied zwischen Immobilientreuhänder und Makler?
-          <svg class="faq__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
-        <div class="faq__body">
-          Ein staatlich geprüfter Immobilientreuhänder wie Rainer Schauer besitzt alle 4 WKO-Konzessionen: Makler, Bauträger, Verwalter und Treuhänder. Das bedeutet umfassendere Kompetenz, höhere rechtliche Standards und ein breiteres Leistungsspektrum als ein einfacher Makler.
-        </div>
-      </div>
-
-      <div class="faq__item">
-        <button class="faq__trigger" aria-expanded="false">
-          Wie hoch ist die Maklerprovision in Österreich?
-          <svg class="faq__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
-        <div class="faq__body">
-          In Österreich beträgt die Maklerprovision maximal 3% des Kaufpreises plus MwSt. Seit dem Bestellerprinzip zahlt grundsätzlich derjenige die Provision, der den Makler beauftragt hat. Bei Renovus erhalten Sie für diese Provision eine vollständige Rundum-Betreuung – von der Bewertung bis zur Schlüsselübergabe.
-        </div>
-      </div>
-
-    </div>
+<section id="final-cta" class="s-final-cta">
+  <div class="s-final-cta__bg">
+    <picture>
+      <source media="(max-width:767px)" srcset="https://renovus-website.pages.dev/img/villa-linz-premium-immobilie-garten-mobile.webp">
+      <img src="https://renovus-website.pages.dev/img/villa-linz-premium-immobilie-garten.webp"
+        alt="Villa Linz Premium Immobilie – Renovus" loading="lazy" width="1200" height="600">
+    </picture>
+    <div class="s-final-cta__overlay"></div>
+  </div>
+  <div class="wrap s-final-cta__inner">
+    <h2 class="s-final-cta__h2">Lassen Sie uns Ihre Immobilie<br>optimal positionieren.</h2>
+    <a href="#bewertung" class="btn-gold">Beratung starten</a>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════
-     CLUSTER-LINKS (Regionen)
-══════════════════════════════════════ -->
-<section class="section cluster-section">
-  <div class="container">
-    <p class="eyebrow text-center">Unsere Regionen</p>
-    <h2 class="text-center">Lokal verankert im Großraum Linz</h2>
-    <div class="cluster__grid">
-      <a href="/immobilienmakler-leonding" class="cluster__card">
-        <strong>Leonding</strong>
-        <span>Immobilienmakler Leonding</span>
-      </a>
-      <a href="/immobilienmakler-traun" class="cluster__card">
-        <strong>Traun</strong>
-        <span>Immobilienmakler Traun</span>
-      </a>
-      <a href="/immobilienmakler-ansfelden" class="cluster__card">
-        <strong>Ansfelden</strong>
-        <span>Immobilienmakler Ansfelden</span>
-      </a>
-      <a href="/immobilienmakler-pasching" class="cluster__card">
-        <strong>Pasching</strong>
-        <span>Immobilienmakler Pasching</span>
-      </a>
-      <a href="/immobilie-verkaufen-linz-land" class="cluster__card">
-        <strong>Linz-Land</strong>
-        <span>Immobilien Linz-Land</span>
-      </a>
-      <a href="/immobilien-urfahr-linz" class="cluster__card">
-        <strong>Urfahr</strong>
-        <span>Immobilien Urfahr</span>
-      </a>
-    </div>
-  </div>
-</section>
 
+</main>
+
+<div style="font-size:48px;color:rgba(198,167,107,0.15);">↓</div>
+  </div>
+</div>
 <footer class="footer">
 
   <!-- ══════════════════════════════
@@ -796,7 +958,7 @@
         <svg viewBox="0 0 24 24">
           <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 012 2.12 2 2 0 014 .11h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
         </svg>
-        <span>Direktlinie Rainer Schauer: <strong>+43 732 237 997</strong></span>
+        <span>Direktlinie Rainer Schauer: <strong>+43 732 237 997</strong></span>
       </div>
       <a href="tel:+43732237997" class="footer__prebar-btn">
         <svg viewBox="0 0 24 24">
@@ -913,7 +1075,7 @@
               <svg viewBox="0 0 24 24">
                 <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 012 2.12 2 2 0 014 .11h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
               </svg>
-              <a href="tel:+43732237997">+43 732 237 997</a>
+              <a href="tel:+43732237997">+43 732 237 997</a>
             </li>
             <li class="footer__contact-item">
               <svg viewBox="0 0 24 24">
@@ -1123,47 +1285,7 @@
   Kostenlose Bewertung anfragen
 </a>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  var burger  = document.getElementById('rnvBurger');
-  var drawer  = document.getElementById('rnvDrawer');
-  var overlay = document.getElementById('rnvOverlay');
-  var closeBtn= document.getElementById('rnvDrawerClose');
-  var header  = document.getElementById('rnvHeader');
 
-  if (!burger || !drawer || !overlay) return;
-
-  function openDrawer() {
-    drawer.classList.add('is-open');
-    overlay.classList.add('is-on');
-    burger.classList.add('is-open');
-    burger.setAttribute('aria-expanded', 'true');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeDrawer() {
-    drawer.classList.remove('is-open');
-    overlay.classList.remove('is-on');
-    burger.classList.remove('is-open');
-    burger.setAttribute('aria-expanded', 'false');
-    document.body.style.overflow = '';
-  }
-
-  burger.addEventListener('click', function() {
-    drawer.classList.contains('is-open') ? closeDrawer() : openDrawer();
-  });
-  if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
-  overlay.addEventListener('click', closeDrawer);
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') closeDrawer();
-  });
-
-  if (header) {
-    window.addEventListener('scroll', function() {
-      header.classList.toggle('is-scrolled', window.scrollY > 10);
-    }, {passive: true});
-  }
-});
-</script>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -1331,2053 +1453,141 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 </body>
-</html><main id="main-content">
-
-<div id="page-startseite">
-
-
-<main id="main-content">
-
-<!-- ══ HERO ══════════════════════════════════════════════════════════════ -->
-<section class="hero" id="hero">
-  <div class="hero__bg">
-    <img
-      src="https://renovus-website.pages.dev/img/hero-donau-panorama-linz-immobilienmakler-renovus.webp"
-      alt="Panoramablick über Linz und die Donau – Ihr Immobilienmakler Renovus Immobilien Linz"
-      loading="eager" fetchpriority="high" class="hero__img"
-    >
-    <div class="hero__overlay"></div>
-    <div class="hero__grain" aria-hidden="true"></div>
-  </div>
-  <div class="hero__inner">
-    <div class="hero__content">
-      <p class="hero__eyebrow">
-        <span class="hero__eyebrow-line"></span>
-        Staatlich geprüfter Immobilientreuhänder in Linz
-      </p>
-      <h1 class="hero__h1">
-        Immobilienmakler Linz –
-        <em>Ihre Immobilie erfolgreich verkaufen</em>
-        mit Renovus.
-      </h1>
-      <p class="hero__sub">
-        Persönliche Betreuung durch Rainer Schauer. Kostenlose Immobilienbewertung und diskreter Verkauf von Haus, Wohnung und Anlageimmobilien in Linz, Linz-Land und Urfahr-Umgebung.
-      </p>
-      <div class="hero__ctas">
-        <a href="/immobilienbewertung-linz" class="rvb rvb--gold rvb--lg">
-          <i class="fa-solid fa-chart-line"></i>
-          Immobilie kostenlos bewerten
-        </a>
-        <a <a href="#bewertungs-form" class="rvb rvb--gold">
-            <i class="fa-solid fa-chart-line"></i> Immobilie kostenlos bewerten
-          </a>
-          <a href="#bewertungs-form" class="rvb rvb--outline-light">
-            <i class="fa-solid fa-calendar-check"></i> Beratungsgespräch vereinbaren
-          </a>
-      </div>
-      <div class="hero__guetesiegel">
-        <div class="hero__guetesiegel-item">
-          <img src="https://renovus-website.pages.dev/img/guetesiegel-immobilientreuhander-linz-wko.webp"
-               alt="Staatlich geprüfter Immobilientreuhänder Linz – WKO Gütesiegel Renovus"
-               loading="eager" width="64" height="64">
-          <span>Immobilien&shy;treuhänder</span>
-        </div>
-        <div class="hero__guetesiegel-item">
-          <img src="https://renovus-website.pages.dev/img/guetesiegel-immobilienmakler-linz-wko.webp"
-               alt="Konzessionierter Immobilienmakler Linz – WKO Gütesiegel Renovus"
-               loading="eager" width="64" height="64">
-          <span>Immobilien&shy;makler</span>
-        </div>
-        <div class="hero__guetesiegel-item">
-          <img src="https://renovus-website.pages.dev/img/guetesiegel-immobilienverwalter-linz-wko.webp"
-               alt="Immobilienverwalter Linz – WKO Gütesiegel Renovus"
-               loading="eager" width="64" height="64">
-          <span>Immobilien&shy;verwalter</span>
-        </div>
-        <div class="hero__guetesiegel-item">
-          <img src="https://renovus-website.pages.dev/img/guetesiegel-bautraeger-linz-wko.webp"
-               alt="Bauträger Linz – WKO Gütesiegel Renovus"
-               loading="eager" width="64" height="64">
-          <span>Bauträger</span>
-        </div>
-      </div>
-      <div class="hero__trust">
-        <div class="hero__trust-item"><i class="fa-solid fa-shield-halved"></i> Staatlich geprüfter Treuhänder</div>
-        <div class="hero__trust-item"><i class="fa-solid fa-award"></i> WKO-konzessioniert</div>
-        <div class="hero__trust-item"><i class="fa-solid fa-map-location-dot"></i> Linz · Linz-Land · Urfahr</div>
-        <div class="hero__trust-item"><i class="fa-solid fa-lock"></i> Kostenlos &amp; unverbindlich</div>
-      </div>
-    </div>
-  </div>
-  <div class="hero__scroll" aria-hidden="true">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 12 15 18 9"/></svg>
-  </div>
-</section>
-
-
-<!-- ══ RAINER / TRUST BLOCK ═══════════════════════════════════════════════ -->
-<section class="rainer rv-section rv-section--white" id="rainer">
-  <div class="rv-inner">
-    <div class="rainer__grid">
-      <div class="rainer__img-wrap">
-        <img
-          src="https://renovus-website.pages.dev/img/rainer-schauer-immobilientreuhander-linz-portrait.webp"
-          alt="Rainer Schauer – staatlich geprüfter Immobilientreuhänder in Linz, Renovus Immobilien"
-          loading="lazy" class="rainer__img"
-        >
-        <div class="rainer__img-label">
-          <i class="fa-solid fa-shield-halved" style="color:var(--gold);font-size:22px;flex-shrink:0"></i>
-          <div class="rainer__img-label-text">
-            <span class="rainer__img-label-name">Rainer Schauer</span>
-            <span class="rainer__img-label-role">Staatl. gepr. Immobilientreuhänder</span>
-          </div>
-        </div>
-      </div>
-      <div class="rainer__content">
-        <div class="rv-tag">Ihr Ansprechpartner</div>
-        <h2 class="rv-h2">Ihr persönlicher<br><em>Immobilientreuhänder in Linz.</em></h2>
-        <p class="rainer__lead">Kein System-Makler. Kein Callcenter. Rainer Schauer begleitet Sie persönlich – von der ersten Bewertung bis zur Schlüsselübergabe. Mit klarer Strategie, fundierter Marktkenntnis und dem Ziel, das Beste aus Ihrer Immobilie herauszuholen.</p>
-        <ul class="rainer__creds">
-          <li class="rainer__cred"><i class="fa-solid fa-briefcase"></i> <strong>25 Jahre</strong> unternehmerische Erfahrung</li>
-          <li class="rainer__cred"><i class="fa-solid fa-building"></i> <strong>15 Jahre</strong> Erfahrung in der Immobilienbranche</li>
-          <li class="rainer__cred"><i class="fa-solid fa-shield-halved"></i> <strong>5 Jahre</strong> staatlich geprüfter Immobilientreuhänder</li>
-          <li class="rainer__cred"><i class="fa-solid fa-handshake"></i> Persönliche Einzelbetreuung – Sie haben immer denselben Ansprechpartner</li>
-          <li class="rainer__cred"><i class="fa-solid fa-chart-line"></i> Ergebnisorientierung – nicht Provision, sondern Ihr optimaler Verkaufspreis</li>
-        </ul>
-        <div class="rainer__ctas">
-          <a href="/ueber-renovus" class="rvb rvb--outline-dark"><i class="fa-solid fa-user"></i> Mehr über Rainer Schauer</a>
-          <a href="#bewertungs-form" class="rvb rvb--gold"><i class="fa-solid fa-calendar-check"></i> Jetzt Gespräch vereinbaren</a>
-          <a href="/immobilienbewertung-linz" class="rvb rvb--ghost"><i class="fa-solid fa-chart-line"></i> Immobilie bewerten</a>
-        </div>
-        <div class="rainer__quote">
-          <p>„Ich verkaufe nicht einfach Immobilien. Ich entwickle für jedes Objekt eine individuelle Strategie – damit Sie das erzielen, was Ihre Immobilie wirklich wert ist."</p>
-          <cite>— Rainer Schauer, Renovus Immobilien Linz</cite>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ TRUSTLEISTE ══════════════════════════════════════════════════════ -->
-<div class="trustleiste">
-  <div class="trustleiste__inner">
-    <div class="trustleiste__seals">
-      <div class="trustleiste__seal">
-        <img src="https://renovus-website.pages.dev/img/guetesiegel-immobilientreuhander-linz-wko.webp"
-             alt="WKO Gütesiegel Staatlich geprüfter Immobilientreuhänder Linz – Renovus Immobilien"
-             loading="lazy" width="96" height="96">
-        <span class="trustleiste__seal-label">Immobilien&shy;treuhänder</span>
-      </div>
-      <div class="trustleiste__seal">
-        <img src="https://renovus-website.pages.dev/img/guetesiegel-immobilienmakler-linz-wko.webp"
-             alt="WKO Gütesiegel Konzessionierter Immobilienmakler Linz – Renovus Immobilien"
-             loading="lazy" width="96" height="96">
-        <span class="trustleiste__seal-label">Immobilien&shy;makler</span>
-      </div>
-      <div class="trustleiste__seal">
-        <img src="https://renovus-website.pages.dev/img/guetesiegel-immobilienverwalter-linz-wko.webp"
-             alt="WKO Gütesiegel Immobilienverwalter Linz – Renovus Immobilien"
-             loading="lazy" width="96" height="96">
-        <span class="trustleiste__seal-label">Immobilien&shy;verwalter</span>
-      </div>
-      <div class="trustleiste__seal">
-        <img src="https://renovus-website.pages.dev/img/guetesiegel-bautraeger-linz-wko.webp"
-             alt="WKO Gütesiegel Bauträger Linz – Renovus Immobilien"
-             loading="lazy" width="96" height="96">
-        <span class="trustleiste__seal-label">Bauträger</span>
-      </div>
-    </div>
-    <div class="trustleiste__stats">
-      <div class="trustleiste__stat">
-        <i class="fa-solid fa-briefcase"></i>
-        <span><strong>25 Jahre</strong> unternehmerische Erfahrung</span>
-      </div>
-      <div class="trustleiste__stat">
-        <i class="fa-solid fa-building"></i>
-        <span><strong>15 Jahre</strong> Erfahrung in der Immobilienbranche</span>
-      </div>
-      <div class="trustleiste__stat">
-        <i class="fa-solid fa-shield-halved"></i>
-        <span><strong>5 Jahre</strong> staatlich geprüfter Immobilientreuhänder</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ══ FREINBERG PANORAMA BREAK ══════════════════════════════════════════ -->
-<div class="image-break--panorama" id="freinberg-break">
-  <img
-    src="https://renovus-website.pages.dev/img/panorama-linz-freinberg-weitblick-immobilien.webp"
-    alt="Panoramablick vom Freinberg über Linz – Immobilienmakler Renovus Immobilien Linz"
-    loading="lazy"
-  >
-  <div class="image-break__overlay">
-    <div style="position:absolute;bottom:48px;left:50%;transform:translateX(-50%);text-align:center;width:100%;">
-      <p style="font-family:var(--font-head);font-size:clamp(22px,3vw,40px);font-weight:300;font-style:italic;color:white;letter-spacing:0.02em;text-shadow:0 2px 20px rgba(0,0,0,0.5);">
-        Immobilienentscheidungen brauchen <em style="color:var(--gold);font-style:normal;">Weitblick.</em>
-      </p>
-    </div>
-  </div>
-</div>
-
-<!-- ══ 3-WEGE-BLOCK ═══════════════════════════════════════════════════════ -->
-<section class="wege rv-section" id="wege">
-  <div class="rv-inner">
-    <div class="rv-header rv-header--center">
-      <div class="rv-tag">Was möchten Sie tun?</div>
-      <h2 class="rv-h2">Ihr nächster Schritt<br><em>mit Renovus.</em></h2>
-    </div>
-    <div class="wege__grid">
-      <a href="/immobilienbewertung-linz" class="wege__card wege__card--primary">
-        <img src="https://renovus-website.pages.dev/img/immobilienbewertung-haus-linz-aussen-renovus.webp"
-             alt="Immobilienbewertung Linz – Haus bewerten lassen, Renovus Immobilien"
-             class="wege__kachel-img" loading="lazy">
-        <h3 class="wege__title">Immobilie bewerten</h3>
-        <p class="wege__text">Was ist Ihre Immobilie heute wirklich wert? Rainer Schauer bewertet Haus oder Wohnung kostenlos, persönlich und fundiert – direkt vor Ort in Linz.</p>
-        <span class="wege__cta">Kostenlose Bewertung <i class="fa-solid fa-arrow-right"></i></span>
-      </a>
-      <a href="/immobilie-verkaufen-linz" class="wege__card">
-        <img src="https://renovus-website.pages.dev/img/haus-verkaufen-linz-beratung-renovus.webp"
-             alt="Haus verkaufen Linz – persönliche Beratung durch Renovus Immobilien"
-             class="wege__kachel-img" loading="lazy">
-        <h3 class="wege__title">Immobilie verkaufen</h3>
-        <p class="wege__text">Sie haben sich entschieden zu verkaufen. Renovus begleitet Sie durch den gesamten Prozess – von der Bewertung über das Exposé bis zur Schlüsselübergabe.</p>
-        <span class="wege__cta">Zum Verkaufsprozess <i class="fa-solid fa-arrow-right"></i></span>
-      </a>
-      <a href="/wohnen-und-verkaufen-im-alter-linz" class="wege__card">
-        <img src="https://renovus-website.pages.dev/img/immobilie-verkaufen-alter-linz-aelteres-paar.webp"
-             alt="Immobilie verkaufen im Alter Linz – Renovus Immobilien begleitet einfühlsam"
-             class="wege__kachel-img" loading="lazy">
-        <h3 class="wege__title">Wohnen &amp; Verkaufen im Alter</h3>
-        <p class="wege__text">Das Haus ist zu groß, die Treppe zu hoch, der Garten zu aufwändig? Renovus versteht diese Lebensphase und begleitet Sie behutsam und ohne Druck.</p>
-        <span class="wege__cta">Optionen ansehen <i class="fa-solid fa-arrow-right"></i></span>
-      </a>
-    </div>
-  </div>
-</section>
-
-
-<!-- ══ PROZESSBLOCK ══════════════════════════════════════════════════════ -->
-<section id="prozess-verkauf" aria-labelledby="prozess-heading">
-  <div class="rv-inner">
-    <div class="rv-header rv-header--center">
-      <div class="rv-tag">Unser Vorgehen</div>
-      <h2 class="rv-h2" id="prozess-heading">So verkaufen wir Ihre<br><em>Immobilie erfolgreich.</em></h2>
-      <p class="rv-sub">Vier klare Schritte. Ein persönlicher Ansprechpartner. Kein Rätselraten.</p>
-    </div>
-    <div class="prozess-verkauf__grid">
-      <div class="prozess-verkauf__card">
-        <div class="prozess-verkauf__img-wrap">
-          <img src="https://renovus-website.pages.dev/img/immobilienbewertung-haus-linz-aussen-renovus.webp"
-               alt="Immobilienbewertung Linz – fundierte Marktbewertung durch Renovus Immobilien"
-               loading="lazy">
-        </div>
-        <div class="prozess-verkauf__body">
-          <div class="prozess-verkauf__num">01</div>
-          <h3 class="prozess-verkauf__title">Bewertung</h3>
-          <p class="prozess-verkauf__text">Fundierte Marktanalyse und ehrlicher Preisrahmen – damit Sie wissen, was Ihre Immobilie in Linz heute wirklich wert ist.</p>
-        </div>
-      </div>
-      <div class="prozess-verkauf__card">
-        <div class="prozess-verkauf__img-wrap">
-          <img src="https://renovus-website.pages.dev/img/immobilienvermarktung-drohne-linz-luftaufnahme.webp"
-               alt="Immobilienvermarktung Linz – professionelle Luftaufnahmen durch Renovus Immobilien"
-               loading="lazy">
-        </div>
-        <div class="prozess-verkauf__body">
-          <div class="prozess-verkauf__num">02</div>
-          <h3 class="prozess-verkauf__title">Strategie &amp; Vermarktung</h3>
-          <p class="prozess-verkauf__text">Professionelle Fotos, Luftaufnahmen, starkes Exposé und gezielte Reichweite – Ihre Immobilie optimal am Markt positioniert.</p>
-        </div>
-      </div>
-      <div class="prozess-verkauf__card">
-        <div class="prozess-verkauf__img-wrap">
-          <img src="https://renovus-website.pages.dev/img/immobilienbesichtigung-wohnung-innenraum-linz.webp"
-               alt="Immobilienbesichtigung Linz – qualifizierte Interessenten, Renovus Immobilien"
-               loading="lazy">
-        </div>
-        <div class="prozess-verkauf__body">
-          <div class="prozess-verkauf__num">03</div>
-          <h3 class="prozess-verkauf__title">Besichtigung</h3>
-          <p class="prozess-verkauf__text">Wir filtern Interessenten, führen qualifizierte Besichtigungen und schützen Ihre Zeit – nur ernsthafte Käufer kommen durch.</p>
-        </div>
-      </div>
-      <div class="prozess-verkauf__card">
-        <div class="prozess-verkauf__img-wrap">
-          <img src="https://renovus-website.pages.dev/img/immobilienverkauf-abschluss-handschlag-renovus-linz.webp"
-               alt="Immobilienverkauf Abschluss Linz – Vertragsunterzeichnung mit Renovus Immobilien"
-               loading="lazy">
-        </div>
-        <div class="prozess-verkauf__body">
-          <div class="prozess-verkauf__num">04</div>
-          <h3 class="prozess-verkauf__title">Abschluss</h3>
-          <p class="prozess-verkauf__text">Vertragsverhandlung, Notartermin, Übergabe – Rainer Schauer begleitet Sie persönlich bis zum letzten Handschlag.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ══ MICRO-CTA ════════════════════════════════════════════════════════ -->
-<div class="micro-cta">
-  <div class="micro-cta__inner">
-    <span class="micro-cta__text">
-      <i class="fa-solid fa-shield-halved"></i>
-      Kostenlose Bewertung durch staatlich geprüften Immobilientreuhänder — Antwort in 24 Stunden
-    </span>
-    <a href="#bewertungs-form" class="micro-cta__btn">
-      Jetzt anfragen <i class="fa-solid fa-arrow-right"></i>
-    </a>
-  </div>
-</div>
-
-<!-- ══ MONEY PAGES ════════════════════════════════════════════════════════ -->
-<section class="rv-section rv-section--sand" id="objekte">
-  <div class="rv-inner">
-    <div class="rv-header rv-header--center">
-      <div class="rv-tag">Ihre Immobilie in Linz verkaufen</div>
-      <h2 class="rv-h2">Haus, Wohnung oder<br><em>Anlageimmobilie.</em></h2>
-      <p class="rv-sub">Renovus vermittelt alle Immobilientypen im Großraum Linz – persönlich, diskret und zum bestmöglichen Preis.</p>
-    </div>
-    <div class="money__grid">
-      <a href="/haus-verkaufen-linz" class="money__card">
-        <div class="money__img-wrap">
-          <img src="https://renovus-website.pages.dev/img/haus-verkaufen-linz-einfamilienhaus-modern.webp"
-            alt="Haus verkaufen Linz – modernes Einfamilienhaus, Renovus Immobilien" loading="lazy" class="money__img">
-          <span class="money__badge">Haus &amp; Villa</span>
-        </div>
-        <div class="money__body">
-          <h3 class="money__title">Haus verkaufen Linz</h3>
-          <p class="money__text">Einfamilienhaus, Doppelhaus, Reihenhaus oder Villa – Renovus bewertet und vermarktet Ihr Haus zum optimalen Preis in Linz und Linz-Land.</p>
-          <span class="money__cta">Haus verkaufen <i class="fa-solid fa-arrow-right"></i></span>
-        </div>
-      </a>
-      <a href="/wohnung-verkaufen-linz" class="money__card">
-        <div class="money__img-wrap">
-          <img src="https://renovus-website.pages.dev/img/wohnung-verkaufen-linz-modern-renovus.webp"
-            alt="Wohnung verkaufen Linz – moderne Eigentumswohnung, Renovus Immobilien" loading="lazy" class="money__img">
-          <span class="money__badge">Eigentumswohnung</span>
-        </div>
-        <div class="money__body">
-          <h3 class="money__title">Wohnung verkaufen Linz</h3>
-          <p class="money__text">Ihre Eigentumswohnung professionell inseriert und diskret an qualifizierte Käufer vermittelt – schnell und wertoptimal.</p>
-          <span class="money__cta">Wohnung verkaufen <i class="fa-solid fa-arrow-right"></i></span>
-        </div>
-      </a>
-      <a href="/immobilie-verkaufen-linz" class="money__card">
-        <div class="money__img-wrap">
-          <img src="https://renovus-website.pages.dev/img/penthouse-linz-premium-immobilie-renovus.webp"
-            alt="Penthouse verkaufen Linz – exklusive Premium-Immobilie, Renovus Immobilien" loading="lazy" class="money__img">
-          <span class="money__badge">Penthouse &amp; Premium</span>
-        </div>
-        <div class="money__body">
-          <h3 class="money__title">Premium-Immobilien Linz</h3>
-          <p class="money__text">Penthäuser, Villen und exklusive Objekte – Renovus vermarktet hochwertige Immobilien diskret und an den richtigen Käuferkreis.</p>
-          <span class="money__cta">Premium-Objekte <i class="fa-solid fa-arrow-right"></i></span>
-        </div>
-      </a>
-    </div>
-    <div style="text-align:center;margin-top:40px">
-      <a href="/immobilie-ohne-makler-verkaufen-linz" class="rvb rvb--outline-dark">Immobilie ohne Makler verkaufen – was Sie wissen sollten</a>
-    </div>
-  </div>
-</section>
-
-
-<!-- ══ MICRO-CTA ════════════════════════════════════════════════════════ -->
-<div class="micro-cta">
-  <div class="micro-cta__inner">
-    <span class="micro-cta__text">
-      <i class="fa-solid fa-shield-halved"></i>
-      Kostenlose Bewertung durch staatlich geprüften Immobilientreuhänder — Antwort in 24 Stunden
-    </span>
-    <a href="#bewertungs-form" class="micro-cta__btn">
-      Jetzt anfragen <i class="fa-solid fa-arrow-right"></i>
-    </a>
-  </div>
-</div>
-
-<!-- ══ WOHNZIMMER IMAGE BREAK ════════════════════════════════════════════ -->
-<div class="image-break--fullview" id="wohnzimmer-break">
-  <img
-    src="https://renovus-website.pages.dev/img/wohnzimmer-lichtdurchflutet-linz-immobilie.webp"
-    alt="Lichtdurchflutetes modernes Wohnzimmer – Immobilie Linz, Renovus Immobilien"
-    loading="lazy"
-  >
-</div>
-<div style="background:var(--dark);padding:24px 0;text-align:center;">
-  <p style="font-family:var(--font-head);font-size:clamp(18px,2.5vw,30px);font-weight:300;font-style:italic;color:white;letter-spacing:0.02em;">
-    Der richtige Käufer erkennt den <em style="color:var(--gold);font-style:normal;">Wert sofort.</em>
-  </p>
-</div>
-
-<!-- ══ BEST AGER ══════════════════════════════════════════════════════════ -->
-<section class="bestager rv-section" id="wohnen-im-alter">
-  <div class="rv-inner">
-    <div class="bestager__grid">
-      <div>
-        <div class="rv-tag rv-tag--light">Lebenssituation im Fokus</div>
-        <h2 class="rv-h2 rv-h2--light">Immobilie im Alter<br>verkaufen –<br><em>Ihre Möglichkeiten.</em></h2>
-        <p class="bestager__text">Viele Eigentümer kommen in eine Lebensphase, in der das Haus zu groß, die Treppe zu hoch oder der Garten zu aufwändig wird. Renovus begleitet Sie behutsam – ohne Druck, mit echter Rücksicht auf Ihre Situation und Ihre Zeit.</p>
-        <a href="/wohnen-und-verkaufen-im-alter-linz" class="rvb rvb--gold">
-          <i class="fa-solid fa-house-heart"></i>
-          Alle Möglichkeiten ansehen
-        </a>
-      </div>
-      <div class="bestager__cards">
-        <a href="/haus-zu-gross-linz" class="ba-card">
-          <div class="ba-icon"><i class="fa-solid fa-house"></i></div>
-          <div>
-            <h3 class="ba-title">Haus zu groß – was tun?</h3>
-            <p class="ba-text">Das Haus ist zu groß geworden. Was sind Ihre Möglichkeiten? Renovus zeigt Ihnen Schritt für Schritt Ihren richtigen Weg.</p>
-            <span class="ba-link">Mehr erfahren <i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </a>
-        <a href="/vom-haus-in-die-wohnung-linz" class="ba-card">
-          <div class="ba-icon"><i class="fa-solid fa-arrow-right-to-bracket"></i></div>
-          <div>
-            <h3 class="ba-title">Vom Haus in die Wohnung</h3>
-            <p class="ba-text">Behutsamer Übergang: Hausverkauf und neue Wohnung in einem Zug – Renovus begleitet Sie durch beide Schritte gemeinsam.</p>
-            <span class="ba-link">Mehr erfahren <i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </a>
-        <a href="/immobilie-verkaufen-im-alter-linz" class="ba-card">
-          <div class="ba-icon"><i class="fa-solid fa-shield-halved"></i></div>
-          <div>
-            <h3 class="ba-title">Immobilie verkaufen im Alter</h3>
-            <p class="ba-text">Sicher und diskret: Renovus versteht die besonderen Anforderungen beim Immobilienverkauf im Ruhestand und bietet volle Transparenz.</p>
-            <span class="ba-link">Mehr erfahren <i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ SITUATIONEN ════════════════════════════════════════════════════════ -->
-<section class="rv-section rv-section--sand-2" id="situationen">
-  <div class="rv-inner">
-    <div class="rv-header rv-header--center">
-      <div class="rv-tag">Besondere Lebenssituationen</div>
-      <h2 class="rv-h2">Jede Situation verdient<br><em>individuelle Beratung.</em></h2>
-      <p class="rv-sub">Manchmal entsteht eine Immobilienfrage nicht aus einem ruhigen Entschluss heraus. Renovus begleitet Sie auch in schwierigen Momenten – diskret und lösungsorientiert.</p>
-    </div>
-    <div class="sit__grid">
-      <a href="/immobilie-geerbt-linz" class="sit__card">
-        <i class="fa-solid fa-scroll sit__icon"></i>
-        <h3 class="sit__title">Immobilie geerbt in Linz</h3>
-        <p class="sit__text">Eine geerbte Immobilie bringt viele Fragen: Was ist sie wert? Soll man verkaufen oder vermieten? Gibt es steuerliche Fallstricke? Renovus hilft Ihnen, Klarheit zu gewinnen.</p>
-        <span class="sit__cta">Was jetzt? <i class="fa-solid fa-arrow-right"></i></span>
-      </a>
-      <a href="/immobilie-bei-trennung-linz" class="sit__card">
-        <i class="fa-solid fa-handshake sit__icon"></i>
-        <h3 class="sit__title">Immobilie bei Trennung</h3>
-        <p class="sit__text">Bei Scheidung oder Trennung ist die gemeinsame Immobilie oft das emotionalste und komplexeste Thema. Renovus berät unparteiisch, diskret und lösungsorientiert für beide Seiten.</p>
-        <span class="sit__cta">Diskret anfragen <i class="fa-solid fa-arrow-right"></i></span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ══ REGIONEN ═══════════════════════════════════════════════════════════ -->
-<section class="rv-section rv-section--white" id="region">
-  <div class="rv-inner">
-    <div class="rv-header rv-header--center">
-      <div class="rv-tag">Regionale Expertise</div>
-      <h2 class="rv-h2">Ihr Immobilienmakler<br><em>im Großraum Linz.</em></h2>
-      <p class="rv-sub">Renovus kennt jeden Markt – von der Linzer Altstadt bis ins Linz-Land und in die Urfahr-Umgebung. Lokale Kenntnis ist der entscheidende Vorteil beim Immobilienverkauf.</p>
-    </div>
-    <div class="regions__grid">
-      <a href="/immobilienmakler-linz" class="region__card region__card--main">
-        <i class="fa-solid fa-city region__icon"></i>
-        <span class="region__badge">Hauptstandort</span>
-        <span class="region__name">Linz</span>
-        <span class="region__sub">Alle Stadtteile</span>
-      </a>
-      <a href="/immobilien-linz-land" class="region__card">
-        <i class="fa-solid fa-map-location-dot region__icon"></i>
-        <span class="region__name">Linz-Land</span>
-        <span class="region__sub">Bezirk gesamt</span>
-      </a>
-      <a href="/immobilien-urfahr-umgebung" class="region__card">
-        <i class="fa-solid fa-mountain region__icon"></i>
-        <span class="region__name">Urfahr-Umgebung</span>
-        <span class="region__sub">Bezirk gesamt</span>
-      </a>
-      <a href="/immobilienmakler-leonding" class="region__card">
-        <i class="fa-solid fa-tree region__icon"></i>
-        <span class="region__name">Leonding</span>
-        <span class="region__sub">Linz-Land</span>
-      </a>
-      <a href="/immobilienmakler-traun" class="region__card">
-        <i class="fa-solid fa-tree region__icon"></i>
-        <span class="region__name">Traun</span>
-        <span class="region__sub">Linz-Land</span>
-      </a>
-      <a href="/immobilienmakler-ansfelden" class="region__card">
-        <i class="fa-solid fa-tree region__icon"></i>
-        <span class="region__name">Ansfelden</span>
-        <span class="region__sub">Linz-Land</span>
-      </a>
-      <a href="/immobilienmakler-pasching" class="region__card">
-        <i class="fa-solid fa-tree region__icon"></i>
-        <span class="region__name">Pasching</span>
-        <span class="region__sub">Linz-Land</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-
-<!-- ══ MICRO-CTA ════════════════════════════════════════════════════════ -->
-<div class="micro-cta">
-  <div class="micro-cta__inner">
-    <span class="micro-cta__text">
-      <i class="fa-solid fa-shield-halved"></i>
-      Kostenlose Bewertung durch staatlich geprüften Immobilientreuhänder — Antwort in 24 Stunden
-    </span>
-    <a href="#bewertungs-form" class="micro-cta__btn">
-      Jetzt anfragen <i class="fa-solid fa-arrow-right"></i>
-    </a>
-  </div>
-</div>
-
-
-
-<!-- ══ IMAGE BREAK DOM ══════════════════════════════════════════════════ -->
-<div class="image-break--fullview" id="dom-break" style="position:relative;max-height:480px;overflow:hidden;">
-  <img
-    src="https://renovus-website.pages.dev/img/linz-dom-stadtansicht-immobilienmakler-renovus.webp"
-    alt="Linzer Dom Stadtansicht – Immobilienmakler Renovus Immobilien kennt den Markt in Linz"
-    loading="lazy"
-    style="width:100%;height:480px;object-fit:cover;object-position:center 30%;display:block;"
-  >
-  <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(26,24,21,0.75) 0%,rgba(26,24,21,0.2) 60%,transparent 100%);display:flex;align-items:flex-end;justify-content:center;padding-bottom:52px;">
-    <p style="font-family:var(--font-head);font-size:clamp(20px,3vw,40px);font-weight:300;font-style:italic;color:white;text-align:center;padding:0 24px;text-shadow:0 2px 20px rgba(0,0,0,0.5);">
-      Linz kennen heißt den <em style="color:var(--gold);font-style:normal;">Markt verstehen.</em>
-    </p>
-  </div>
-</div>
-
-<!-- ══ BEWERTUNGSTOOL ════════════════════════════════════════════════════ -->
-<section class="rv-section rv-section--sand" id="bewertungstool" aria-labelledby="btm-heading">
-  <div class="rv-inner">
-    <div class="rv-header rv-header--center">
-      <div class="rv-tag">Online Sofortbewertung</div>
-      <h2 class="rv-h2" id="btm-heading">Was ist Ihre Immobilie wert?<br><em>Jetzt in 3 Minuten herausfinden.</em></h2>
-      <p class="rv-sub">Schnelle Online-Einschätzung — kostenlos, unverbindlich, sofort. Oder direkt mit Rainer Schauer persönlich:</p>
-    </div>
-    <div style="margin:40px auto 0;max-width:800px;">
-      <btm-widget></btm-widget>
-    </div>
-    <div style="text-align:center;margin-top:32px;">
-      <a href="#bewertungs-form" class="rvb rvb--outline-dark">
-        <i class="fa-solid fa-user"></i> Persönliche Bewertung durch Rainer Schauer
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ══ MARKT / EXPERTISE ══════════════════════════════════════════════════ -->
-<section class="rv-section rv-section--dark" id="markt">
-  <div class="rv-inner">
-    <div style="margin-bottom:52px;border-radius:6px;overflow:hidden;max-height:340px;">
-      <img src="https://renovus-website.pages.dev/img/linz-architektur-immobilienmarkt-standort.webp"
-           alt="Linz Architektur – Immobilienmarkt und Standortkompetenz, Renovus Immobilien"
-           loading="lazy"
-           style="width:100%;height:340px;object-fit:cover;display:block;">
-    </div>
-    <div class="rv-header rv-header--center">
-      <div class="rv-tag rv-tag--light">Wissen &amp; Markt</div>
-      <h2 class="rv-h2 rv-h2--light">Fundiertes Wissen.<br><em>Klare Einschätzungen.</em></h2>
-      <p class="rv-sub rv-sub--light">Renovus teilt sein Marktwissen transparent – damit Sie die richtigen Entscheidungen treffen können.</p>
-    </div>
-    <div class="exp__grid">
-      <a href="/immobilienpreise-linz" class="exp__card">
-        <i class="fa-solid fa-chart-bar exp__icon"></i>
-        <h3 class="exp__title">Immobilienpreise Linz 2025</h3>
-        <p class="exp__text">Aktuelle Preisentwicklung für Häuser und Wohnungen in Linz – fundiert aufbereitet. Was ist Ihre Immobilie heute wert?</p>
-        <span class="exp__cta">Preisübersicht <i class="fa-solid fa-arrow-right"></i></span>
-      </a>
-      <a href="/immobilienmarkt-linz" class="exp__card">
-        <i class="fa-solid fa-magnifying-glass-chart exp__icon"></i>
-        <h3 class="exp__title">Immobilienmarkt Linz 2025</h3>
-        <p class="exp__text">Trends, Nachfrage und Ausblick: Was bewegt den Linzer Immobilienmarkt? Der aktuelle Überblick für Eigentümer und Käufer.</p>
-        <span class="exp__cta">Marktbericht <i class="fa-solid fa-arrow-right"></i></span>
-      </a>
-      <a href="/maklervertrag-oesterreich" class="exp__card">
-        <i class="fa-solid fa-file-contract exp__icon"></i>
-        <h3 class="exp__title">Maklervertrag Österreich</h3>
-        <p class="exp__text">Was steht im Maklervertrag? Welche Rechte haben Sie? Provision, Laufzeit und Widerrufsrecht – verständlich erklärt.</p>
-        <span class="exp__cta">Jetzt informieren <i class="fa-solid fa-arrow-right"></i></span>
-      </a>
-    </div>
-  </div>
-</section>
-
-
-
-
-<!-- ══ RATGEBER ═════════════════════════════════════════════════════════ -->
-<section class="rv-section rv-section--white" id="ratgeber" aria-labelledby="ratgeber-heading">
-  <div class="rv-inner">
-    <div class="rv-header rv-header--center">
-      <div class="rv-tag">Wissen &amp; Orientierung</div>
-      <h2 class="rv-h2" id="ratgeber-heading">Wissen, das Ihnen beim<br><em>Verkauf wirklich hilft.</em></h2>
-      <p class="rv-sub">Ehrliche Einschätzungen statt Werbeversprechen. Fundiert, verständlich, kostenlos.</p>
-    </div>
-    <div class="ratgeber-grid" style="margin-top:48px;">
-      <a href="/ratgeber/immobilie-erben.html" class="ratgeber-card">
-        <div class="ratgeber-img">
-          <img src="https://renovus-website.pages.dev/img/immobilie-verkaufen-alter-linz-aelteres-paar.webp"
-               alt="Immobilie in der Pension verkaufen Linz – Ratgeber Renovus Immobilien"
-               loading="lazy" style="width:100%;height:100%;object-fit:cover;">
-        </div>
-        <div class="ratgeber-body">
-          <div class="ratgeber-tag">Für Eigentümer im Alter</div>
-          <h3 class="ratgeber-title">Immobilie in der Pension verkaufen</h3>
-          <p class="ratgeber-excerpt">Steuerliche Aspekte, richtiges Timing, persönliche Planung — was Sie vor dem Verkauf wissen sollten.</p>
-          <span class="ratgeber-link">Ratgeber lesen <i class="fa-solid fa-arrow-right"></i></span>
-        </div>
-      </a>
-      <a href="/ratgeber/immobilie-verkaufen.html" class="ratgeber-card">
-        <div class="ratgeber-img">
-          <img src="https://renovus-website.pages.dev/img/immobilienbewertung-haus-linz-aussen-renovus.webp"
-               alt="Immobilie verkaufen Linz Schritt für Schritt – Ratgeber Renovus Immobilien"
-               loading="lazy" style="width:100%;height:100%;object-fit:cover;">
-        </div>
-        <div class="ratgeber-body">
-          <div class="ratgeber-tag">Vollständiger Leitfaden</div>
-          <h3 class="ratgeber-title">Immobilie verkaufen in Linz — Schritt für Schritt</h3>
-          <p class="ratgeber-excerpt">Vom ersten Gedanken bis zum Kaufvertrag — der komplette Ablauf, ehrlich erklärt.</p>
-          <span class="ratgeber-link">Ratgeber lesen <i class="fa-solid fa-arrow-right"></i></span>
-        </div>
-      </a>
-      <a href="/ratgeber/immobilienmakler-vorteile.html" class="ratgeber-card">
-        <div class="ratgeber-img">
-          <img src="https://renovus-website.pages.dev/img/linz-immobilien-imagebreak-qualitaet.webp"
-               alt="Immobilienwert berechnen Linz – Bewertungsverfahren erklärt Renovus"
-               loading="lazy" style="width:100%;height:100%;object-fit:cover;">
-        </div>
-        <div class="ratgeber-body">
-          <div class="ratgeber-tag">Bewertung verstehen</div>
-          <h3 class="ratgeber-title">Immobilienwert berechnen — so funktioniert es</h3>
-          <p class="ratgeber-excerpt">Sachwert, Vergleichswert, Ertragswert — welches Verfahren zählt und was Ihren Preis wirklich bestimmt.</p>
-          <span class="ratgeber-link">Ratgeber lesen <i class="fa-solid fa-arrow-right"></i></span>
-        </div>
-      </a>
-    </div>
-    <div style="text-align:center;margin-top:40px;">
-      <a href="/ratgeber" class="rvb rvb--outline-dark">
-        <i class="fa-solid fa-book-open"></i> Alle Ratgeber ansehen
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ══ REZENSIONEN ══════════════════════════════════════════════════════ -->
-<section class="rv-section rv-section--sand" id="rezensionen" aria-labelledby="rez-heading">
-  <div class="rv-inner">
-    <div class="rv-header rv-header--center">
-      <div class="rv-tag">Kundenstimmen</div>
-      <h2 class="rv-h2" id="rez-heading">Was unsere Kunden<br><em>über uns sagen.</em></h2>
-    </div>
-    <div class="rez__grid">
-      <div class="rez__card">
-        <div class="rez__quote-mark">„</div>
-        <p class="rez__text">Rainer Schauer hat unser Haus in Linz-Land innerhalb von 6 Wochen verkauft — und das zu einem Preis, den wir selbst nicht für möglich gehalten hätten. Die Kommunikation war jederzeit klar und persönlich.</p>
-        <div class="rez__author">
-          <div class="rez__author-info">
-            <strong>Familie M.</strong>
-            <span>Einfamilienhaus, Linz-Land</span>
-          </div>
-        </div>
-      </div>
-      <div class="rez__card">
-        <div class="rez__quote-mark">„</div>
-        <p class="rez__text">Endlich ein Makler, der nicht einfach inseriert und wartet. Rainer hat für unsere Wohnung eine echte Strategie entwickelt — das hat man gemerkt. Volle Empfehlung.</p>
-        <div class="rez__author">
-          <div class="rez__author-info">
-            <strong>M. & P. K.</strong>
-            <span>Eigentumswohnung, Linz</span>
-          </div>
-        </div>
-      </div>
-      <div class="rez__card">
-        <div class="rez__quote-mark">„</div>
-        <p class="rez__text">Als wir entschieden haben, unser Haus zu verkaufen und in eine kleinere Wohnung zu ziehen, hat Rainer uns in beiden Schritten begleitet. Diskret, geduldig und immer auf Augenhöhe.</p>
-        <div class="rez__author">
-          <div class="rez__author-info">
-            <strong>Renate S.</strong>
-            <span>Haus &amp; Wohnungssuche, Urfahr</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <p style="text-align:center;margin-top:32px;font-size:13px;color:var(--ink-mid);">
-      <i class="fa-solid fa-shield-halved" style="color:var(--gold);margin-right:6px;"></i>
-      Echte Kundenstimmen — keine generierten Bewertungen
-    </p>
-  </div>
-</section>
-
-<!-- ══ TIPPGEBER ════════════════════════════════════════════════════════ -->
-<section class="rv-section rv-section--white" id="tippgeber" aria-labelledby="tippgeber-heading">
-  <div class="rv-inner">
-    <div class="tippgeber-grid">
-      <div class="tippgeber-content">
-        <div class="rv-tag">Empfehlungs-Programm</div>
-        <h2 class="rv-h2" id="tippgeber-heading">Kennen Sie jemanden,<br>der verkaufen möchte?<br><em>Ihr Tipp. Ihr Geld.</em></h2>
-        <p class="rv-sub" style="margin-top:16px;">Wenn jemand aus Ihrem Umfeld seine Immobilie verkaufen möchte — geben Sie uns einen Tipp. Wir übernehmen alles weitere. Sie erhalten automatisch Ihre Prämie nach Kaufabschluss.</p>
-        <div class="tippgeber-praemie">
-          <div class="tippgeber-praemie__amount">€ 3.000</div>
-          <div class="tippgeber-praemie__label">Durchschnittliche Prämie<br><small>10 % des Maklerhonorars — mindestens € 1.000</small></div>
-        </div>
-        <div class="tippgeber-steps">
-          <div class="tippgeber-step">
-            <span class="tippgeber-step__num">1</span>
-            <span class="tippgeber-step__text">Tipp abgeben — Adresse &amp; Eigentümer</span>
-          </div>
-          <div class="tippgeber-step">
-            <span class="tippgeber-step__num">2</span>
-            <span class="tippgeber-step__text">Renovus übernimmt alles weitere</span>
-          </div>
-          <div class="tippgeber-step">
-            <span class="tippgeber-step__num">3</span>
-            <span class="tippgeber-step__text">Prämie landet auf Ihrem Konto</span>
-          </div>
-        </div>
-        <a href="/tippgeber" class="rvb rvb--gold" style="margin-top:32px;display:inline-flex;">
-          <i class="fa-solid fa-gift"></i> Jetzt Tipp abgeben
-        </a>
-      </div>
-      <div class="tippgeber-visual">
-        <div class="tippgeber-card">
-          <div class="tippgeber-card__icon"><i class="fa-solid fa-house-circle-check"></i></div>
-          <div class="tippgeber-card__text">
-            <strong>Vertraulich &amp; unverbindlich</strong>
-            <p>Ihre Angaben werden streng vertraulich behandelt. Die Immobilie darf noch nicht öffentlich inseriert sein.</p>
-          </div>
-        </div>
-        <div class="tippgeber-card">
-          <div class="tippgeber-card__icon"><i class="fa-solid fa-shield-halved"></i></div>
-          <div class="tippgeber-card__text">
-            <strong>Automatische Auszahlung</strong>
-            <p>Nach erfolgreichem Kaufabschluss erhalten Sie Ihre Prämie automatisch auf Ihr Konto.</p>
-          </div>
-        </div>
-        <div class="tippgeber-card">
-          <div class="tippgeber-card__icon"><i class="fa-solid fa-users"></i></div>
-          <div class="tippgeber-card__text">
-            <strong>Für alle geeignet</strong>
-            <p>Nachbarn, Bekannte, Verwandte, Freunde — jeder Hinweis zählt. In 2 Minuten ausgefüllt.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ FAQ ════════════════════════════════════════════════════════════════ -->
-<section class="rv-section rv-section--sand" id="faq">
-  <div class="rv-inner">
-    <div class="faq__wrap">
-      <div>
-        <div class="rv-tag">Häufige Fragen</div>
-        <h2 class="rv-h2">Was Eigentümer<br><em>am häufigsten fragen.</em></h2>
-        <p class="rv-sub" style="margin-top:16px">Klare Antworten auf die wichtigsten Fragen rund um den Immobilienverkauf in Linz.</p>
-        <div style="margin-top:36px">
-          <a href="/immobilie-verkaufen-ablauf-linz" class="rvb rvb--outline-dark">Ablauf &amp; Kosten im Detail</a>
-        </div>
-      </div>
-      <div class="faq__list" itemscope itemtype="https://schema.org/FAQPage">
-        <div class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-          <button class="faq__trigger" aria-expanded="false">
-            <span itemprop="name">Was ist meine Immobilie in Linz wert?</span>
-            <i class="fa-solid fa-chevron-down faq__chevron"></i>
-          </button>
-          <div class="faq__body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <div itemprop="text"><p>Der Wert hängt von Lage, Größe, Zustand, Ausstattung und der aktuellen Marktnachfrage ab. Eigentumswohnungen liegen in Linz derzeit bei 3.500–5.500 €/m², Häuser zwischen 350.000 und über 800.000 €. Rainer Schauer bewertet Ihre Immobilie <a href="/immobilienbewertung-linz">kostenlos und persönlich vor Ort</a>.</p></div>
-          </div>
-        </div>
-        <div class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-          <button class="faq__trigger" aria-expanded="false">
-            <span itemprop="name">Wie lange dauert ein Immobilienverkauf in Linz?</span>
-            <i class="fa-solid fa-chevron-down faq__chevron"></i>
-          </button>
-          <div class="faq__body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <div itemprop="text"><p>Durchschnittlich 3 bis 6 Monate von der Bewertung bis zur Schlüsselübergabe. Bei gut vorbereiteten Objekten in gefragten Lagen geht es oft deutlich schneller. Entscheidend sind Preis, Vorbereitung und das Käufernetz des Maklers. <a href="/immobilie-verkaufen-ablauf-linz">Alle Schritte im Detail</a>.</p></div>
-          </div>
-        </div>
-        <div class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-          <button class="faq__trigger" aria-expanded="false">
-            <span itemprop="name">Was kostet ein Immobilienmakler in Österreich?</span>
-            <i class="fa-solid fa-chevron-down faq__chevron"></i>
-          </button>
-          <div class="faq__body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <div itemprop="text"><p>Die gesetzliche Maklerprovision beträgt maximal 3 % des Kaufpreises zzgl. 20 % USt. (= 3,6 % inkl. USt.) – für Käufer und Verkäufer jeweils. Die Provision entsteht nur bei erfolgreichem Abschluss. Es gibt keine Vorabkosten. <a href="/maklervertrag-oesterreich">Maklervertrag Österreich erklärt</a>.</p></div>
-          </div>
-        </div>
-        <div class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-          <button class="faq__trigger" aria-expanded="false">
-            <span itemprop="name">Wann ist der beste Zeitpunkt für den Immobilienverkauf?</span>
-            <i class="fa-solid fa-chevron-down faq__chevron"></i>
-          </button>
-          <div class="faq__body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <div itemprop="text"><p>Der beste Zeitpunkt ist dann, wenn Ihre persönliche Situation es erfordert. Gut präsentierte Objekte verkaufen sich in Linz das ganze Jahr. Erfahrungsgemäß sind Frühjahr und Herbst besonders umsatzstark. Eine fundierte Bewertung zeigt, ob jetzt der richtige Moment ist. <a href="/immobilienmarkt-linz">Aktueller Marktbericht Linz</a>.</p></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ FORMULAR / FINAL CTA ═══════════════════════════════════════════════ -->
-<section class="form-section rv-section" id="bewertung-anfragen">
-  <div class="rv-inner">
-    <div class="form-section__grid" style="grid-template-columns: 360px 1fr; gap: 72px;">
-      <div class="form-section__img-col" style="align-self:stretch;">
-        <img
-          src="https://renovus-website.pages.dev/img/wohnung-verkaufen-linz-beratung-renovus.webp"
-          alt="Wohnung verkaufen Linz – Beratung und Bewertung durch Renovus Immobilien"
-          loading="lazy"
-          style="width:100%;height:100%;object-fit:cover;min-height:400px;border-radius:8px;display:block;"
-        >
-      </div>
-      <div class="form-section__text">
-        <div class="rv-tag rv-tag--light">Jetzt starten</div>
-        <h2 class="rv-h2 rv-h2--light">Jetzt Immobilie<br><em>kostenlos bewerten</em><br>lassen.</h2>
-        <p class="rv-sub rv-sub--light">Füllen Sie das Formular aus – Rainer Schauer meldet sich persönlich innerhalb von 24 Stunden.</p>
-        <ul class="form-perks">
-          <li class="form-perk"><i class="fa-solid fa-circle-check"></i> Kostenlos &amp; unverbindlich</li>
-          <li class="form-perk"><i class="fa-solid fa-circle-check"></i> Persönlicher Termin vor Ort in Linz</li>
-          <li class="form-perk"><i class="fa-solid fa-circle-check"></i> Fundierte Marktanalyse</li>
-          <li class="form-perk"><i class="fa-solid fa-circle-check"></i> Antwort in 24 Stunden</li>
-          <li class="form-perk"><i class="fa-solid fa-circle-check"></i> Ohne versteckte Folgekosten</li>
-        </ul>
-        <div class="form-direct">
-          <p>Oder direkt</p>
-          <a href="tel:+43732237997" class="form-direct-link"><i class="fa-solid fa-phone"></i> +43 732 237 997</a>
-          <a href="mailto:office@renovus.at" class="form-direct-link"><i class="fa-solid fa-envelope"></i> office@renovus.at</a>
-        </div>
-      </div>
-      <div>
-        <div class="form-box" id="bewertungs-form">
-          <h3 class="form-box__title">Immobilie kostenlos bewerten lassen</h3>
-          <form data-rnv="bewertung" method="post" action="https://api.renovus.at/lead/inbound" novalidate>
-            <div style="position:absolute;left:-9999px;opacity:0;height:0;" aria-hidden="true">
-              <input class="rnv-hp-field" type="text" name="website" tabindex="-1" autocomplete="off">
-            </div>
-            <div class="form-row">
-              <div class="form-field">
-                <label class="form-label" for="f-name">Ihr Name <span class="form-req">*</span></label>
-                <input class="form-input" id="f-name" type="text" name="name" placeholder="Vor- und Nachname" required autocomplete="name">
-              </div>
-            </div>
-            <div class="form-row form-row--2">
-              <div class="form-field">
-                <label class="form-label" for="f-email">E-Mail <span class="form-req">*</span></label>
-                <input class="form-input" id="f-email" type="email" name="email" placeholder="ihre@email.at" required autocomplete="email">
-              </div>
-              <div class="form-field">
-                <label class="form-label" for="f-tel">Telefon <span class="form-req">*</span></label>
-                <input class="form-input" id="f-tel" type="tel" name="telefon" placeholder="+43 …" required autocomplete="tel">
-              </div>
-            </div>
-            <div class="form-row form-row--2">
-              <div class="form-field">
-                <label class="form-label" for="f-typ">Immobilientyp</label>
-                <select class="form-select" id="f-typ" name="immobilientyp">
-                  <option value="" disabled selected>Bitte wählen</option>
-                  <option>Einfamilienhaus</option>
-                  <option>Doppelhaus / Reihenhaus</option>
-                  <option>Eigentumswohnung</option>
-                  <option>Mehrfamilienhaus / Zinshaus</option>
-                  <option>Grundstück</option>
-                  <option>Gewerbeimmobilie</option>
-                  <option>Sonstiges</option>
-                </select>
-              </div>
-              <div class="form-field">
-                <label class="form-label" for="f-ort">Ort / Adresse</label>
-                <input class="form-input" id="f-ort" type="text" name="ort" placeholder="z.B. Linz, Leonding …" autocomplete="address-level2">
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-field">
-                <label class="form-label" for="f-msg">Ihre Nachricht (optional)</label>
-                <textarea class="form-textarea" id="f-msg" name="nachricht" rows="3" placeholder="Haben Sie weitere Informationen oder Fragen?"></textarea>
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-check">
-                <input type="checkbox" id="f-dsgvo" name="dsgvo_ok" required>
-                <label for="f-dsgvo">Ich akzeptiere die <a href="/datenschutz">Datenschutzerklärung</a> und bin mit der Kontaktaufnahme einverstanden. <span class="form-req">*</span></label>
-              </div>
-            </div>
-            <button type="submit" class="rvb rvb--gold rvb--full">
-              <i class="fa-solid fa-chart-line"></i>
-              Immobilie kostenlos bewerten lassen
-            </button>
-            <p class="form-ssl"><i class="fa-solid fa-lock"></i> SSL-verschlüsselt · Keine Weitergabe · DSGVO-konform</p>
-          </form>
-          <div class="rv-form-success" style="display:none">
-            <div class="rv-form-success__icon">✅</div>
-            <h3>Vielen Dank!</h3>
-            <p>Ihre Anfrage wurde übermittelt.<br>Rainer Schauer meldet sich persönlich bei Ihnen.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ══ LEAD MAGNET ══════════════════════════════════════════════════════ -->
-<section class="rv-section rv-section--dark" id="lead-magnet" aria-labelledby="lm-heading">
-  <div class="rv-inner">
-    <div class="lm__grid">
-      <div class="lm__content">
-        <div class="rv-tag rv-tag--light">Kostenloser Ratgeber</div>
-        <h2 class="rv-h2 rv-h2--light" id="lm-heading">Die 7 größten Fehler<br>beim Immobilienverkauf<br><em>— und wie Sie diese vermeiden.</em></h2>
-        <p class="rv-sub rv-sub--light" style="margin-top:16px;">Viele Eigentümer verlieren beim Verkauf bares Geld — oft ohne es zu wissen. Dieser kostenlose Ratgeber zeigt Ihnen die 7 häufigsten Fehler und wie Sie sie vermeiden.</p>
-        <ul class="lm__list">
-          <li><i class="fa-solid fa-circle-check"></i> Falsche Preisvorstellung</li>
-          <li><i class="fa-solid fa-circle-check"></i> Mangelnde Vorbereitung</li>
-          <li><i class="fa-solid fa-circle-check"></i> Schlechte Präsentation</li>
-          <li><i class="fa-solid fa-circle-check"></i> Falscher Verhandlungszeitpunkt</li>
-          <li><i class="fa-solid fa-circle-check"></i> Rechtliche Fallstricke</li>
-        </ul>
-      </div>
-      <div class="lm__form-wrap">
-        <div class="form-box" style="background:rgba(255,255,255,0.06);border:1px solid rgba(198,167,107,0.25);">
-          <h3 class="form-box__title" style="color:var(--cream-on-dark);">Kostenlos herunterladen</h3>
-          <form data-rnv="leadmagnet" action="https://api.renovus.at/lead/inbound" method="POST" novalidate>
-            <input type="hidden" name="source" value="lead_magnet_startseite">
-            <div class="form-row">
-              <div class="form-field">
-                <label class="form-label" for="lm-name" style="color:rgba(244,239,230,0.6);">Ihr Name</label>
-                <input class="form-input" id="lm-name" type="text" name="name" placeholder="Vor- und Nachname" required>
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-field">
-                <label class="form-label" for="lm-email" style="color:rgba(244,239,230,0.6);">E-Mail-Adresse</label>
-                <input class="form-input" id="lm-email" type="email" name="email" placeholder="ihre@email.at" required>
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-check">
-                <input type="checkbox" id="lm-dsgvo" name="dsgvo_ok" required>
-                <label for="lm-dsgvo" style="color:rgba(244,239,230,0.5);font-size:12px;">
-                  Ich akzeptiere die <a href="/datenschutz" style="color:var(--gold);">Datenschutzerklärung</a>. <span class="form-req">*</span>
-                </label>
-              </div>
-            </div>
-            <button type="submit" class="rvb rvb--gold rvb--full">
-              <i class="fa-solid fa-download"></i> Jetzt kostenlos herunterladen
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ FINAL CTA VILLA ════════════════════════════════════════════════════ -->
-<div class="image-break--fullview" id="final-cta-villa" style="position:relative;">
-  <img
-    src="https://renovus-website.pages.dev/img/villa-linz-premium-immobilie-garten.webp"
-    alt="Premium Villa mit Garten in Linz – Renovus Immobilien positioniert Ihre Immobilie optimal"
-    loading="lazy"
-    style="width:100%;height:auto;display:block;object-fit:contain;"
-  >
-  <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(26,24,21,0.80) 0%,rgba(26,24,21,0.25) 50%,transparent 100%);display:flex;align-items:flex-end;justify-content:center;padding-bottom:64px;">
-    <div style="text-align:center;max-width:600px;padding:0 24px;">
-      <p style="font-family:var(--font-head);font-size:clamp(26px,3.5vw,48px);font-weight:300;color:white;line-height:1.2;margin-bottom:24px;">
-        Lassen Sie uns Ihre Immobilie<br><em style="color:var(--gold);">optimal positionieren.</em>
-      </p>
-      <a href="#bewertungs-form" class="rvb rvb--gold" style="display:inline-flex;align-items:center;gap:8px;font-size:16px;padding:16px 36px;">
-        <i class="fa-solid fa-chart-line"></i> Beratung starten
-      </a>
-    </div>
-  </div>
-</div>
-
-<div class="entity-block" style="background:var(--sand,#F9F7F2);border-left:3px solid var(--gold,#C6A46A);padding:16px 20px;border-radius:0 8px 8px 0;margin:32px 0;">
-<p style="font-size:15px;line-height:1.7;margin:0;">Renovus Immobilien ist Ihr Immobilientreuhänder in Linz und Oberösterreich. Inhaber Rainer Schauer begleitet Eigentümer persönlich beim Verkauf von Häusern, Wohnungen, Zinshäusern und Anlageimmobilien im Großraum Linz — von der kostenlosen Erstbewertung bis zur Schlüsselübergabe. Staatlich geprüft, WKO-konzessioniert, persönlich erreichbar.</p>
-</div>
-</main>
-
-</main>
-YPE html>
-<html lang="de" data-page-context="startseite">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Immobilienmakler Linz – Renovus Immobilien | Rainer Schauer</title>
-<meta name="description" content="Renovus Immobilien – Ihr staatlich geprüfter Immobilientreuhänder in Linz. Kostenlose Bewertung, persönliche Beratung, maximaler Erlös. Rainer Schauer.">
-<link rel="canonical" href="https://www.renovus.at/">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Immobilienmakler Linz – Renovus Immobilien">
-<meta property="og:description" content="Staatlich geprüfter Immobilientreuhänder in Linz. Kostenlose Bewertung, diskreter Verkauf – persönlich begleitet von Rainer Schauer.">
-<meta property="og:image" content="https://renovus-website.pages.dev/img/hero-donau-panorama-linz-immobilienmakler-renovus.webp">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/styles.css">
-<link rel="preload" href="https://renovus-website.pages.dev/img/hero-donau-panorama-linz-immobilienmakler-renovus.webp" as="image" fetchpriority="high">
-
-<script src="https://components.bottimmo.com/components/68ed36277654c77a34abe578/btm-widget/de-AT" defer></script>
-</head>
-<body>
-
-<!-- ════ EBENE 1: TOPBAR ════ -->
-<div class="rnv-topbar">
-  <div class="rnv-topbar__inner">
-    <div class="rnv-topbar__left">
-      <a href="tel:+43732237997">
-        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M2 3a1 1 0 011-1h2l.74 4.435-1.548.773A11 11 0 009.29 13.81l.774-1.548L14.5 13v2a1 1 0 01-1 1h-2C5.82 16 2 12.18 2 7V3z"/></svg>
-        0732 237 997
-      </a>
-      <a href="mailto:office@renovus.at">office@renovus.at</a>
-    </div>
-    <div class="rnv-topbar__right">
-      <span class="rnv-topbar__trust">Staatlich geprüfter Immobilientreuhänder · WKO konzessioniert</span>
-      <div class="rnv-topbar__sep"></div>
-      <nav class="rnv-topbar__social">
-        <a href="https://www.facebook.com/renovus.at" target="_blank" rel="noopener" title="Facebook">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-        </a>
-        <a href="https://www.instagram.com/renovus.immobilien" target="_blank" rel="noopener" title="Instagram">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/company/renovus-immobilien" target="_blank" rel="noopener" title="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-        </a>
-      </nav>
-    </div>
-  </div>
-</div>
-
-<!-- ════ EBENE 2: AKTIONSLEISTE ════ -->
-<div class="rnv-actionbar">
-  <div class="rnv-actionbar__inner">
-    <a href="/tippgeber-linz" class="rnv-actionbar__outline">
-      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2l1.5 3 3.5.5-2.5 2.5.5 3.5L8 10l-3 1.5.5-3.5L3 5.5 6.5 5z"/></svg>
-      Tippgeber — Prämie verdienen
-    </a>
-    <a href="/immobilienbewertung-linz" class="rnv-actionbar__gold">
-      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,10 6,6 10,8 14,3"/></svg>
-      Immobilie kostenlos bewerten
-    </a>
-  </div>
-</div>
-
-<!-- ════ EBENE 3: HAUPTHEADER ════ -->
-<header class="rnv-header" id="rnvHeader">
-  <div class="rnv-header__inner">
-
-    <a href="/" class="rnv-logo">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
-        <polygon fill="#C6A76B" points="25.45 13.62 25.45 18.15 23.61 18.15 23.61 14.48 19.31 10.92 17.47 9.38 15.91 8.08 14.48 9.27 12.63 10.81 8.39 14.33 8.39 21.04 12.63 21.04 12.63 14.2 19.31 14.2 19.31 21.04 25.45 21.04 25.45 26.32 6.55 26.32 6.55 24.47 23.61 24.47 23.61 22.89 17.47 22.89 17.47 16.04 14.48 16.04 14.48 22.89 6.55 22.89 6.55 13.46 8.39 11.93 12.63 8.4 14.46 6.88 14.48 6.9 14.48 6.87 15.91 5.68 17.35 6.88 17.47 6.98 19.31 8.51 23.61 12.08 25.45 13.62"/>
-      </svg>
-      <div class="rnv-logo__wordmark">
-        <span class="rnv-logo__name">Renovus <span>Immobilien</span></span>
-        <span class="rnv-logo__sub">Linz · Linz-Land · Urfahr-Umgebung</span>
-      </div>
-    </a>
-
-    <nav class="rnv-nav" aria-label="Hauptnavigation">
-      <ul class="rnv-nav__list">
-
-        <!-- KAUFEN -->
-        <li class="rnv-nav__item">
-          <span class="rnv-nav__link" tabindex="0">Kaufen
-            <svg class="rnv-nav__chevron" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg>
-          </span>
-          <div class="rnv-drop">
-            <div class="rnv-drop__label">Immobilien kaufen</div>
-            <a href="/immobilien-linz-kaufen" class="rnv-drop__link"><span class="rnv-drop__icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8l6-5 6 5v7H2z"/><rect x="6" y="11" width="4" height="4"/></svg></span><div class="rnv-drop__text"><strong>Immobilien Linz kaufen</strong><small>Aktuelles Angebot</small></div></a>
-            <a href="/wohnung-linz-kaufen" class="rnv-drop__link"><span class="rnv-drop__icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="12" height="10" rx="1"/><path d="M5 14v-3h6v3"/></svg></span><div class="rnv-drop__text"><strong>Wohnung Linz kaufen</strong></div></a>
-            <a href="/haus-linz-kaufen" class="rnv-drop__link"><span class="rnv-drop__icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8l6-5 6 5v7H2z"/></svg></span><div class="rnv-drop__text"><strong>Haus Linz kaufen</strong></div></a>
-          </div>
-        </li>
-
-        <!-- VERKAUFEN -->
-        <li class="rnv-nav__item">
-          <span class="rnv-nav__link" tabindex="0">Verkaufen
-            <svg class="rnv-nav__chevron" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg>
-          </span>
-          <div class="rnv-drop rnv-drop--mega">
-            <div class="rnv-mega">
-              <div class="rnv-mega__col">
-                <div class="rnv-drop__label">Bewertung &amp; Verkauf</div>
-                <a href="/immobilienbewertung-linz" class="rnv-drop__link"><span class="rnv-drop__icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="2,10 6,6 10,8 14,3"/></svg></span><div class="rnv-drop__text"><strong>Immobilienbewertung Linz</strong><small>Kostenlos &amp; unverbindlich</small></div></a>
-                <a href="/haus-verkaufen-linz" class="rnv-drop__link"><span class="rnv-drop__icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8l6-5 6 5v7H2z"/></svg></span><div class="rnv-drop__text"><strong>Haus verkaufen Linz</strong></div></a>
-                <a href="/wohnung-verkaufen-linz" class="rnv-drop__link"><span class="rnv-drop__icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="1"/></svg></span><div class="rnv-drop__text"><strong>Wohnung verkaufen Linz</strong></div></a>
-              </div>
-              <div class="rnv-mega__col">
-                <div class="rnv-drop__label">Region</div>
-                <a href="/immobilie-verkaufen-linz-land" class="rnv-drop__link"><span class="rnv-drop__icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2C5.24 2 3 4.24 3 7c0 4 5 9 5 9s5-5 5-9c0-2.76-2.24-5-5-5z"/><circle cx="8" cy="7" r="2"/></svg></span><div class="rnv-drop__text"><strong>Immobilie verk. Linz-Land</strong><small>Leonding · Traun · Ansfelden</small></div></a>
-                <a href="/immobilie-verkaufen-urfahr-umgebung" class="rnv-drop__link"><span class="rnv-drop__icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2C5.24 2 3 4.24 3 7c0 4 5 9 5 9s5-5 5-9c0-2.76-2.24-5-5-5z"/><circle cx="8" cy="7" r="2"/></svg></span><div class="rnv-drop__text"><strong>Immobilie verk. Urfahr-Umg.</strong><small>Puchenau · Steyregg</small></div></a>
-              </div>
-              <div class="rnv-mega__cta">
-                <div class="rnv-mega__cta-copy"><strong>Was ist Ihre Immobilie wert?</strong><p>Kostenlose Bewertung durch staatlich geprüften Treuhänder</p></div>
-                <a href="/immobilienbewertung-linz" class="rnv-mega__cta-btn">Kostenlos bewerten</a>
-              </div>
-            </div>
-          </div>
-        </li>
-
-        <!-- REGION -->
-        <li class="rnv-nav__item">
-          <span class="rnv-nav__link" tabindex="0">Region
-            <svg class="rnv-nav__chevron" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg>
-          </span>
-          <div class="rnv-drop">
-            <a href="/immobilienmakler-linz" class="rnv-drop__link"><span class="rnv-drop__icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="1"/></svg></span><div class="rnv-drop__text"><strong>Immobilien Linz</strong></div></a>
-            <div class="rnv-drop__sep"></div>
-            <a href="/immobilienmakler-leonding" class="rnv-drop__link"><span class="rnv-drop__icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2C5.24 2 3 4.24 3 7c0 4 5 9 5 9s5-5 5-9c0-2.76-2.24-5-5-5z"/></svg></span><div class="rnv-drop__text"><strong>Leonding</strong></div></a>
-            <a href="/immobilienmakler-traun" class="rnv-drop__link"><span class="rnv-drop__icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2C5.24 2 3 4.24 3 7c0 4 5 9 5 9s5-5 5-9c0-2.76-2.24-5-5-5z"/></svg></span><div class="rnv-drop__text"><strong>Traun</strong></div></a>
-            <a href="/immobilienmakler-ansfelden" class="rnv-drop__link"><span class="rnv-drop__icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2C5.24 2 3 4.24 3 7c0 4 5 9 5 9s5-5 5-9c0-2.76-2.24-5-5-5z"/></svg></span><div class="rnv-drop__text"><strong>Ansfelden</strong></div></a>
-            <a href="/immobilienmakler-pasching" class="rnv-drop__link"><span class="rnv-drop__icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2C5.24 2 3 4.24 3 7c0 4 5 9 5 9s5-5 5-9c0-2.76-2.24-5-5-5z"/></svg></span><div class="rnv-drop__text"><strong>Pasching</strong></div></a>
-          </div>
-        </li>
-
-        <!-- WISSEN -->
-        <li class="rnv-nav__item">
-          <span class="rnv-nav__link" tabindex="0">Wissen
-            <svg class="rnv-nav__chevron" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg>
-          </span>
-          <div class="rnv-drop">
-            <div class="rnv-drop__label">Wissen &amp; Ratgeber</div>
-            <a href="/ratgeber" class="rnv-drop__link"><span class="rnv-drop__icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4h12M2 8h8M2 12h10"/></svg></span><div class="rnv-drop__text"><strong>Ratgeber</strong><small>Expertenwissen kompakt</small></div></a>
-            <a href="/checklisten" class="rnv-drop__link"><span class="rnv-drop__icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="2" width="14" height="12" rx="1"/><path d="M4 6h8M4 9h5"/></svg></span><div class="rnv-drop__text"><strong>Checklisten</strong></div></a>
-            <a href="/blog" class="rnv-drop__link"><span class="rnv-drop__icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M5 8h6M8 5v6"/></svg></span><div class="rnv-drop__text"><strong>Blog &amp; News</strong></div></a>
-          </div>
-        </li>
-
-        <!-- UNTERNEHMEN -->
-        <li class="rnv-nav__item">
-          <span class="rnv-nav__link" tabindex="0">Unternehmen
-            <svg class="rnv-nav__chevron" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg>
-          </span>
-          <div class="rnv-drop rnv-drop--right">
-            <a href="/ueber-renovus" class="rnv-drop__link"><span class="rnv-drop__icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="5" r="3"/><path d="M2 14c0-3.31 2.69-6 6-6s6 2.69 6 6"/></svg></span><div class="rnv-drop__text"><strong>Über Renovus</strong><small>Team &amp; Philosophie</small></div></a>
-            <a href="/leistungen" class="rnv-drop__link"><span class="rnv-drop__icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2l1.5 3 3.5.5-2.5 2.5.5 3.5L8 10l-3 1.5.5-3.5L3 5.5 6.5 5z"/></svg></span><div class="rnv-drop__text"><strong>Leistungen</strong></div></a>
-            <div class="rnv-drop__sep"></div>
-            <a href="/kontakt" class="rnv-drop__link"><span class="rnv-drop__icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3a1 1 0 011-1h2l.74 4.435-1.548.773A11 11 0 009.29 13.81l.774-1.548L14.5 13v2a1 1 0 01-1 1h-2C5.82 16 2 12.18 2 7V3z"/></svg></span><div class="rnv-drop__text"><strong>Kontakt</strong><small>+43 732 237 997</small></div></a>
-          </div>
-        </li>
-
-      </ul>
-    </nav>
-
-    <button class="rnv-burger" id="rnvBurger" aria-label="Menü öffnen" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-
-  </div>
-</header>
-
-<!-- ════ OVERLAY ════ -->
-<div class="rnv-overlay" id="rnvOverlay"></div>
-
-<!-- ════ MOBILE DRAWER ════ -->
-<div class="rnv-drawer" id="rnvDrawer">
-  <div class="rnv-drawer__head">
-    <span class="rnv-drawer__logo">Renovus <span>Immobilien</span></span>
-    <button class="rnv-drawer__close" id="rnvDrawerClose" aria-label="Menü schließen">✕</button>
-  </div>
-  <div class="rnv-drawer__cta-block">
-    <a href="/immobilienbewertung-linz" class="rnv-drawer__cta-gold">Immobilie kostenlos bewerten</a>
-    <a href="/tippgeber-linz" class="rnv-drawer__cta-outline">Tippgeber — Prämie verdienen</a>
-  </div>
-  <div class="rnv-drawer__section">
-    <div class="rnv-drawer__section-label">Kaufen</div>
-    <a href="/immobilien-linz-kaufen" class="rnv-drawer__link">Immobilien Linz kaufen <span style="color:var(--gold)">›</span></a>
-    <a href="/wohnung-linz-kaufen" class="rnv-drawer__sublink"><span class="rnv-drawer__dot"></span>Wohnung kaufen</a>
-    <a href="/haus-linz-kaufen" class="rnv-drawer__sublink"><span class="rnv-drawer__dot"></span>Haus kaufen</a>
-  </div>
-  <div class="rnv-drawer__section">
-    <div class="rnv-drawer__section-label">Verkaufen</div>
-    <a href="/immobilie-verkaufen-linz" class="rnv-drawer__link">Immobilie verkaufen <span style="color:var(--gold)">›</span></a>
-    <a href="/haus-verkaufen-linz" class="rnv-drawer__sublink"><span class="rnv-drawer__dot"></span>Haus verkaufen</a>
-    <a href="/wohnung-verkaufen-linz" class="rnv-drawer__sublink"><span class="rnv-drawer__dot"></span>Wohnung verkaufen</a>
-    <a href="/immobilienbewertung-linz" class="rnv-drawer__link" style="color:var(--gold);font-weight:600;">Kostenlose Bewertung <span>›</span></a>
-  </div>
-  <div class="rnv-drawer__section">
-    <div class="rnv-drawer__section-label">Region</div>
-    <a href="/immobilienmakler-linz" class="rnv-drawer__sublink"><span class="rnv-drawer__dot"></span>Linz</a>
-    <a href="/immobilienmakler-leonding" class="rnv-drawer__sublink"><span class="rnv-drawer__dot"></span>Leonding</a>
-    <a href="/immobilienmakler-traun" class="rnv-drawer__sublink"><span class="rnv-drawer__dot"></span>Traun</a>
-    <a href="/immobilienmakler-ansfelden" class="rnv-drawer__sublink"><span class="rnv-drawer__dot"></span>Ansfelden</a>
-    <a href="/immobilienmakler-pasching" class="rnv-drawer__sublink"><span class="rnv-drawer__dot"></span>Pasching</a>
-  </div>
-  <div class="rnv-drawer__section">
-    <div class="rnv-drawer__section-label">Wissen</div>
-    <a href="/ratgeber" class="rnv-drawer__sublink"><span class="rnv-drawer__dot"></span>Ratgeber</a>
-    <a href="/checklisten" class="rnv-drawer__sublink"><span class="rnv-drawer__dot"></span>Checklisten</a>
-    <a href="/blog" class="rnv-drawer__sublink"><span class="rnv-drawer__dot"></span>Blog &amp; News</a>
-  </div>
-  <div class="rnv-drawer__section">
-    <div class="rnv-drawer__section-label">Unternehmen</div>
-    <a href="/ueber-renovus" class="rnv-drawer__sublink"><span class="rnv-drawer__dot"></span>Über Renovus</a>
-    <a href="/leistungen" class="rnv-drawer__sublink"><span class="rnv-drawer__dot"></span>Leistungen</a>
-    <a href="/kontakt" class="rnv-drawer__sublink"><span class="rnv-drawer__dot"></span>Kontakt</a>
-  </div>
-  <div class="rnv-drawer__social">
-    <a href="https://www.facebook.com/renovus.at" class="rnv-drawer__social-btn" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-    </a>
-    <a href="https://www.instagram.com/renovus.immobilien" class="rnv-drawer__social-btn" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-    </a>
-    <a href="https://www.linkedin.com/company/renovus-immobilien" class="rnv-drawer__social-btn" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-    </a>
-  </div>
-</div>
-
-<!-- ════ STICKY MOBILE BAR ════ -->
-<a href="/immobilienbewertung-linz" class="rnv-sticky-bar">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-  Kostenlose Bewertung anfragen
-</a>
-
-<div class="page-offset"></div>
-
-<!-- ══════════════════════════════════════
-     HERO
-══════════════════════════════════════ -->
-<section id="hero" class="hero section-navy">
-  <div class="hero__bg">
-    <picture>
-      <source media="(max-width: 767px)"
-        srcset="https://renovus-website.pages.dev/img/hero-donau-panorama-linz-immobilienmakler-renovus-mobile.webp">
-      <img
-        src="https://renovus-website.pages.dev/img/hero-donau-panorama-linz-immobilienmakler-renovus.webp"
-        alt="Immobilienmakler Linz – Renovus Immobilien, Donau Panorama"
-        fetchpriority="high"
-        loading="eager">
-    </picture>
-    <div class="hero__overlay"></div>
-  </div>
-  <div class="hero__content container">
-    <p class="eyebrow">Immobilienmakler Linz · Linz-Land · Urfahr-Umgebung</p>
-    <h1>Ihre Immobilie in <em>besten Händen</em></h1>
-    <p class="lead hero__sub">Staatlich geprüfter Immobilientreuhänder mit 4 WKO-Konzessionen. Persönlich. Kompetent. Vor Ort. Rainer Schauer begleitet Sie vom ersten Gespräch bis zum Abschluss.</p>
-    <div class="btn-group hero__ctas">
-      <a href="#bewertung" class="btn btn-primary">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        Kostenlose Bewertung
-      </a>
-      <a href="/immobilien" class="btn btn-secondary">Objekte ansehen</a>
-    </div>
-    <ul class="hero__trust">
-      <li>Staatlich geprüft · 4 WKO-Konzessionen</li>
-      <li>Kostenlose Bewertung vor Ort</li>
-      <li>Persönliche Begleitung bis zum Abschluss</li>
-    </ul>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════
-     TRUST-LEISTE
-══════════════════════════════════════ -->
-<section class="trust-bar">
-  <div class="container">
-    <div class="trust-bar__inner">
-      <div class="trust-bar__seals">
-        <img src="https://renovus-website.pages.dev/img/guetesiegel-immobilientreuhander-linz-wko.webp"
-          alt="WKO Gütesiegel Immobilientreuhänder staatlich geprüft" loading="lazy" width="72" height="72">
-        <img src="https://renovus-website.pages.dev/img/guetesiegel-immobilienmakler-linz-wko.webp"
-          alt="WKO Gütesiegel Immobilienmakler staatlich geprüft" loading="lazy" width="72" height="72">
-        <img src="https://renovus-website.pages.dev/img/guetesiegel-bautraeger-linz-wko.webp"
-          alt="WKO Gütesiegel Bauträger staatlich geprüft" loading="lazy" width="72" height="72">
-        <img src="https://renovus-website.pages.dev/img/guetesiegel-immobilienverwalter-linz-wko.webp"
-          alt="WKO Gütesiegel Immobilienverwalter staatlich geprüft" loading="lazy" width="72" height="72">
-      </div>
-      <div class="trust-bar__stats">
-        <div class="trust-bar__stat">
-          <strong>15+</strong>
-          <span>Jahre Erfahrung</span>
-        </div>
-        <div class="trust-bar__stat">
-          <strong>300+</strong>
-          <span>Erfolgreiche Abschlüsse</span>
-        </div>
-        <div class="trust-bar__stat">
-          <strong>4,9★</strong>
-          <span>Google Bewertung</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════
-     INTRO + PORTRAIT
-══════════════════════════════════════ -->
-<section id="ueber" class="section section-sand">
-  <div class="container">
-    <div class="intro__grid">
-      <div class="intro__img">
-        <picture>
-          <source media="(max-width: 767px)"
-            srcset="https://renovus-website.pages.dev/img/rainer-schauer-immobilientreuhander-linz-renovus-mobile.webp">
-          <img
-            src="https://renovus-website.pages.dev/img/rainer-schauer-immobilientreuhander-linz-renovus.webp"
-            alt="Rainer Schauer – Immobilientreuhänder Linz, Renovus Immobilien"
-            loading="lazy">
-        </picture>
-        <div class="intro__img-label">
-          <strong>Rainer Schauer</strong>
-          <span>Staatlich geprüfter Immobilientreuhänder</span>
-        </div>
-      </div>
-      <div class="intro__content">
-        <p class="eyebrow">Persönlich. Kompetent. Vor Ort.</p>
-        <h2>Ihr Partner für Immobilien im Großraum Linz</h2>
-        <p>Renovus Immobilien steht für persönliche Beratung auf höchstem Niveau. Rainer Schauer – staatlich geprüfter Immobilientreuhänder mit allen 4 WKO-Konzessionen – begleitet Sie vom ersten Gespräch bis zur Schlüsselübergabe. Kein Callcenter, kein Mitarbeiter der Ihr Objekt nie gesehen hat.</p>
-        <p>Mit über 15 Jahren Marktkenntnis im Großraum Linz kennen wir jeden Stadtteil, jede Lage, jeden Preistrend. Das Ergebnis: Ihre Immobilie wird zum richtigen Preis, in der richtigen Zeit, an den richtigen Käufer verkauft.</p>
-        <div class="intro__credentials">
-          <div class="intro__credential">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            Staatlich geprüfter Immobilientreuhänder
-          </div>
-          <div class="intro__credential">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            4× WKO-Konzession (Makler, Bauträger, Verwalter, Treuhänder)
-          </div>
-          <div class="intro__credential">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            Aktives Käufer- und Investorennetzwerk in Linz
-          </div>
-        </div>
-        <a href="/ueber-renovus" class="btn btn-secondary">Mehr über Rainer Schauer</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════
-     LEISTUNGSBLÖCKE
-══════════════════════════════════════ -->
-<section id="leistungen" class="section">
-  <div class="container">
-    <p class="eyebrow text-center">Was wir für Sie tun</p>
-    <h2 class="text-center">Unsere Leistungen</h2>
-    <div class="cards cards-3 leistungen__grid">
-
-      <div class="card leistung-card">
-        <div class="card__media">
-          <picture>
-            <source media="(max-width: 767px)"
-              srcset="https://renovus-website.pages.dev/img/haus-verkaufen-linz-einfamilienhaus-modern-mobile.webp">
-            <img src="https://renovus-website.pages.dev/img/haus-verkaufen-linz-einfamilienhaus-modern.webp"
-              alt="Immobilie verkaufen Linz – Renovus Immobilien" loading="lazy">
-          </picture>
-        </div>
-        <div class="card__body">
-          <p class="leistung__tag">Verkaufen</p>
-          <h3>Immobilie verkaufen</h3>
-          <p>Maximaler Erlös durch professionelle Vermarktung, aktives Käufernetzwerk und persönliche Begleitung bis zum Notartermin.</p>
-          <a href="/immobilie-verkaufen-linz" class="card__link">
-            Mehr erfahren
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <div class="card leistung-card">
-        <div class="card__media">
-          <picture>
-            <source media="(max-width: 767px)"
-              srcset="https://renovus-website.pages.dev/img/immobilienbewertung-haus-linz-aussen-renovus-mobile.webp">
-            <img src="https://renovus-website.pages.dev/img/immobilienbewertung-haus-linz-aussen-renovus.webp"
-              alt="Immobilienbewertung Linz kostenlos – Renovus" loading="lazy">
-          </picture>
-        </div>
-        <div class="card__body">
-          <p class="leistung__tag">Bewertung</p>
-          <h3>Kostenlose Bewertung</h3>
-          <p>Fundierte Marktpreiseinschätzung direkt vor Ort. Kostenlos, unverbindlich, persönlich – in 45–90 Minuten wissen Sie was Ihre Immobilie wert ist.</p>
-          <a href="/immobilienbewertung-linz" class="card__link">
-            Jetzt anfragen
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <div class="card leistung-card">
-        <div class="card__media">
-          <picture>
-            <source media="(max-width: 767px)"
-              srcset="https://renovus-website.pages.dev/img/wohnung-verkaufen-linz-modern-renovus-mobile.webp">
-            <img src="https://renovus-website.pages.dev/img/wohnung-verkaufen-linz-modern-renovus.webp"
-              alt="Immobilien kaufen Linz – Renovus Immobilien" loading="lazy">
-          </picture>
-        </div>
-        <div class="card__body">
-          <p class="leistung__tag">Kaufen</p>
-          <h3>Immobilie kaufen</h3>
-          <p>Zugang zu exklusiven Off-Market-Objekten, persönliche Begleitung bei der Besichtigung und kompetente Beratung beim Kaufvertrag.</p>
-          <a href="/immobilien-linz-kaufen" class="card__link">
-            Suchanfrage stellen
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════
-     PROZESS
-══════════════════════════════════════ -->
-<section id="prozess" class="section section-sand">
-  <div class="container">
-    <p class="eyebrow text-center">Wie es funktioniert</p>
-    <h2 class="text-center">Der Weg zum erfolgreichen Verkauf</h2>
-    <div class="steps steps-4 prozess__steps">
-      <div class="step">
-        <div class="step__number">1</div>
-        <h3>Kostenlose Bewertung</h3>
-        <p>Rainer Schauer kommt persönlich zu Ihnen. Fundierte Marktpreiseinschätzung in 45–90 Minuten – kostenlos und unverbindlich.</p>
-      </div>
-      <div class="step">
-        <div class="step__number">2</div>
-        <h3>Professionelle Aufbereitung</h3>
-        <p>Professionelle Fotos, Drohnenaufnahmen, 3D-Grundriss und ein überzeugendes Exposé – Ihre Immobilie im besten Licht.</p>
-      </div>
-      <div class="step">
-        <div class="step__number">3</div>
-        <h3>Aktive Vermarktung</h3>
-        <p>Präsentation auf allen relevanten Portalen, direkter Zugang zu unserem Käufernetzwerk und gezieltes Marketing.</p>
-      </div>
-      <div class="step">
-        <div class="step__number">4</div>
-        <h3>Abschluss & Übergabe</h3>
-        <p>Kaufpreisverhandlung, Notartermin-Koordination und persönliche Begleitung bis zur Schlüsselübergabe.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════
-     RAINER ZITAT
-══════════════════════════════════════ -->
-<section class="section zitat-section">
-  <div class="container">
-    <div class="zitat__inner">
-      <div class="zitat__quote-mark">"</div>
-      <blockquote class="zitat__text">
-        Ich habe Renovus Immobilien gegründet, weil ich glaube dass jeder Mensch beim wichtigsten finanziellen Entscheid seines Lebens einen verlässlichen Partner verdient — keinen Verkäufer, sondern einen Treuhänder.
-      </blockquote>
-      <div class="zitat__author">
-        <img src="https://renovus-website.pages.dev/img/rainer-schauer-immobilientreuhander-linz-portrait.webp"
-          alt="Rainer Schauer" loading="lazy" width="56" height="56">
-        <div>
-          <strong>Rainer Schauer</strong>
-          <span>Staatlich geprüfter Immobilientreuhänder · Renovus Immobilien</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════
-     3-STEP BEWERTUNGSFORMULAR
-══════════════════════════════════════ -->
-<section id="bewertung" class="section section-navy bewertung-section">
-  <div class="container">
-    <div class="bewertung__header">
-      <p class="eyebrow" style="color:rgba(198,167,107,.8)">Jetzt starten</p>
-      <h2 style="color:#fff">Kostenlose Immobilienbewertung anfragen</h2>
-      <p class="lead" style="color:rgba(255,255,255,.75)">Unverbindlich · Persönlich · Marktgerecht</p>
-      <ul class="bewertung__checks">
-        <li>Kostenlos und ohne Verpflichtung</li>
-        <li>Rainer Schauer kommt persönlich zu Ihnen</li>
-        <li>Fundiertes Ergebnis in 45–90 Minuten</li>
-      </ul>
-    </div>
-
-    <div class="form-card bewertung__form-card">
-
-      <!-- Schritt-Anzeige -->
-      <div class="bewertung__steps-nav">
-        <div class="bewertung__step-dot active" data-step="1">1</div>
-        <div class="bewertung__step-line"></div>
-        <div class="bewertung__step-dot" data-step="2">2</div>
-        <div class="bewertung__step-line"></div>
-        <div class="bewertung__step-dot" data-step="3">3</div>
-      </div>
-
-      <!-- Step 1: Objekttyp -->
-      <div class="bewertung__step" id="bstep-1">
-        <h3 class="bewertung__step-title">Was möchten Sie bewerten lassen?</h3>
-        <div class="bewertung__typ-grid">
-          <button type="button" class="bewertung__typ-btn" data-value="Einfamilienhaus">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-            Haus
-          </button>
-          <button type="button" class="bewertung__typ-btn" data-value="Eigentumswohnung">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
-            Wohnung
-          </button>
-          <button type="button" class="bewertung__typ-btn" data-value="Zinshaus">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M9 21V7l7-4v18M9 7H3v14M16 11h.01M16 15h.01"/></svg>
-            Zinshaus
-          </button>
-          <button type="button" class="bewertung__typ-btn" data-value="Sonstiges">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-            Sonstiges
-          </button>
-        </div>
-        <p class="bewertung__step-note">Bitte wählen Sie Ihren Objekttyp</p>
-      </div>
-
-      <!-- Step 2: Objektdetails -->
-      <div class="bewertung__step hidden" id="bstep-2">
-        <h3 class="bewertung__step-title">Details zu Ihrer Immobilie</h3>
-        <div class="form-grid">
-          <div class="form-row form-row-2">
-            <div>
-              <label class="form-label" for="b-strasse">Straße + Hausnummer <span class="req">*</span></label>
-              <input class="form-input" type="text" id="b-strasse" name="strasse" placeholder="z.B. Hauptstraße 12" required>
-            </div>
-            <div>
-              <label class="form-label" for="b-plz">PLZ + Ort <span class="req">*</span></label>
-              <input class="form-input" type="text" id="b-plz" name="plz_ort" placeholder="z.B. 4020 Linz" required>
-            </div>
-          </div>
-          <div class="form-row form-row-2">
-            <div>
-              <label class="form-label" for="b-flaeche">Wohnfläche m² <span class="req">*</span></label>
-              <input class="form-input" type="number" id="b-flaeche" name="flaeche" placeholder="z.B. 120" min="10" max="2000" required>
-            </div>
-            <div>
-              <label class="form-label" for="b-baujahr">Baujahr</label>
-              <input class="form-input" type="number" id="b-baujahr" name="baujahr" placeholder="z.B. 1990" min="1850" max="2026">
-            </div>
-          </div>
-        </div>
-        <div class="bewertung__nav">
-          <button type="button" class="btn btn-secondary bewertung__back" data-to="1">← Zurück</button>
-          <button type="button" class="btn btn-primary bewertung__next" data-to="3">Weiter →</button>
-        </div>
-      </div>
-
-      <!-- Step 3: Kontakt -->
-      <div class="bewertung__step hidden" id="bstep-3">
-        <h3 class="bewertung__step-title">Ihre Kontaktdaten</h3>
-        <div class="form-grid">
-          <div class="form-row form-row-2">
-            <div>
-              <label class="form-label" for="b-vorname">Vorname <span class="req">*</span></label>
-              <input class="form-input" type="text" id="b-vorname" name="vorname" placeholder="Vorname" required>
-            </div>
-            <div>
-              <label class="form-label" for="b-nachname">Nachname <span class="req">*</span></label>
-              <input class="form-input" type="text" id="b-nachname" name="nachname" placeholder="Nachname" required>
-            </div>
-          </div>
-          <div class="form-row form-row-2">
-            <div>
-              <label class="form-label" for="b-email">E-Mail <span class="req">*</span></label>
-              <input class="form-input" type="email" id="b-email" name="email" placeholder="ihre@email.at" required>
-            </div>
-            <div>
-              <label class="form-label" for="b-tel">Telefon <span class="req">*</span></label>
-              <input class="form-input" type="tel" id="b-tel" name="telefon" placeholder="+43 732 ..." required>
-            </div>
-          </div>
-          <div class="form-check">
-            <input type="checkbox" id="b-dsgvo" name="dsgvo" required>
-            <label for="b-dsgvo">Ich stimme zu, dass meine Daten gemäß <a href="/datenschutz">Datenschutzerklärung</a> verarbeitet werden. <span class="req">*</span></label>
-          </div>
-        </div>
-        <div class="bewertung__nav">
-          <button type="button" class="btn btn-secondary bewertung__back" data-to="2">← Zurück</button>
-          <button type="button" class="btn btn-primary bewertung__submit" id="b-submit">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            Jetzt kostenlos anfragen
-          </button>
-        </div>
-        <p class="form-help" style="margin-top:12px;text-align:center">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline;margin-right:4px"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
-          SSL-verschlüsselt · Keine Weitergabe an Dritte
-        </p>
-      </div>
-
-      <!-- Erfolg -->
-      <!-- Bottimmo Widget Alternative -->
-<div class="bottimmo__wrap">
-  <p class="bottimmo__label">Oder nutzen Sie unser Online-Bewertungstool:</p>
-  <btm-widget></btm-widget>
-</div>
-
-<div class="bewertung__step hidden" id="bstep-success">
-        <div class="bewertung__success">
-          <div class="bewertung__success-icon">✓</div>
-          <h3>Vielen Dank!</h3>
-          <p>Ihre Anfrage wurde erfolgreich übermittelt. Rainer Schauer meldet sich persönlich innerhalb von 24 Stunden bei Ihnen.</p>
-          <p class="bewertung__success-contact">
-            Oder rufen Sie direkt an:
-            <a href="tel:+43732237997"><strong>+43&nbsp;732&nbsp;237&nbsp;997</strong></a>
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════
-     FAQ
-══════════════════════════════════════ -->
-<section id="faq" class="section section-sand">
-  <div class="container container-narrow">
-    <p class="eyebrow text-center">Häufige Fragen</p>
-    <h2 class="text-center">Das fragen unsere Kunden</h2>
-    <div class="faq faq__list">
-
-      <div class="faq__item">
-        <button class="faq__trigger" aria-expanded="false">
-          Was kostet eine Immobilienbewertung bei Renovus?
-          <svg class="faq__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
-        <div class="faq__body">
-          Die Immobilienbewertung durch Rainer Schauer ist vollständig kostenlos und unverbindlich. Sie dauert ca. 45–90 Minuten direkt bei Ihnen vor Ort und liefert eine fundierte Marktpreiseinschätzung auf Basis aktueller Vergleichsverkäufe.
-        </div>
-      </div>
-
-      <div class="faq__item">
-        <button class="faq__trigger" aria-expanded="false">
-          Wie lange dauert ein Immobilienverkauf in Linz?
-          <svg class="faq__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
-        <div class="faq__body">
-          Gut bepreiste Wohnungen in guten Lagen finden in Linz in 4–8 Wochen Käufer, Häuser in 6–14 Wochen. Mit professioneller Vermarktung durch Renovus erzielen Sie den besten Preis in kürzester Zeit. Wer realistisch bepreist, verkauft schnell.
-        </div>
-      </div>
-
-      <div class="faq__item">
-        <button class="faq__trigger" aria-expanded="false">
-          Welche Regionen betreut Renovus Immobilien?
-          <svg class="faq__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
-        <div class="faq__body">
-          Renovus ist aktiv in Linz Stadt (alle Stadtteile), im Bezirk Linz-Land (Leonding, Traun, Ansfelden, Pasching) und in Urfahr-Umgebung (Puchenau, Steyregg, Gallneukirchen). Bei besonderen Objekten auch im gesamten Zentralraum Oberösterreich.
-        </div>
-      </div>
-
-      <div class="faq__item">
-        <button class="faq__trigger" aria-expanded="false">
-          Was ist der Unterschied zwischen Immobilientreuhänder und Makler?
-          <svg class="faq__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
-        <div class="faq__body">
-          Ein staatlich geprüfter Immobilientreuhänder wie Rainer Schauer besitzt alle 4 WKO-Konzessionen: Makler, Bauträger, Verwalter und Treuhänder. Das bedeutet umfassendere Kompetenz, höhere rechtliche Standards und ein breiteres Leistungsspektrum als ein einfacher Makler.
-        </div>
-      </div>
-
-      <div class="faq__item">
-        <button class="faq__trigger" aria-expanded="false">
-          Wie hoch ist die Maklerprovision in Österreich?
-          <svg class="faq__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
-        <div class="faq__body">
-          In Österreich beträgt die Maklerprovision maximal 3% des Kaufpreises plus MwSt. Seit dem Bestellerprinzip zahlt grundsätzlich derjenige die Provision, der den Makler beauftragt hat. Bei Renovus erhalten Sie für diese Provision eine vollständige Rundum-Betreuung – von der Bewertung bis zur Schlüsselübergabe.
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════
-     CLUSTER-LINKS (Regionen)
-══════════════════════════════════════ -->
-<section class="section cluster-section">
-  <div class="container">
-    <p class="eyebrow text-center">Unsere Regionen</p>
-    <h2 class="text-center">Lokal verankert im Großraum Linz</h2>
-    <div class="cluster__grid">
-      <a href="/immobilienmakler-leonding" class="cluster__card">
-        <strong>Leonding</strong>
-        <span>Immobilienmakler Leonding</span>
-      </a>
-      <a href="/immobilienmakler-traun" class="cluster__card">
-        <strong>Traun</strong>
-        <span>Immobilienmakler Traun</span>
-      </a>
-      <a href="/immobilienmakler-ansfelden" class="cluster__card">
-        <strong>Ansfelden</strong>
-        <span>Immobilienmakler Ansfelden</span>
-      </a>
-      <a href="/immobilienmakler-pasching" class="cluster__card">
-        <strong>Pasching</strong>
-        <span>Immobilienmakler Pasching</span>
-      </a>
-      <a href="/immobilie-verkaufen-linz-land" class="cluster__card">
-        <strong>Linz-Land</strong>
-        <span>Immobilien Linz-Land</span>
-      </a>
-      <a href="/immobilien-urfahr-linz" class="cluster__card">
-        <strong>Urfahr</strong>
-        <span>Immobilien Urfahr</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-
-  <!-- ══════════════════════════════
-       1. PRE-BAR
-  ══════════════════════════════ -->
-  <div class="footer__prebar">
-    <div class="footer__prebar-inner">
-      <div class="footer__prebar-left">
-        <svg viewBox="0 0 24 24">
-          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 012 2.12 2 2 0 014 .11h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
-        </svg>
-        <span>Direktlinie Rainer Schauer: <strong>+43 732 237 997</strong></span>
-      </div>
-      <a href="tel:+43732237997" class="footer__prebar-btn">
-        <svg viewBox="0 0 24 24">
-          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 012 2.12 2 2 0 014 .11h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
-        </svg>
-        Jetzt anrufen
-      </a>
-    </div>
-  </div>
-
-  <!-- ══════════════════════════════
-       2. HAUPT-BEREICH
-  ══════════════════════════════ -->
-  <div class="footer__main">
-    <div class="footer__main-inner">
-      <div class="footer__columns">
-
-        <!-- SPALTE 1: Marke -->
-        <div class="footer__brand">
-          <a href="/" class="footer__logo">
-            <svg class="footer__logo-icon" viewBox="0 0 32 32" fill="none">
-              <polygon
-                points="25.45 13.62 25.45 18.15 23.61 18.15 23.61 14.48 19.31 10.92 17.47 9.38 15.91 8.08 14.48 9.27 12.63 10.81 8.39 14.33 8.39 21.04 12.63 21.04 12.63 14.2 19.31 14.2 19.31 21.04 25.45 21.04 25.45 26.32 6.55 26.32 6.55 24.47 23.61 24.47 23.61 22.89 17.47 22.89 17.47 16.04 14.48 16.04 14.48 22.89 6.55 22.89 6.55 13.46 8.39 11.93 12.63 8.4 14.46 6.88 14.48 6.9 14.48 6.87 15.91 5.68 17.35 6.88 17.47 6.98 19.31 8.51 23.61 12.08 25.45 13.62"
-                fill="#C6A76B"
-              />
-            </svg>
-            <div class="footer__logo-divider"></div>
-            <div class="footer__logo-wordmark">
-              <span class="footer__logo-name">RENOVUS</span>
-              <span class="footer__logo-sub">IMMOBILIEN</span>
-            </div>
-          </a>
-
-          <div class="footer__portrait-row">
-            <div class="footer__portrait">
-              <img
-                src="https://renovus-website.pages.dev/img/rainer-schauer-immobilientreuhander-linz-portrait.webp"
-                alt="Rainer Schauer – Immobilientreuhänder Linz"
-                width="72"
-                height="72"
-                loading="lazy"
-              >
-            </div>
-            <p class="footer__tagline">Persönlich. Kompetent. Vor&nbsp;Ort.</p>
-          </div>
-
-          <p class="footer__desc">
-            Ihr unabhängiger Immobilienpartner im Großraum Linz. Staatlich geprüfter Immobilientreuhänder und Projektabwickler.
-          </p>
-
-          <div class="footer__social">
-            <a href="https://www.facebook.com/renovus.at" class="footer__social-link" target="_blank" rel="noopener" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
-              </svg>
-            </a>
-            <a href="https://www.instagram.com/renovus.immobilien" class="footer__social-link" target="_blank" rel="noopener" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="2" width="20" height="20" rx="5"/>
-                <circle cx="12" cy="12" r="4"/>
-                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
-              </svg>
-            </a>
-            <a href="https://www.linkedin.com/company/renovus-immobilien" class="footer__social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
-                <circle cx="4" cy="4" r="2"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- SPALTE 2: Leistungen -->
-        <div>
-          <h4 class="footer__col-title">Leistungen</h4>
-          <ul class="footer__nav-list">
-            <li><a href="/immobilie-verkaufen-linz">Immobilie verkaufen</a></li>
-            <li><a href="/immobilien-linz-kaufen">Immobilien kaufen</a></li>
-            <li><a href="/wohnung-linz-kaufen">Wohnung kaufen</a></li>
-            <li><a href="/haus-linz-kaufen">Haus kaufen</a></li>
-            <li><a href="/anlageimmobilien-linz">Anlageimmobilien</a></li>
-            <li><a href="/immobilienbewertung-linz">Kostenlose Bewertung</a></li>
-            <li><a href="/tippgeber-linz">Tippgeber-Programm</a></li>
-          </ul>
-        </div>
-
-        <!-- SPALTE 3: Informationen -->
-        <div>
-          <h4 class="footer__col-title">Informationen</h4>
-          <ul class="footer__nav-list">
-            <li><a href="/ueber-renovus">Über Renovus</a></li>
-            <li><a href="/ratgeber">Ratgeber</a></li>
-            <li><a href="/immobilienpreise-linz">Immobilienpreise Linz</a></li>
-            <li><a href="/immobilienmarkt-linz">Marktüberblick Linz</a></li>
-            <li><a href="/kontakt">Kontakt</a></li>
-            <li><a href="/datenschutz">Datenschutz</a></li>
-            <li><a href="/impressum">Impressum</a></li>
-            <li><a href="/agb">AGB</a></li>
-          </ul>
-        </div>
-
-        <!-- SPALTE 4: Kontakt + Gütesiegel -->
-        <div>
-          <h4 class="footer__col-title">Kontakt</h4>
-          <ul class="footer__contact-list">
-            <li class="footer__contact-item">
-              <svg viewBox="0 0 24 24">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-                <circle cx="12" cy="10" r="3"/>
-              </svg>
-              <span>Harrachstraße 34<br>4020 Linz, Österreich</span>
-            </li>
-            <li class="footer__contact-item">
-              <svg viewBox="0 0 24 24">
-                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 012 2.12 2 2 0 014 .11h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
-              </svg>
-              <a href="tel:+43732237997">+43 732 237 997</a>
-            </li>
-            <li class="footer__contact-item">
-              <svg viewBox="0 0 24 24">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                <polyline points="22,6 12,13 2,6"/>
-              </svg>
-              <span>office@renovus.at</span>
-            </li>
-            <li class="footer__contact-item">
-              <svg viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
-              </svg>
-              <a href="https://www.renovus.at" target="_blank" rel="noopener">www.renovus.at</a>
-            </li>
-          </ul>
-
-          <div class="footer__badges">
-            <div class="footer__badge">
-              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              Mitglied WKO
-            </div>
-            <div class="footer__badge">
-              <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-              DSGVO-konform
-            </div>
-          </div>
-
-          <p class="footer__seals-title">WKO Gütesiegel</p>
-          <div class="footer__seals">
-            <div class="footer__seal">
-              <img
-                src="https://renovus-website.pages.dev/img/guetesiegel-immobilientreuhander-linz-wko.webp"
-                alt="WKO Gütesiegel Immobilientreuhänder"
-                width="60" height="60"
-                loading="lazy"
-              >
-            </div>
-            <div class="footer__seal">
-              <img
-                src="https://renovus-website.pages.dev/img/guetesiegel-immobilienmakler-linz-wko.webp"
-                alt="WKO Gütesiegel Immobilienmakler"
-                width="60" height="60"
-                loading="lazy"
-              >
-            </div>
-            <div class="footer__seal">
-              <img
-                src="https://renovus-website.pages.dev/img/guetesiegel-bautraeger-linz-wko.webp"
-                alt="WKO Gütesiegel Bauträger"
-                width="60" height="60"
-                loading="lazy"
-              >
-            </div>
-            <div class="footer__seal">
-              <img
-                src="https://renovus-website.pages.dev/img/guetesiegel-immobilienverwalter-linz-wko.webp"
-                alt="WKO Gütesiegel Immobilienverwalter"
-                width="60" height="60"
-                loading="lazy"
-              >
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- ══════════════════════════════
-       3. SEO LINKBLOCK
-  ══════════════════════════════ -->
-  <div class="footer__seo">
-    <div class="footer__seo-inner">
-
-      <div>
-        <p class="footer__seo-col-title">Immobilien verkaufen</p>
-        <ul class="footer__seo-list">
-          <li><a href="/immobilienmakler-linz">Immobilienmakler Linz</a></li>
-          <li><a href="/immobilienbewertung-linz">Immobilienbewertung Linz</a></li>
-          <li><a href="/immobilie-verkaufen-linz">Immobilie verkaufen Linz</a></li>
-          <li><a href="/haus-verkaufen-linz">Haus verkaufen Linz</a></li>
-          <li><a href="/wohnung-verkaufen-linz">Wohnung verkaufen Linz</a></li>
-          <li><a href="/immobilie-schnell-verkaufen-linz">Immobilie schnell verkaufen</a></li>
-          <li><a href="/immobilienbewertung-linz">Immobilie bewerten lassen Linz</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <p class="footer__seo-col-title">Wohnen &amp; Verkaufen im Alter</p>
-        <ul class="footer__seo-list">
-          <li><a href="/wohnen-und-verkaufen-im-alter-linz">Wohnen &amp; Verkaufen im Alter</a></li>
-          <li><a href="/haus-zu-gross-linz">Haus zu groß – was tun?</a></li>
-          <li><a href="/vom-haus-in-die-wohnung-linz">Vom Haus in die Wohnung</a></li>
-          <li><a href="/immobilie-verkaufen-im-alter-linz">Immobilie verkaufen im Alter</a></li>
-          <li><a href="/immobilie-geerbt-linz">Immobilie geerbt</a></li>
-          <li><a href="/immobilie-bei-trennung-linz">Immobilie bei Trennung</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <p class="footer__seo-col-title">Regionen</p>
-        <ul class="footer__seo-list">
-          <li><a href="/immobilien-linz-land">Immobilien Linz-Land</a></li>
-          <li><a href="/immobilien-urfahr-umgebung">Immobilien Urfahr-Umgebung</a></li>
-          <li><a href="/immobilienmakler-leonding">Immobilienmakler Leonding</a></li>
-          <li><a href="/immobilienmakler-traun">Immobilienmakler Traun</a></li>
-          <li><a href="/immobilienmakler-ansfelden">Immobilienmakler Ansfelden</a></li>
-          <li><a href="/immobilienmakler-pasching">Immobilienmakler Pasching</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <p class="footer__seo-col-title">Markt &amp; Wissen</p>
-        <ul class="footer__seo-list">
-          <li><a href="/immobilienpreise-linz">Immobilienpreise Linz</a></li>
-          <li><a href="/immobilienmarkt-linz">Immobilienmarkt Linz</a></li>
-          <li><a href="/maklervertrag-oesterreich">Maklervertrag Österreich</a></li>
-          <li><a href="/immobilie-verkaufen-ablauf-linz">Ablauf Immobilienverkauf</a></li>
-          <li><a href="/immobilienbewertung-linz">Kostenlose Bewertung</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <p class="footer__seo-col-title">Renovus Immobilien</p>
-        <ul class="footer__seo-list">
-          <li><a href="/ueber-renovus">Über Renovus</a></li>
-          <li><a href="/warum-renovus-immobilien-linz">Warum Renovus?</a></li>
-          <li><a href="/kontakt">Kontakt</a></li>
-          <li><a href="https://maps.google.com/?q=Renovus+Immobilien+Linz" target="_blank" rel="noopener">Google Unternehmensprofil</a></li>
-          <li><a href="/impressum">Impressum</a></li>
-          <li><a href="/datenschutz">Datenschutz</a></li>
-          <li><a href="/agb">AGB</a></li>
-          <li><a href="/nebenkosten-immobilienkauf">Nebenkosten Immobilienkauf</a></li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- ══════════════════════════════
-       4. BOTTOM BAR
-  ══════════════════════════════ -->
-  <div class="footer__bottom">
-    <div class="footer__bottom-inner">
-      <p class="footer__copyright">
-        © 2026 Renovus Immobilien · Inhaber: Rainer Schauer · Harrachstraße 34, 4020 Linz
-      </p>
-      <nav class="footer__legal-links" aria-label="Rechtliche Links">
-        <a href="/impressum">Impressum</a>
-        <a href="/datenschutz">Datenschutz</a>
-        <a href="/agb">AGB</a>
-        <a href="/nebenkosten-immobilienkauf">Nebenkosten</a>
-      </nav>
-    </div>
-  </div>
-
-</footer>
-
-<!-- WhatsApp Button -->
-<a href="https://wa.me/43732237997?text=Hallo%20Rainer%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Immobilienbewertung%20in%20Linz." 
-   class="wa-btn" 
-   target="_blank" 
-   rel="noopener"
-   aria-label="WhatsApp Renovus Immobilien">
-  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.525 5.847L.057 23.882l6.196-1.622A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 01-5.006-1.368l-.36-.213-3.68.964.982-3.595-.234-.371A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
-  </svg>
-</a>
-
-<!-- LISA Chatbot Button -->
-<button class="lisa-btn" id="lisaBtn" aria-label="LISA – KI-Assistentin öffnen">
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
-  </svg>
-</button>
-
-<!-- LISA Chat Widget -->
-<div class="lisa-widget hidden" id="lisaWidget">
-  <div class="lisa-widget__head">
-    <div class="lisa-widget__avatar">L</div>
-    <div>
-      <strong>LISA</strong>
-      <span>KI-Assistentin · Renovus Immobilien</span>
-    </div>
-    <button class="lisa-widget__close" id="lisaClose" aria-label="Schließen">✕</button>
-  </div>
-  <div class="lisa-widget__messages" id="lisaMessages">
-    <div class="lisa-msg lisa-msg--assistant">
-      Guten Tag! Ich bin LISA, die KI-Assistentin von Renovus Immobilien. Wie kann ich Ihnen helfen? 🏠
-    </div>
-  </div>
-  <div class="lisa-widget__input">
-    <input type="text" id="lisaInput" placeholder="Ihre Frage..." aria-label="Nachricht an LISA">
-    <button id="lisaSend" aria-label="Senden">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
-      </svg>
-    </button>
-  </div>
-</div>
-
-<!-- Sticky Mobile Bar -->
-<a href="#bewertung" class="sticky-mobile-cta">
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
-  Kostenlose Bewertung anfragen
-</a>
-
-
-
-
+</html>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+  // ── FAQ s-faq ──
+  document.querySelectorAll('.s-faq__trigger').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = btn.closest('.s-faq__item');
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.s-faq__item.open').forEach(function(i) {
+        i.classList.remove('open');
+        i.querySelector('.s-faq__trigger').setAttribute('aria-expanded','false');
+      });
+      if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+    });
+  });
+
+  // ── 3-Step Formular s-form ──
+  var formTyp = '';
+
+  document.querySelectorAll('.s-form__typ-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.s-form__typ-btn').forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      formTyp = btn.dataset.value;
+      setTimeout(function() { sfGoTo(2); }, 280);
+    });
+  });
+
+  document.querySelectorAll('.s-form__next').forEach(function(btn) {
+    btn.addEventListener('click', function() { sfGoTo(parseInt(btn.dataset.to)); });
+  });
+  document.querySelectorAll('.s-form__back').forEach(function(btn) {
+    btn.addEventListener('click', function() { sfGoTo(parseInt(btn.dataset.to)); });
+  });
+
+  function sfGoTo(n) {
+    document.querySelectorAll('.s-form__step').forEach(function(s) { s.classList.add('s-form__hidden'); });
+    var target = document.getElementById('fs-' + n) || document.getElementById('fs-success');
+    if (target) target.classList.remove('s-form__hidden');
+    document.querySelectorAll('.s-form__step-dot').forEach(function(dot) {
+      dot.classList.remove('active','done');
+      var s = parseInt(dot.dataset.step);
+      if (s < n) dot.classList.add('done');
+      if (s === n) dot.classList.add('active');
+    });
+    var bew = document.getElementById('bewertung');
+    if (bew) bew.scrollIntoView({ behavior:'smooth', block:'start' });
+  }
+
+  var submitBtn = document.getElementById('f-submit');
+  if (submitBtn) {
+    submitBtn.addEventListener('click', function() {
+      var v = document.getElementById('f-vorname').value.trim();
+      var n = document.getElementById('f-nachname').value.trim();
+      var e = document.getElementById('f-email').value.trim();
+      var t = document.getElementById('f-tel').value.trim();
+      var d = document.getElementById('f-dsgvo').checked;
+      if (!v || !n || !e || !t || !d) { alert('Bitte füllen Sie alle Pflichtfelder aus.'); return; }
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Wird gesendet...';
+      fetch('https://api.renovus.at/lead/inbound', {
+        method:'POST', headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({
+          type:'bewertung', vorname:v, nachname:n, email:e, telefon:t,
+          objekttyp:formTyp,
+          strasse: document.getElementById('f-strasse').value,
+          plz_ort: document.getElementById('f-plz').value,
+          flaeche: document.getElementById('f-flaeche').value,
+          baujahr: document.getElementById('f-baujahr').value,
+          source:'startseite', dsgvo:true
+        })
+      }).finally(function() {
+        document.querySelectorAll('.s-form__step').forEach(function(s) { s.classList.add('s-form__hidden'); });
+        var suc = document.getElementById('fs-success');
+        if (suc) suc.classList.remove('s-form__hidden');
+        document.querySelectorAll('.s-form__step-dot').forEach(function(d) { d.classList.add('done'); });
+      });
+    });
+  }
+
+  // ── LISA ──
+  var lisaBtn    = document.getElementById('lisaBtn');
+  var lisaWidget = document.getElementById('lisaWidget');
+  var lisaClose  = document.getElementById('lisaClose');
+  var lisaInput  = document.getElementById('lisaInput');
+  var lisaSend   = document.getElementById('lisaSend');
+  var lisaMsgs   = document.getElementById('lisaMessages');
+  var lisaHistory = [];
+
+  if (lisaBtn && lisaWidget) {
+    function toggleLisa() { lisaWidget.classList.toggle('hidden'); if (!lisaWidget.classList.contains('hidden') && lisaInput) lisaInput.focus(); }
+    lisaBtn.addEventListener('click', toggleLisa);
+    if (lisaClose) lisaClose.addEventListener('click', toggleLisa);
+
+    function addMsg(text, role) {
+      var div = document.createElement('div');
+      div.className = 'lisa-msg lisa-msg--' + role;
+      div.textContent = text;
+      lisaMsgs.appendChild(div);
+      lisaMsgs.scrollTop = lisaMsgs.scrollHeight;
+    }
+
+    function sendToLisa() {
+      if (!lisaInput) return;
+      var text = lisaInput.value.trim();
+      if (!text) return;
+      addMsg(text, 'user');
+      lisaInput.value = '';
+      lisaHistory.push({role:'user', content:text});
+      var typing = document.createElement('div');
+      typing.className = 'lisa-msg lisa-msg--assistant lisa-typing';
+      typing.textContent = '...';
+      lisaMsgs.appendChild(typing);
+      lisaMsgs.scrollTop = lisaMsgs.scrollHeight;
+      fetch('https://lisa-worker.rainerschauerlinz.workers.dev', {
+        method:'POST', headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({messages:lisaHistory, pageContext:document.body.getAttribute('data-page-context')||'startseite'})
+      }).then(function(r){return r.json();}).then(function(d){
+        typing.remove();
+        var reply = d.reply || 'Entschuldigung, bitte versuchen Sie es erneut.';
+        addMsg(reply, 'assistant');
+        lisaHistory.push({role:'assistant', content:reply});
+      }).catch(function(){
+        typing.remove();
+        addMsg('Entschuldigung, ich bin gerade nicht erreichbar. Tel: +43 732 237 997', 'assistant');
+      });
+    }
+    if (lisaSend) lisaSend.addEventListener('click', sendToLisa);
+    if (lisaInput) lisaInput.addEventListener('keydown', function(e){ if(e.key==='Enter') sendToLisa(); });
+  }
+
+});
+</script>
 
 </body>
 </html>
