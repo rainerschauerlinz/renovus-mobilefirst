@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /api/
+Disallow: /snapshots/
+Disallow: /thank-you/
+Disallow: /burger-test.html
+
+Sitemap: https://www.renovus.at/sitemap.xml
