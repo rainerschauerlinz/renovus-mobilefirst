@@ -1291,154 +1291,43 @@
 
 
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-
-  /* ── BURGER MENÜ ── */
-  var burger   = document.getElementById('rnvBurger');
-  var drawer   = document.getElementById('rnvDrawer');
-  var overlay  = document.getElementById('rnvOverlay');
-  var closeBtn = document.getElementById('rnvDrawerClose');
-  var header   = document.getElementById('rnvHeader');
-  if (burger && drawer && overlay) {
-    function openDrawer() { drawer.classList.add('is-open'); overlay.classList.add('is-on'); burger.classList.add('is-open'); burger.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; }
-    function closeDrawer() { drawer.classList.remove('is-open'); overlay.classList.remove('is-on'); burger.classList.remove('is-open'); burger.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
-    burger.addEventListener('click', function() { drawer.classList.contains('is-open') ? closeDrawer() : openDrawer(); });
-    if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
-    overlay.addEventListener('click', closeDrawer);
-    document.addEventListener('keydown', function(e) { if(e.key==='Escape') closeDrawer(); });
-  }
-  if (header) { window.addEventListener('scroll', function() { header.classList.toggle('is-scrolled', window.scrollY>10); }, {passive:true}); }
-
-  /* ── FAQ ── */
-  document.querySelectorAll('.s-faq__trigger').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var item=btn.closest('.s-faq__item'), isOpen=item.classList.contains('open');
-      document.querySelectorAll('.s-faq__item.open').forEach(function(i){ i.classList.remove('open'); i.querySelector('.s-faq__trigger').setAttribute('aria-expanded','false'); });
-      if(!isOpen){ item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
-    });
-  });
-
-  /* ── FORMULAR ── */
-  var formTyp='';
-  document.querySelectorAll('.s-form__typ-btn').forEach(function(btn){
-    btn.addEventListener('click',function(){ document.querySelectorAll('.s-form__typ-btn').forEach(function(b){b.classList.remove('active');}); btn.classList.add('active'); formTyp=btn.dataset.value; setTimeout(function(){sfGoTo(2);},280); });
-  });
-  document.querySelectorAll('.s-form__next').forEach(function(btn){ btn.addEventListener('click',function(){sfGoTo(parseInt(btn.dataset.to));}); });
-  document.querySelectorAll('.s-form__back').forEach(function(btn){ btn.addEventListener('click',function(){sfGoTo(parseInt(btn.dataset.to));}); });
-  function sfGoTo(n){
-    document.querySelectorAll('.s-form__step').forEach(function(s){s.classList.add('s-form__hidden');});
-    var t=document.getElementById('fs-'+n)||document.getElementById('fs-success'); if(t)t.classList.remove('s-form__hidden');
-    document.querySelectorAll('.s-form__step-dot').forEach(function(dot){ dot.classList.remove('active','done'); var s=parseInt(dot.dataset.step); if(s<n)dot.classList.add('done'); if(s===n)dot.classList.add('active'); });
-    var bew=document.getElementById('bewertung'); if(bew)bew.scrollIntoView({behavior:'smooth',block:'start'});
-  }
-  var sb=document.getElementById('f-submit');
-  if(sb){ sb.addEventListener('click',function(){
-    var v=document.getElementById('f-vorname').value.trim(),n=document.getElementById('f-nachname').value.trim(),e=document.getElementById('f-email').value.trim(),t=document.getElementById('f-tel').value.trim(),d=document.getElementById('f-dsgvo').checked;
-    if(!v||!n||!e||!t||!d){alert('Bitte füllen Sie alle Pflichtfelder aus.');return;}
-    sb.disabled=true;sb.textContent='Wird gesendet...';
-    fetch('https://api.renovus.at/lead/inbound',{method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({type:'bewertung',vorname:v,nachname:n,email:e,telefon:t,objekttyp:formTyp,
-        strasse:document.getElementById('f-strasse').value,plz_ort:document.getElementById('f-plz').value,
-        flaeche:document.getElementById('f-flaeche').value,baujahr:document.getElementById('f-baujahr').value,
-        source:window.location.pathname,dsgvo:true})
-    }).finally(function(){
-      document.querySelectorAll('.s-form__step').forEach(function(s){s.classList.add('s-form__hidden');});
-      var suc=document.getElementById('fs-success');if(suc)suc.classList.remove('s-form__hidden');
-      document.querySelectorAll('.s-form__step-dot').forEach(function(d){d.classList.add('done');});
-    });
-  }); }
-
-  /* ── LISA ── */
-  var lb=document.getElementById('lisaBtn'),lw=document.getElementById('lisaWidget'),lc=document.getElementById('lisaClose'),li=document.getElementById('lisaInput'),ls=document.getElementById('lisaSend'),lm=document.getElementById('lisaMessages'),lh=[];
-  if(lb&&lw){
-    function tl(){lw.classList.toggle('hidden');if(!lw.classList.contains('hidden')&&li)li.focus();}
-    lb.addEventListener('click',tl); if(lc)lc.addEventListener('click',tl);
-    function am(t,r){var d=document.createElement('div');d.className='lisa-msg lisa-msg--'+r;d.textContent=t;lm.appendChild(d);lm.scrollTop=lm.scrollHeight;}
-    function sl(){if(!li)return;var t=li.value.trim();if(!t)return;am(t,'user');li.value='';lh.push({role:'user',content:t});var ty=document.createElement('div');ty.className='lisa-msg lisa-msg--assistant lisa-typing';ty.textContent='...';lm.appendChild(ty);lm.scrollTop=lm.scrollHeight;
-      fetch('https://lisa-worker.rainerschauerlinz.workers.dev',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages:lh,pageContext:document.body.getAttribute('data-page-context')||'startseite'})}).then(function(r){return r.json();}).then(function(d){ty.remove();am(d.reply||'Bitte erneut versuchen.','assistant');lh.push({role:'assistant',content:d.reply});}).catch(function(){ty.remove();am('Tel: +43 732 237 997','assistant');});
-    }
-    if(ls)ls.addEventListener('click',sl); if(li)li.addEventListener('keydown',function(e){if(e.key==='Enter')sl();});
-  }
-
-});
-</script>
-</body>
-</html>
-
-
-
-
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
 
-  /* ── BURGER MENÜ ── */
-  var burger   = document.getElementById('rnvBurger');
-  var drawer   = document.getElementById('rnvDrawer');
-  var overlay  = document.getElementById('rnvOverlay');
-  var closeBtn = document.getElementById('rnvDrawerClose');
-  var header   = document.getElementById('rnvHeader');
-  if (burger && drawer && overlay) {
-    function openDrawer() { drawer.classList.add('is-open'); overlay.classList.add('is-on'); burger.classList.add('is-open'); burger.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; }
-    function closeDrawer() { drawer.classList.remove('is-open'); overlay.classList.remove('is-on'); burger.classList.remove('is-open'); burger.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
-    burger.addEventListener('click', function() { drawer.classList.contains('is-open') ? closeDrawer() : openDrawer(); });
-    if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
-    overlay.addEventListener('click', closeDrawer);
-    document.addEventListener('keydown', function(e) { if(e.key==='Escape') closeDrawer(); });
+  /* BURGER */
+  var burger=document.getElementById('rnvBurger'),drawer=document.getElementById('rnvDrawer'),overlay=document.getElementById('rnvOverlay'),closeBtn=document.getElementById('rnvDrawerClose'),hdr=document.getElementById('rnvHeader');
+  if(burger&&drawer&&overlay){
+    function oD(){drawer.classList.add('is-open');overlay.classList.add('is-on');burger.classList.add('is-open');burger.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';}
+    function cD(){drawer.classList.remove('is-open');overlay.classList.remove('is-on');burger.classList.remove('is-open');burger.setAttribute('aria-expanded','false');document.body.style.overflow='';}
+    burger.addEventListener('click',function(){drawer.classList.contains('is-open')?cD():oD();});
+    if(closeBtn)closeBtn.addEventListener('click',cD);
+    overlay.addEventListener('click',cD);
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')cD();});
   }
-  if (header) { window.addEventListener('scroll', function() { header.classList.toggle('is-scrolled', window.scrollY>10); }, {passive:true}); }
+  if(hdr){window.addEventListener('scroll',function(){hdr.classList.toggle('is-scrolled',window.scrollY>10);},{passive:true});}
 
-  /* ── FAQ ── */
-  document.querySelectorAll('.s-faq__trigger').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var item=btn.closest('.s-faq__item'), isOpen=item.classList.contains('open');
-      document.querySelectorAll('.s-faq__item.open').forEach(function(i){ i.classList.remove('open'); i.querySelector('.s-faq__trigger').setAttribute('aria-expanded','false'); });
-      if(!isOpen){ item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+  /* FAQ */
+  document.querySelectorAll('.s-faq__trigger').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var item=btn.closest('.s-faq__item'),isOpen=item.classList.contains('open');
+      document.querySelectorAll('.s-faq__item.open').forEach(function(i){i.classList.remove('open');i.querySelector('.s-faq__trigger').setAttribute('aria-expanded','false');});
+      if(!isOpen){item.classList.add('open');btn.setAttribute('aria-expanded','true');}
     });
   });
 
-  /* ── FORMULAR ── */
-  var formTyp='';
-  document.querySelectorAll('.s-form__typ-btn').forEach(function(btn){
-    btn.addEventListener('click',function(){ document.querySelectorAll('.s-form__typ-btn').forEach(function(b){b.classList.remove('active');}); btn.classList.add('active'); formTyp=btn.dataset.value; setTimeout(function(){sfGoTo(2);},280); });
-  });
-  document.querySelectorAll('.s-form__next').forEach(function(btn){ btn.addEventListener('click',function(){sfGoTo(parseInt(btn.dataset.to));}); });
-  document.querySelectorAll('.s-form__back').forEach(function(btn){ btn.addEventListener('click',function(){sfGoTo(parseInt(btn.dataset.to));}); });
-  function sfGoTo(n){
-    document.querySelectorAll('.s-form__step').forEach(function(s){s.classList.add('s-form__hidden');});
-    var t=document.getElementById('fs-'+n)||document.getElementById('fs-success'); if(t)t.classList.remove('s-form__hidden');
-    document.querySelectorAll('.s-form__step-dot').forEach(function(dot){ dot.classList.remove('active','done'); var s=parseInt(dot.dataset.step); if(s<n)dot.classList.add('done'); if(s===n)dot.classList.add('active'); });
-    var bew=document.getElementById('bewertung'); if(bew)bew.scrollIntoView({behavior:'smooth',block:'start'});
-  }
+  /* FORMULAR */
+  var ft='';
+  document.querySelectorAll('.s-form__typ-btn').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('.s-form__typ-btn').forEach(function(x){x.classList.remove('active');});b.classList.add('active');ft=b.dataset.value;setTimeout(function(){sg(2);},280);});});
+  document.querySelectorAll('.s-form__next').forEach(function(b){b.addEventListener('click',function(){sg(parseInt(b.dataset.to));});});
+  document.querySelectorAll('.s-form__back').forEach(function(b){b.addEventListener('click',function(){sg(parseInt(b.dataset.to));});});
+  function sg(n){document.querySelectorAll('.s-form__step').forEach(function(s){s.classList.add('s-form__hidden');});var t=document.getElementById('fs-'+n)||document.getElementById('fs-success');if(t)t.classList.remove('s-form__hidden');document.querySelectorAll('.s-form__step-dot').forEach(function(d){d.classList.remove('active','done');var s=parseInt(d.dataset.step);if(s<n)d.classList.add('done');if(s===n)d.classList.add('active');});var bew=document.getElementById('bewertung');if(bew)bew.scrollIntoView({behavior:'smooth',block:'start'});}
   var sb=document.getElementById('f-submit');
-  if(sb){ sb.addEventListener('click',function(){
-    var v=document.getElementById('f-vorname').value.trim(),n=document.getElementById('f-nachname').value.trim(),e=document.getElementById('f-email').value.trim(),t=document.getElementById('f-tel').value.trim(),d=document.getElementById('f-dsgvo').checked;
-    if(!v||!n||!e||!t||!d){alert('Bitte füllen Sie alle Pflichtfelder aus.');return;}
-    sb.disabled=true;sb.textContent='Wird gesendet...';
-    fetch('https://api.renovus.at/lead/inbound',{method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({type:'bewertung',vorname:v,nachname:n,email:e,telefon:t,objekttyp:formTyp,
-        strasse:document.getElementById('f-strasse').value,plz_ort:document.getElementById('f-plz').value,
-        flaeche:document.getElementById('f-flaeche').value,baujahr:document.getElementById('f-baujahr').value,
-        source:window.location.pathname,dsgvo:true})
-    }).finally(function(){
-      document.querySelectorAll('.s-form__step').forEach(function(s){s.classList.add('s-form__hidden');});
-      var suc=document.getElementById('fs-success');if(suc)suc.classList.remove('s-form__hidden');
-      document.querySelectorAll('.s-form__step-dot').forEach(function(d){d.classList.add('done');});
-    });
-  }); }
+  if(sb){sb.addEventListener('click',function(){var v=document.getElementById('f-vorname').value.trim(),n=document.getElementById('f-nachname').value.trim(),e=document.getElementById('f-email').value.trim(),t=document.getElementById('f-tel').value.trim(),d=document.getElementById('f-dsgvo').checked;if(!v||!n||!e||!t||!d){alert('Bitte füllen Sie alle Pflichtfelder aus.');return;}sb.disabled=true;sb.textContent='Wird gesendet...';fetch('https://api.renovus.at/lead/inbound',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({type:'bewertung',vorname:v,nachname:n,email:e,telefon:t,objekttyp:ft,strasse:document.getElementById('f-strasse').value,plz_ort:document.getElementById('f-plz').value,flaeche:document.getElementById('f-flaeche').value,baujahr:document.getElementById('f-baujahr').value,source:window.location.pathname,dsgvo:true})}).finally(function(){document.querySelectorAll('.s-form__step').forEach(function(s){s.classList.add('s-form__hidden');});var suc=document.getElementById('fs-success');if(suc)suc.classList.remove('s-form__hidden');document.querySelectorAll('.s-form__step-dot').forEach(function(d){d.classList.add('done');});});});}
 
-  /* ── LISA ── */
+  /* LISA */
   var lb=document.getElementById('lisaBtn'),lw=document.getElementById('lisaWidget'),lc=document.getElementById('lisaClose'),li=document.getElementById('lisaInput'),ls=document.getElementById('lisaSend'),lm=document.getElementById('lisaMessages'),lh=[];
-  if(lb&&lw){
-    function tl(){lw.classList.toggle('hidden');if(!lw.classList.contains('hidden')&&li)li.focus();}
-    lb.addEventListener('click',tl); if(lc)lc.addEventListener('click',tl);
-    function am(t,r){var d=document.createElement('div');d.className='lisa-msg lisa-msg--'+r;d.textContent=t;lm.appendChild(d);lm.scrollTop=lm.scrollHeight;}
-    function sl(){if(!li)return;var t=li.value.trim();if(!t)return;am(t,'user');li.value='';lh.push({role:'user',content:t});var ty=document.createElement('div');ty.className='lisa-msg lisa-msg--assistant lisa-typing';ty.textContent='...';lm.appendChild(ty);lm.scrollTop=lm.scrollHeight;
-      fetch('https://lisa-worker.rainerschauerlinz.workers.dev',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages:lh,pageContext:document.body.getAttribute('data-page-context')||'startseite'})}).then(function(r){return r.json();}).then(function(d){ty.remove();am(d.reply||'Bitte erneut versuchen.','assistant');lh.push({role:'assistant',content:d.reply});}).catch(function(){ty.remove();am('Tel: +43 732 237 997','assistant');});
-    }
-    if(ls)ls.addEventListener('click',sl); if(li)li.addEventListener('keydown',function(e){if(e.key==='Enter')sl();});
-  }
+  if(lb&&lw){function tl(){lw.classList.toggle('hidden');if(!lw.classList.contains('hidden')&&li)li.focus();}lb.addEventListener('click',tl);if(lc)lc.addEventListener('click',tl);function am(t,r){var d=document.createElement('div');d.className='lisa-msg lisa-msg--'+r;d.textContent=t;lm.appendChild(d);lm.scrollTop=lm.scrollHeight;}function sl(){if(!li)return;var t=li.value.trim();if(!t)return;am(t,'user');li.value='';lh.push({role:'user',content:t});var ty=document.createElement('div');ty.className='lisa-msg lisa-msg--assistant lisa-typing';ty.textContent='...';lm.appendChild(ty);fetch('https://lisa-worker.rainerschauerlinz.workers.dev',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages:lh,pageContext:document.body.getAttribute('data-page-context')||'startseite'})}).then(function(r){return r.json();}).then(function(d){ty.remove();am(d.reply||'Bitte erneut versuchen.','assistant');lh.push({role:'assistant',content:d.reply});}).catch(function(){ty.remove();am('Tel: +43 732 237 997','assistant');});} if(ls)ls.addEventListener('click',sl);if(li)li.addEventListener('keydown',function(e){if(e.key==='Enter')sl();});}
 
 });
 </script>
