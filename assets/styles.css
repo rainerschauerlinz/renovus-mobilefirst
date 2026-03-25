@@ -1,4 +1,4 @@
-/* build:1774396684 */
+/* build:1774396880 */
 /* =========================================================
    RENOVUS BASE CSS
    Mobile First
@@ -659,15 +659,15 @@ body { padding-top: var(--header-total); }
 .footer__prebar-left {
   display: flex; align-items: center; gap: 8px;
   font-size: 13px; color: rgba(255,255,255,.7);
-  flex: 1; min-width: 0;
-}
-.footer__prebar-left span {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .footer__prebar-left strong {
   white-space: nowrap;
+  color: rgba(255,255,255,.9);
+  font-weight: 600;
+}
+/* Mobile: Button verstecken damit Nummer Platz hat */
+.footer__prebar-btn {
+  display: none;
 }
 .footer__prebar-left svg {
   width: 18px; height: 18px; stroke: var(--gold); fill: none;
@@ -811,6 +811,8 @@ body { padding-top: var(--header-total); }
     max-width: none;
   }
   .rnv-actionbar__gold { padding: 0 14px; }
+  /* Prebar Button ab 480px wieder sichtbar */
+  .footer__prebar-btn { display: inline-flex; }
 }
 
 /* =========================
