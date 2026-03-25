@@ -1,4 +1,4 @@
-/* build:1774400237 */
+/* build:1774401070 */
 /* =========================================================
    RENOVUS BASE CSS
    Mobile First
@@ -1307,4 +1307,142 @@ btm-widget { display:block; }
 @media (min-width:1280px) {
   .wrap { padding:0 clamp(40px,4vw,72px); }
   .s-hero__inner { padding-top:calc(var(--header-total) + 48px); }
+}
+
+
+/* ================================================
+   CLUSTER VERKAUFEN — Zusätzliche Klassen
+   V01–V09
+   ================================================ */
+
+/* Breadcrumb */
+.breadcrumb { padding:12px 0; border-bottom:1px solid var(--border); background:var(--sand); }
+.breadcrumb__list { display:flex; align-items:center; gap:8px; list-style:none; font-size:.82rem; color:var(--text-mid); }
+.breadcrumb__list a { color:var(--text-mid); transition:color var(--transition); }
+.breadcrumb__list a:hover { color:var(--gold); }
+
+/* Page Hero (Unterseiten) */
+.s-page-hero { position:relative; overflow:hidden; min-height:52svh; display:flex; align-items:flex-end; }
+.s-page-hero__bg { position:absolute; inset:0; z-index:0; }
+.s-page-hero__bg img { width:100%; height:100%; object-fit:cover; object-position:center 40%; display:block; }
+.s-page-hero__overlay { position:absolute; inset:0; background:linear-gradient(175deg,rgba(10,9,8,.25) 0%,rgba(10,9,8,.75) 100%); }
+.s-page-hero__inner { position:relative; z-index:2; padding:calc(var(--header-total) + 28px) 0 48px; }
+.s-page-hero__eyebrow { display:block; font-size:.72rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:rgba(198,167,107,.85); margin-bottom:12px; }
+.s-page-hero__h1 { font-family:var(--font-serif); font-size:clamp(1.6rem,6vw,2.8rem); font-weight:600; color:#fff; line-height:1.12; letter-spacing:-.02em; margin-bottom:14px; }
+.s-page-hero__h1 em { font-style:italic; color:var(--gold); }
+.s-page-hero__sub { font-size:.92rem; color:rgba(244,239,230,.75); line-height:1.7; max-width:520px; margin-bottom:22px; }
+
+/* Vorteile 3er */
+.s-vorteile { padding:48px 0; }
+.s-vorteile__grid { display:flex; flex-direction:column; gap:16px; }
+.s-vorteile__card { padding:22px; border:1px solid var(--border); border-radius:var(--radius-lg); background:#fff; }
+.s-vorteile__icon { color:var(--gold); margin-bottom:12px; }
+.s-vorteile__icon svg { stroke:var(--gold); }
+.s-vorteile__card h3 { font-size:1rem; color:var(--navy); margin-bottom:7px; }
+.s-vorteile__card p { font-size:.88rem; color:var(--text-mid); line-height:1.65; }
+
+/* Content Section */
+.s-content-section { padding:56px 0; }
+.s-content-grid { display:flex; flex-direction:column; gap:32px; }
+.s-content-text h2 { margin-bottom:14px; }
+.s-content-text h3 { font-size:1.1rem; margin-top:20px; margin-bottom:8px; }
+.s-content-text p { color:var(--text-mid); line-height:1.75; margin-bottom:12px; }
+.s-content-list { list-style:none; display:flex; flex-direction:column; gap:8px; margin:14px 0; }
+.s-content-list li { position:relative; padding-left:18px; font-size:.9rem; color:var(--text-dark); line-height:1.6; }
+.s-content-list li::before { content:'→'; position:absolute; left:0; color:var(--gold); font-weight:700; }
+.s-content-img img { width:100%; border-radius:var(--radius-lg); object-fit:cover; display:block; }
+.s-content-img-label { display:flex; align-items:center; gap:7px; margin-top:10px; font-size:.8rem; color:var(--text-mid); }
+.s-content-img-label svg { stroke:var(--gold); flex-shrink:0; }
+
+/* CTA Banner */
+.s-cta-banner { background:var(--navy); padding:48px 0; }
+.s-cta-banner__inner { display:flex; flex-direction:column; gap:24px; }
+.s-cta-banner__text h2 { font-family:var(--font-serif); font-size:clamp(1.2rem,4vw,1.8rem); color:#fff; margin-bottom:8px; line-height:1.3; }
+.s-cta-banner__text p { color:rgba(255,255,255,.65); font-size:.9rem; margin-bottom:14px; }
+.s-cta-banner__checks { list-style:none; display:flex; flex-direction:column; gap:6px; }
+.s-cta-banner__checks li { position:relative; padding-left:18px; font-size:.85rem; color:rgba(255,255,255,.65); }
+.s-cta-banner__checks li::before { content:'✓'; position:absolute; left:0; color:var(--gold); font-weight:700; }
+
+/* Zitat */
+.s-zitat { background:var(--navy); padding:48px 0; }
+.s-zitat__inner { text-align:center; max-width:720px; margin:0 auto; }
+.s-zitat__quote-mark { font-family:var(--font-serif); font-size:4rem; color:var(--gold); line-height:.8; margin-bottom:14px; opacity:.7; }
+.s-zitat__text { font-family:var(--font-serif); font-style:italic; font-size:clamp(1rem,3vw,1.35rem); color:rgba(255,255,255,.9); line-height:1.7; margin:0 0 22px; quotes:none; }
+.s-zitat__author { display:flex; align-items:center; justify-content:center; gap:12px; }
+.s-zitat__author img { width:50px; height:50px; border-radius:50%; object-fit:cover; object-position:center top; border:2px solid rgba(198,167,107,.4); }
+.s-zitat__author strong { display:block; color:rgba(255,255,255,.9); font-size:.9rem; }
+.s-zitat__author span { font-size:.75rem; color:rgba(255,255,255,.5); }
+
+/* Cluster Links */
+.s-cluster { padding:32px 0; }
+.s-cluster__links { display:flex; flex-wrap:wrap; gap:10px; margin-top:16px; justify-content:center; }
+.s-cluster__link { padding:8px 16px; border:1px solid var(--border); border-radius:99px; font-size:.82rem; color:var(--text-mid); background:#fff; transition:all var(--transition); text-decoration:none; }
+.s-cluster__link:hover { border-color:var(--gold); color:var(--gold); }
+
+/* Ablauf Steps */
+.s-ablauf__grid { display:flex; flex-direction:column; gap:0; margin-top:32px; }
+.s-ablauf__step { display:flex; gap:20px; padding:20px 0; border-bottom:1px solid var(--border); }
+.s-ablauf__step:last-child { border-bottom:none; }
+.s-ablauf__num { font-family:var(--font-serif); font-size:1.8rem; font-weight:300; color:var(--gold); line-height:1; flex-shrink:0; width:40px; }
+.s-ablauf__content h3 { font-size:1rem; color:var(--navy); margin-bottom:7px; }
+.s-ablauf__content p { font-size:.88rem; color:var(--text-mid); line-height:1.7; }
+
+/* Kosten Cards */
+.s-kosten__grid { display:flex; flex-direction:column; gap:14px; margin-top:32px; }
+.s-kosten__card { padding:20px; border:1px solid var(--border); border-radius:var(--radius-lg); background:#fff; }
+.s-kosten__icon { color:var(--gold); margin-bottom:10px; }
+.s-kosten__icon svg { stroke:var(--gold); }
+.s-kosten__card h3 { font-size:1rem; color:var(--navy); margin-bottom:4px; }
+.s-kosten__amount { font-family:var(--font-serif); font-size:1.3rem; color:var(--gold); font-weight:600; margin-bottom:8px; }
+.s-kosten__card p { font-size:.85rem; color:var(--text-mid); line-height:1.65; }
+.s-kosten__example { margin-top:32px; padding:24px; background:var(--sand); border-radius:var(--radius-lg); border:1px solid var(--border); }
+.s-kosten__example h3 { font-size:1rem; color:var(--navy); margin-bottom:16px; }
+.s-kosten__table { display:flex; flex-direction:column; gap:10px; }
+.s-kosten__row { display:flex; justify-content:space-between; align-items:center; padding:8px 0; border-bottom:1px solid var(--border); font-size:.9rem; }
+.s-kosten__row span { color:var(--text-mid); }
+.s-kosten__row strong { color:var(--navy); }
+.s-kosten__row--total { font-weight:700; border-top:2px solid var(--border); border-bottom:none; padding-top:12px; margin-top:4px; }
+.s-kosten__row--result { background:rgba(198,167,107,.1); padding:10px 12px; border-radius:var(--radius); border:none; margin-top:6px; }
+.s-kosten__row--result span, .s-kosten__row--result strong { color:var(--navy); font-weight:700; }
+
+/* Vergleich */
+.s-vergleich__grid { display:flex; flex-direction:column; gap:16px; margin-top:32px; }
+.s-vergleich__col { border:1px solid var(--border); border-radius:var(--radius-lg); overflow:hidden; }
+.s-vergleich__col--mit { border-color:var(--gold); }
+.s-vergleich__head { padding:14px 18px; font-weight:700; font-size:.95rem; }
+.s-vergleich__col--ohne .s-vergleich__head { background:var(--sand); color:var(--text-dark); }
+.s-vergleich__col--mit .s-vergleich__head { background:var(--gold); color:var(--navy); }
+.s-vergleich__item { display:flex; align-items:center; gap:10px; padding:10px 18px; font-size:.88rem; border-top:1px solid var(--border); }
+.s-vergleich__item--pro { color:var(--text-dark); }
+.s-vergleich__item--con { color:var(--text-mid); }
+.s-vergleich__item--pro svg { stroke:#22c55e; flex-shrink:0; }
+.s-vergleich__item--con svg { stroke:#ef4444; flex-shrink:0; }
+
+/* Aufbereitung */
+.s-aufbereitung__grid { display:flex; flex-direction:column; gap:20px; margin-top:32px; }
+.s-aufbereitung__card { border:1px solid var(--border); border-radius:var(--radius-lg); overflow:hidden; background:#fff; box-shadow:var(--shadow); }
+.s-aufbereitung__img img { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; }
+.s-aufbereitung__body { padding:18px; }
+.s-aufbereitung__body h3 { font-size:1rem; color:var(--navy); margin-bottom:8px; }
+.s-aufbereitung__body p { font-size:.88rem; color:var(--text-mid); line-height:1.65; }
+
+/* ═══ RESPONSIVE 768px ═══ */
+@media (min-width:768px) {
+  .s-page-hero { min-height:60svh; align-items:center; }
+  .s-page-hero__inner { padding-bottom:64px; }
+  .s-vorteile__grid { display:grid; grid-template-columns:repeat(3,1fr); }
+  .s-content-grid { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start; }
+  .s-cta-banner__inner { flex-direction:row; align-items:center; justify-content:space-between; gap:40px; }
+  .s-cta-banner__text { flex:1; }
+  .s-cta-banner__btn { flex-shrink:0; }
+  .s-kosten__grid { display:grid; grid-template-columns:repeat(2,1fr); }
+  .s-vergleich__grid { display:grid; grid-template-columns:1fr 1fr; }
+  .s-aufbereitung__grid { display:grid; grid-template-columns:repeat(3,1fr); }
+}
+
+/* ═══ RESPONSIVE 1024px ═══ */
+@media (min-width:1024px) {
+  .s-page-hero { min-height:65svh; }
+  .s-ablauf__grid { max-width:800px; margin-left:auto; margin-right:auto; }
+  .s-kosten__grid { grid-template-columns:repeat(4,1fr); }
 }
