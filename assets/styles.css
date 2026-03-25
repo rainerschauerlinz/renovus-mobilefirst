@@ -1,4 +1,4 @@
-/* build:1774403709 */
+/* build:1774428716 */
 /* =========================================================
    RENOVUS BASE CSS
    Mobile First
@@ -989,6 +989,20 @@ body { padding-top: var(--header-total); }
 .s-rainer__credentials { list-style:none; display:flex; flex-direction:column; gap:9px; margin:18px 0 22px; }
 .s-rainer__credentials li { display:flex; align-items:center; gap:9px; font-size:.88rem; color:var(--text-dark); }
 .s-rainer__credentials svg { stroke:var(--gold); flex-shrink:0; }
+/* ── S-RAINER GÜTESIEGEL (Abschnitt 1 Migration) ── */
+.s-rainer__guetesiegel {
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  align-items:center;
+  margin-top:18px;
+}
+.s-rainer__guetesiegel img {
+  width:56px;
+  height:56px;
+  object-fit:contain;
+  opacity:.8;
+}
 
 /* ── S4 + S8 + S12: IMAGE BREAK ── */
 .s-break { position:relative; overflow:hidden; height:280px; display:flex; align-items:center; justify-content:center; }
@@ -1444,4 +1458,4 @@ btm-widget { display:block; }
   .s-ablauf__grid { max-width:800px; margin-left:auto; margin-right:auto; }
   .s-kosten__grid { grid-template-columns:repeat(4,1fr); }
 }
-/* build:1774403709 */
+/* build:1774428716 */
