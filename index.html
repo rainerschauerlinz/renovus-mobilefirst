@@ -78,7 +78,7 @@
   ]
 }
 </script>
-<script src="https://components.bottimmo.com/components/68ed36277654c77a34abe578/btm-widget/de-AT" defer></script>
+
 </head>
 <body>
 
@@ -1287,216 +1287,52 @@
 
 
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
 
-  // ── Bewertungsformular 3-Step ──
-  var formData = { typ: '', strasse: '', plz_ort: '', flaeche: '', baujahr: '' };
 
-  // Typ-Buttons Step 1
-  document.querySelectorAll('.bewertung__typ-btn').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      document.querySelectorAll('.bewertung__typ-btn').forEach(function(b) { b.classList.remove('active'); });
-      btn.classList.add('active');
-      formData.typ = btn.dataset.value;
-      setTimeout(function() { goToStep(2); }, 300);
-    });
-  });
-
-  // Weiter / Zurück
-  document.querySelectorAll('.bewertung__next').forEach(function(btn) {
-    btn.addEventListener('click', function() { goToStep(parseInt(btn.dataset.to)); });
-  });
-  document.querySelectorAll('.bewertung__back').forEach(function(btn) {
-    btn.addEventListener('click', function() { goToStep(parseInt(btn.dataset.to)); });
-  });
-
-  function goToStep(n) {
-    document.querySelectorAll('.bewertung__step').forEach(function(s) { s.classList.add('hidden'); });
-    document.getElementById('bstep-' + n).classList.remove('hidden');
-    // Step dots
-    document.querySelectorAll('.bewertung__step-dot').forEach(function(dot) {
-      dot.classList.remove('active', 'done');
-      var s = parseInt(dot.dataset.step);
-      if (s < n) dot.classList.add('done');
-      if (s === n) dot.classList.add('active');
-    });
-    // Smooth scroll to form on mobile
-    document.getElementById('bewertung').scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-
-  // Formular absenden
-  var submitBtn = document.getElementById('b-submit');
-  if (submitBtn) {
-    submitBtn.addEventListener('click', function() {
-      var vorname = document.getElementById('b-vorname').value.trim();
-      var nachname = document.getElementById('b-nachname').value.trim();
-      var email = document.getElementById('b-email').value.trim();
-      var tel = document.getElementById('b-tel').value.trim();
-      var dsgvo = document.getElementById('b-dsgvo').checked;
-
-      if (!vorname || !nachname || !email || !tel || !dsgvo) {
-        alert('Bitte füllen Sie alle Pflichtfelder aus.');
-        return;
-      }
-
-      submitBtn.disabled = true;
-      submitBtn.textContent = 'Wird gesendet...';
-
-      var payload = {
-        type: 'bewertung',
-        vorname: vorname,
-        nachname: nachname,
-        email: email,
-        telefon: tel,
-        objekttyp: formData.typ,
-        strasse: document.getElementById('b-strasse').value,
-        plz_ort: document.getElementById('b-plz').value,
-        flaeche: document.getElementById('b-flaeche').value,
-        baujahr: document.getElementById('b-baujahr').value,
-        source: 'startseite',
-        dsgvo: true
-      };
-
-      fetch('https://api.renovus.at/lead/inbound', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      })
-      .then(function() {
-        document.querySelectorAll('.bewertung__step').forEach(function(s) { s.classList.add('hidden'); });
-        document.getElementById('bstep-success').classList.remove('hidden');
-        document.querySelectorAll('.bewertung__step-dot').forEach(function(d) { d.classList.add('done'); });
-      })
-      .catch(function() {
-        // Auch bei Fehler Erfolg zeigen (Lead-Daten nicht verlieren)
-        document.querySelectorAll('.bewertung__step').forEach(function(s) { s.classList.add('hidden'); });
-        document.getElementById('bstep-success').classList.remove('hidden');
-      });
-    });
-  }
-
-  // ── FAQ Accordion ──
-  document.querySelectorAll('.faq__trigger').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var item = btn.closest('.faq__item');
-      var isOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq__item.open').forEach(function(i) { i.classList.remove('open'); i.querySelector('.faq__trigger').setAttribute('aria-expanded', 'false'); });
-      if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
-    });
-  });
-
-  // ── LISA Chatbot ──
-  var lisaBtn    = document.getElementById('lisaBtn');
-  var lisaWidget = document.getElementById('lisaWidget');
-  var lisaClose  = document.getElementById('lisaClose');
-  var lisaInput  = document.getElementById('lisaInput');
-  var lisaSend   = document.getElementById('lisaSend');
-  var lisaMsgs   = document.getElementById('lisaMessages');
-  var lisaHistory = [];
-
-  function toggleLisa() {
-    lisaWidget.classList.toggle('hidden');
-    if (!lisaWidget.classList.contains('hidden')) { lisaInput.focus(); }
-  }
-
-  lisaBtn.addEventListener('click', toggleLisa);
-  lisaClose.addEventListener('click', toggleLisa);
-
-  function addMsg(text, role) {
-    var div = document.createElement('div');
-    div.className = 'lisa-msg lisa-msg--' + role;
-    div.textContent = text;
-    lisaMsgs.appendChild(div);
-    lisaMsgs.scrollTop = lisaMsgs.scrollHeight;
-  }
-
-  function sendToLisa() {
-    var text = lisaInput.value.trim();
-    if (!text) return;
-    addMsg(text, 'user');
-    lisaInput.value = '';
-    lisaHistory.push({ role: 'user', content: text });
-
-    // Typing indicator
-    var typing = document.createElement('div');
-    typing.className = 'lisa-msg lisa-msg--assistant lisa-typing';
-    typing.textContent = '...';
-    lisaMsgs.appendChild(typing);
-    lisaMsgs.scrollTop = lisaMsgs.scrollHeight;
-
-    fetch('https://lisa-worker.rainerschauerlinz.workers.dev', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        messages: lisaHistory,
-        pageContext: document.body.getAttribute('data-page-context') || 'startseite'
-      })
-    })
-    .then(function(r) { return r.json(); })
-    .then(function(d) {
-      typing.remove();
-      var reply = d.reply || 'Entschuldigung, bitte versuchen Sie es erneut.';
-      addMsg(reply, 'assistant');
-      lisaHistory.push({ role: 'assistant', content: reply });
-    })
-    .catch(function() {
-      typing.remove();
-      addMsg('Entschuldigung, ich bin gerade nicht erreichbar. Rufen Sie uns an: +43 732 237 997', 'assistant');
-    });
-  }
-
-  lisaSend.addEventListener('click', sendToLisa);
-  lisaInput.addEventListener('keydown', function(e) { if (e.key === 'Enter') sendToLisa(); });
-
-});
-</script>
 
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+
+  /* ── BURGER MENÜ ── */
   var burger   = document.getElementById('rnvBurger');
   var drawer   = document.getElementById('rnvDrawer');
   var overlay  = document.getElementById('rnvOverlay');
   var closeBtn = document.getElementById('rnvDrawerClose');
   var header   = document.getElementById('rnvHeader');
-  if (!burger || !drawer || !overlay) return;
-  function openDrawer() {
-    drawer.classList.add('is-open');
-    overlay.classList.add('is-on');
-    burger.classList.add('is-open');
-    burger.setAttribute('aria-expanded', 'true');
-    document.body.style.overflow = 'hidden';
+
+  if (burger && drawer && overlay) {
+    function openDrawer() {
+      drawer.classList.add('is-open');
+      overlay.classList.add('is-on');
+      burger.classList.add('is-open');
+      burger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeDrawer() {
+      drawer.classList.remove('is-open');
+      overlay.classList.remove('is-on');
+      burger.classList.remove('is-open');
+      burger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+    burger.addEventListener('click', function() {
+      drawer.classList.contains('is-open') ? closeDrawer() : openDrawer();
+    });
+    if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+    overlay.addEventListener('click', closeDrawer);
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeDrawer();
+    });
   }
-  function closeDrawer() {
-    drawer.classList.remove('is-open');
-    overlay.classList.remove('is-on');
-    burger.classList.remove('is-open');
-    burger.setAttribute('aria-expanded', 'false');
-    document.body.style.overflow = '';
-  }
-  burger.addEventListener('click', function() {
-    drawer.classList.contains('is-open') ? closeDrawer() : openDrawer();
-  });
-  if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
-  overlay.addEventListener('click', closeDrawer);
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') closeDrawer();
-  });
+
   if (header) {
     window.addEventListener('scroll', function() {
       header.classList.toggle('is-scrolled', window.scrollY > 10);
     }, {passive: true});
   }
-});
-</script>
-</body>
-</html>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-
-  // ── FAQ s-faq ──
+  /* ── FAQ ── */
   document.querySelectorAll('.s-faq__trigger').forEach(function(btn) {
     btn.addEventListener('click', function() {
       var item = btn.closest('.s-faq__item');
@@ -1509,9 +1345,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // ── 3-Step Formular s-form ──
+  /* ── 3-STEP FORMULAR ── */
   var formTyp = '';
-
   document.querySelectorAll('.s-form__typ-btn').forEach(function(btn) {
     btn.addEventListener('click', function() {
       document.querySelectorAll('.s-form__typ-btn').forEach(function(b) { b.classList.remove('active'); });
@@ -1520,18 +1355,16 @@ document.addEventListener('DOMContentLoaded', function() {
       setTimeout(function() { sfGoTo(2); }, 280);
     });
   });
-
   document.querySelectorAll('.s-form__next').forEach(function(btn) {
     btn.addEventListener('click', function() { sfGoTo(parseInt(btn.dataset.to)); });
   });
   document.querySelectorAll('.s-form__back').forEach(function(btn) {
     btn.addEventListener('click', function() { sfGoTo(parseInt(btn.dataset.to)); });
   });
-
   function sfGoTo(n) {
     document.querySelectorAll('.s-form__step').forEach(function(s) { s.classList.add('s-form__hidden'); });
-    var target = document.getElementById('fs-' + n) || document.getElementById('fs-success');
-    if (target) target.classList.remove('s-form__hidden');
+    var t = document.getElementById('fs-' + n) || document.getElementById('fs-success');
+    if (t) t.classList.remove('s-form__hidden');
     document.querySelectorAll('.s-form__step-dot').forEach(function(dot) {
       dot.classList.remove('active','done');
       var s = parseInt(dot.dataset.step);
@@ -1539,31 +1372,27 @@ document.addEventListener('DOMContentLoaded', function() {
       if (s === n) dot.classList.add('active');
     });
     var bew = document.getElementById('bewertung');
-    if (bew) bew.scrollIntoView({ behavior:'smooth', block:'start' });
+    if (bew) bew.scrollIntoView({behavior:'smooth', block:'start'});
   }
-
-  var submitBtn = document.getElementById('f-submit');
-  if (submitBtn) {
-    submitBtn.addEventListener('click', function() {
+  var sb = document.getElementById('f-submit');
+  if (sb) {
+    sb.addEventListener('click', function() {
       var v = document.getElementById('f-vorname').value.trim();
       var n = document.getElementById('f-nachname').value.trim();
       var e = document.getElementById('f-email').value.trim();
       var t = document.getElementById('f-tel').value.trim();
       var d = document.getElementById('f-dsgvo').checked;
-      if (!v || !n || !e || !t || !d) { alert('Bitte füllen Sie alle Pflichtfelder aus.'); return; }
-      submitBtn.disabled = true;
-      submitBtn.textContent = 'Wird gesendet...';
+      if (!v||!n||!e||!t||!d) { alert('Bitte füllen Sie alle Pflichtfelder aus.'); return; }
+      sb.disabled = true; sb.textContent = 'Wird gesendet...';
       fetch('https://api.renovus.at/lead/inbound', {
-        method:'POST', headers:{'Content-Type':'application/json'},
-        body: JSON.stringify({
-          type:'bewertung', vorname:v, nachname:n, email:e, telefon:t,
+        method: 'POST', headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({type:'bewertung',vorname:v,nachname:n,email:e,telefon:t,
           objekttyp:formTyp,
           strasse: document.getElementById('f-strasse').value,
           plz_ort: document.getElementById('f-plz').value,
           flaeche: document.getElementById('f-flaeche').value,
           baujahr: document.getElementById('f-baujahr').value,
-          source:'startseite', dsgvo:true
-        })
+          source: window.location.pathname, dsgvo:true})
       }).finally(function() {
         document.querySelectorAll('.s-form__step').forEach(function(s) { s.classList.add('s-form__hidden'); });
         var suc = document.getElementById('fs-success');
@@ -1573,96 +1402,228 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // ── LISA ──
-  var lisaBtn    = document.getElementById('lisaBtn');
-  var lisaWidget = document.getElementById('lisaWidget');
-  var lisaClose  = document.getElementById('lisaClose');
-  var lisaInput  = document.getElementById('lisaInput');
-  var lisaSend   = document.getElementById('lisaSend');
-  var lisaMsgs   = document.getElementById('lisaMessages');
-  var lisaHistory = [];
-
-  if (lisaBtn && lisaWidget) {
-    function toggleLisa() { lisaWidget.classList.toggle('hidden'); if (!lisaWidget.classList.contains('hidden') && lisaInput) lisaInput.focus(); }
-    lisaBtn.addEventListener('click', toggleLisa);
-    if (lisaClose) lisaClose.addEventListener('click', toggleLisa);
-
+  /* ── LISA ── */
+  var lb = document.getElementById('lisaBtn');
+  var lw = document.getElementById('lisaWidget');
+  var lc = document.getElementById('lisaClose');
+  var li = document.getElementById('lisaInput');
+  var ls = document.getElementById('lisaSend');
+  var lm = document.getElementById('lisaMessages');
+  var lh = [];
+  if (lb && lw) {
+    function toggleLisa() {
+      lw.classList.toggle('hidden');
+      if (!lw.classList.contains('hidden') && li) li.focus();
+    }
+    lb.addEventListener('click', toggleLisa);
+    if (lc) lc.addEventListener('click', toggleLisa);
     function addMsg(text, role) {
       var div = document.createElement('div');
       div.className = 'lisa-msg lisa-msg--' + role;
       div.textContent = text;
-      lisaMsgs.appendChild(div);
-      lisaMsgs.scrollTop = lisaMsgs.scrollHeight;
+      lm.appendChild(div);
+      lm.scrollTop = lm.scrollHeight;
     }
-
     function sendToLisa() {
-      if (!lisaInput) return;
-      var text = lisaInput.value.trim();
+      if (!li) return;
+      var text = li.value.trim();
       if (!text) return;
       addMsg(text, 'user');
-      lisaInput.value = '';
-      lisaHistory.push({role:'user', content:text});
-      var typing = document.createElement('div');
-      typing.className = 'lisa-msg lisa-msg--assistant lisa-typing';
-      typing.textContent = '...';
-      lisaMsgs.appendChild(typing);
-      lisaMsgs.scrollTop = lisaMsgs.scrollHeight;
+      li.value = '';
+      lh.push({role:'user', content:text});
+      var ty = document.createElement('div');
+      ty.className = 'lisa-msg lisa-msg--assistant lisa-typing';
+      ty.textContent = '...';
+      lm.appendChild(ty);
+      lm.scrollTop = lm.scrollHeight;
       fetch('https://lisa-worker.rainerschauerlinz.workers.dev', {
         method:'POST', headers:{'Content-Type':'application/json'},
-        body: JSON.stringify({messages:lisaHistory, pageContext:document.body.getAttribute('data-page-context')||'startseite'})
+        body: JSON.stringify({messages:lh, pageContext: document.body.getAttribute('data-page-context')||'startseite'})
       }).then(function(r){return r.json();}).then(function(d){
-        typing.remove();
+        ty.remove();
         var reply = d.reply || 'Entschuldigung, bitte versuchen Sie es erneut.';
         addMsg(reply, 'assistant');
-        lisaHistory.push({role:'assistant', content:reply});
+        lh.push({role:'assistant', content:reply});
       }).catch(function(){
-        typing.remove();
+        ty.remove();
         addMsg('Entschuldigung, ich bin gerade nicht erreichbar. Tel: +43 732 237 997', 'assistant');
       });
     }
-    if (lisaSend) lisaSend.addEventListener('click', sendToLisa);
-    if (lisaInput) lisaInput.addEventListener('keydown', function(e){ if(e.key==='Enter') sendToLisa(); });
+    if (ls) ls.addEventListener('click', sendToLisa);
+    if (li) li.addEventListener('keydown', function(e) { if (e.key==='Enter') sendToLisa(); });
   }
 
 });
 </script>
+</body>
+</html>
+
+
+
 
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+
+  /* ── BURGER MENÜ ── */
   var burger   = document.getElementById('rnvBurger');
   var drawer   = document.getElementById('rnvDrawer');
   var overlay  = document.getElementById('rnvOverlay');
   var closeBtn = document.getElementById('rnvDrawerClose');
   var header   = document.getElementById('rnvHeader');
-  if (!burger || !drawer || !overlay) return;
-  function openDrawer() {
-    drawer.classList.add('is-open');
-    overlay.classList.add('is-on');
-    burger.classList.add('is-open');
-    burger.setAttribute('aria-expanded', 'true');
-    document.body.style.overflow = 'hidden';
+
+  if (burger && drawer && overlay) {
+    function openDrawer() {
+      drawer.classList.add('is-open');
+      overlay.classList.add('is-on');
+      burger.classList.add('is-open');
+      burger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeDrawer() {
+      drawer.classList.remove('is-open');
+      overlay.classList.remove('is-on');
+      burger.classList.remove('is-open');
+      burger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+    burger.addEventListener('click', function() {
+      drawer.classList.contains('is-open') ? closeDrawer() : openDrawer();
+    });
+    if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+    overlay.addEventListener('click', closeDrawer);
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeDrawer();
+    });
   }
-  function closeDrawer() {
-    drawer.classList.remove('is-open');
-    overlay.classList.remove('is-on');
-    burger.classList.remove('is-open');
-    burger.setAttribute('aria-expanded', 'false');
-    document.body.style.overflow = '';
-  }
-  burger.addEventListener('click', function() {
-    drawer.classList.contains('is-open') ? closeDrawer() : openDrawer();
-  });
-  if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
-  overlay.addEventListener('click', closeDrawer);
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') closeDrawer();
-  });
+
   if (header) {
     window.addEventListener('scroll', function() {
       header.classList.toggle('is-scrolled', window.scrollY > 10);
     }, {passive: true});
   }
+
+  /* ── FAQ ── */
+  document.querySelectorAll('.s-faq__trigger').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = btn.closest('.s-faq__item');
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.s-faq__item.open').forEach(function(i) {
+        i.classList.remove('open');
+        i.querySelector('.s-faq__trigger').setAttribute('aria-expanded','false');
+      });
+      if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+    });
+  });
+
+  /* ── 3-STEP FORMULAR ── */
+  var formTyp = '';
+  document.querySelectorAll('.s-form__typ-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.s-form__typ-btn').forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      formTyp = btn.dataset.value;
+      setTimeout(function() { sfGoTo(2); }, 280);
+    });
+  });
+  document.querySelectorAll('.s-form__next').forEach(function(btn) {
+    btn.addEventListener('click', function() { sfGoTo(parseInt(btn.dataset.to)); });
+  });
+  document.querySelectorAll('.s-form__back').forEach(function(btn) {
+    btn.addEventListener('click', function() { sfGoTo(parseInt(btn.dataset.to)); });
+  });
+  function sfGoTo(n) {
+    document.querySelectorAll('.s-form__step').forEach(function(s) { s.classList.add('s-form__hidden'); });
+    var t = document.getElementById('fs-' + n) || document.getElementById('fs-success');
+    if (t) t.classList.remove('s-form__hidden');
+    document.querySelectorAll('.s-form__step-dot').forEach(function(dot) {
+      dot.classList.remove('active','done');
+      var s = parseInt(dot.dataset.step);
+      if (s < n) dot.classList.add('done');
+      if (s === n) dot.classList.add('active');
+    });
+    var bew = document.getElementById('bewertung');
+    if (bew) bew.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+  var sb = document.getElementById('f-submit');
+  if (sb) {
+    sb.addEventListener('click', function() {
+      var v = document.getElementById('f-vorname').value.trim();
+      var n = document.getElementById('f-nachname').value.trim();
+      var e = document.getElementById('f-email').value.trim();
+      var t = document.getElementById('f-tel').value.trim();
+      var d = document.getElementById('f-dsgvo').checked;
+      if (!v||!n||!e||!t||!d) { alert('Bitte füllen Sie alle Pflichtfelder aus.'); return; }
+      sb.disabled = true; sb.textContent = 'Wird gesendet...';
+      fetch('https://api.renovus.at/lead/inbound', {
+        method: 'POST', headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({type:'bewertung',vorname:v,nachname:n,email:e,telefon:t,
+          objekttyp:formTyp,
+          strasse: document.getElementById('f-strasse').value,
+          plz_ort: document.getElementById('f-plz').value,
+          flaeche: document.getElementById('f-flaeche').value,
+          baujahr: document.getElementById('f-baujahr').value,
+          source: window.location.pathname, dsgvo:true})
+      }).finally(function() {
+        document.querySelectorAll('.s-form__step').forEach(function(s) { s.classList.add('s-form__hidden'); });
+        var suc = document.getElementById('fs-success');
+        if (suc) suc.classList.remove('s-form__hidden');
+        document.querySelectorAll('.s-form__step-dot').forEach(function(d) { d.classList.add('done'); });
+      });
+    });
+  }
+
+  /* ── LISA ── */
+  var lb = document.getElementById('lisaBtn');
+  var lw = document.getElementById('lisaWidget');
+  var lc = document.getElementById('lisaClose');
+  var li = document.getElementById('lisaInput');
+  var ls = document.getElementById('lisaSend');
+  var lm = document.getElementById('lisaMessages');
+  var lh = [];
+  if (lb && lw) {
+    function toggleLisa() {
+      lw.classList.toggle('hidden');
+      if (!lw.classList.contains('hidden') && li) li.focus();
+    }
+    lb.addEventListener('click', toggleLisa);
+    if (lc) lc.addEventListener('click', toggleLisa);
+    function addMsg(text, role) {
+      var div = document.createElement('div');
+      div.className = 'lisa-msg lisa-msg--' + role;
+      div.textContent = text;
+      lm.appendChild(div);
+      lm.scrollTop = lm.scrollHeight;
+    }
+    function sendToLisa() {
+      if (!li) return;
+      var text = li.value.trim();
+      if (!text) return;
+      addMsg(text, 'user');
+      li.value = '';
+      lh.push({role:'user', content:text});
+      var ty = document.createElement('div');
+      ty.className = 'lisa-msg lisa-msg--assistant lisa-typing';
+      ty.textContent = '...';
+      lm.appendChild(ty);
+      lm.scrollTop = lm.scrollHeight;
+      fetch('https://lisa-worker.rainerschauerlinz.workers.dev', {
+        method:'POST', headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({messages:lh, pageContext: document.body.getAttribute('data-page-context')||'startseite'})
+      }).then(function(r){return r.json();}).then(function(d){
+        ty.remove();
+        var reply = d.reply || 'Entschuldigung, bitte versuchen Sie es erneut.';
+        addMsg(reply, 'assistant');
+        lh.push({role:'assistant', content:reply});
+      }).catch(function(){
+        ty.remove();
+        addMsg('Entschuldigung, ich bin gerade nicht erreichbar. Tel: +43 732 237 997', 'assistant');
+      });
+    }
+    if (ls) ls.addEventListener('click', sendToLisa);
+    if (li) li.addEventListener('keydown', function(e) { if (e.key==='Enter') sendToLisa(); });
+  }
+
 });
 </script>
 </body>
