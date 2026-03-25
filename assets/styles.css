@@ -1,4 +1,4 @@
-/* build:1774401801 */
+/* build:1774401817 */
 /* =========================================================
    RENOVUS BASE CSS
    Mobile First
@@ -856,8 +856,6 @@ body { padding-top: var(--header-total); }
 
   .rnv-nav { display: flex; flex: 1; justify-content: center; }
   .rnv-header__actions-desktop { display: flex; align-items: center; flex-shrink: 0; }
-  .rnv-burger { display: none; }
-  .rnv-overlay { display: none !important; }
   .rnv-actionbar__social { display: flex; align-items: center; gap: 8px; }
 
   .footer__columns { grid-template-columns: 1.6fr 1fr 1fr 1.4fr; gap: 52px; }
